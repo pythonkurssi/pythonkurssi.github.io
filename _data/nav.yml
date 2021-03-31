@@ -18,3 +18,8 @@ items:
 - url: /assignments/
   name: Tehtävät
   icon_class: fas fa-user-graduate
+
+
+- url: /licenses/
+  name: Lisenssit
+  icon_class: fas fa-gavel
