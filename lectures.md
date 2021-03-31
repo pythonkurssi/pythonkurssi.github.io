@@ -1,6 +1,6 @@
 ---
 layout: lectures
-title: Materiaalit
+title: Oppitunnit
 permalink: /lectures/
 ---
 
