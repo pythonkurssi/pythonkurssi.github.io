@@ -1,19 +1,17 @@
 # Site settings
-course_name: History of Magic
-course_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare aliquam mattis. Donec hendrerit sollicitudin urna. Aliquam venenatis rutrum velit, at lobortis dui cursus a. Nam varius metus in turpis maximus, ut rhoncus tellus dictum. In aliquam tortor nec mi dapibus, sit amet vehicula dolor auctor."
-course_semester: "Fall 1998"
+course_name: Python
+course_description: "Python-ohjelmointi ja IoT"
+course_semester: "2021"
 
-baseurl: "/jekyll-course-website-template" # the subpath of your site, e.g. /blog/
-url: "http://kazemnejad.github.io/" # the base hostname & protocol for your site
+baseurl: "/web/" # the subpath of your site, e.g. /blog/
+url: "http://pythonkurssi.github.io/" # the base hostname & protocol for your site
 
-schoolname: "Hogwarts"
-schoolurl: "https://hogwarts.edu"
-twitter_username: username 
+schoolname: "Haaga-Helia"
+schoolurl: "https://haaga-helia.fi"
+twitter_username: HAAGAHELIAamk
 
 address: |
-    School of Witchcraft and Wizardry
-    Hogwarts
-    Scotland
+    Pasila
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
 # google_analytics: UA-XXXXXXXX-X
@@ -30,7 +28,7 @@ excerpt_separator: "<!--more-->"
 include: ['_images', '_css']
 exclude: ['develop']
 
-dateformat: "%m/%d/%Y"
+dateformat: "%d.%m.%Y"
 
 future: true
 collections:
