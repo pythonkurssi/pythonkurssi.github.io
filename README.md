@@ -58,6 +58,11 @@ Pro Tip: You don't need to clone your repo to update your website. Use GitHub we
 - => website address will be: `https://cmu-cs101.github.io/fa2020/`
 
 # How to test your website locally
+
+```sh
+docker run --rm --volume="${PWD}:/srv/jekyll" -it -p 4000:4000 jekyll/jekyll:3.8 jekyll serve --force-polling
+```
+
 1. Install Jekyll ([Installation guide](https://jekyllrb.com/docs/installation/))
 2. Clone your repo
 3. Watch your website while editing: `bundle exec jekyll serve`
