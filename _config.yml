@@ -1,5 +1,5 @@
 # Site settings
-course_name: Python
+course_name: Python-ohjelmointi ja IoT
 course_description: "Python-ohjelmointi ja IoT"
 course_semester: "2021"
 
@@ -9,9 +9,6 @@ url: "http://pythonkurssi.github.io/" # the base hostname & protocol for your si
 schoolname: "Haaga-Helia"
 schoolurl: "https://haaga-helia.fi"
 twitter_username: HAAGAHELIAamk
-
-address: |
-    Pasila
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
 # google_analytics: UA-XXXXXXXX-X
