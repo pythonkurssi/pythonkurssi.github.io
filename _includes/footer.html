@@ -2,58 +2,71 @@
 
   <div class="wrapper">
 
-<!--     <h2 class="footer-heading">{{ site.schoolname }}</h2> -->
-         <div class="footer-col-wrapper">
+    <!--     <h2 class="footer-heading">{{ site.schoolname }}</h2> -->
+    <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
- 
 
-         <p class="text">
-{{ site.address | newline_to_br  }}
+
+        <p class="text">
+          Tämän kurssin on kehittänyt <a href="https://www.linkedin.com/in/havulinna">Teemu Havulinna</a> ja se
+          on lisensoitu <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</a>
+          -lisenssillä.
+        </p>
+        <p class="text">
+          Tämä sivusto on rakennettu <a href="https://github.com/kazemnejad/">Amirhossein Kazemnejadin</a> <a
+            href="https://github.com/kazemnejad/jekyll-course-website-template">jekyll-course-website-template</a>
+          -sivupohjalla, joka on lisensoitu <a
+            href="https://github.com/kazemnejad/jekyll-course-website-template/blob/master/LICENSE">MIT-lisenssillä</a>.
+          Sivupohja pohjautuu alkujaan <a href="https://github.com/svmiller">Steven V. Millerin</a> <a
+            href="https://github.com/svmiller/course-website">course-website</a>-sivupohjaan.
+        </p>
+        <p class="text">
+          Sivut on julkaistu <a href="https://pages.github.com/">GitHub Pages</a> -alustalla. Kurssin lähdekoodit ovat
+          saatavilla <a href="https://github.com/pythonkurssi">GitHub</a>-palvelussa.
+        </p>
       </div>
 
       <div class="footer-col  footer-col-2">
-       <ul class="social-media-list">
-     
+        <ul class="social-media-list">
+
 
           {% if site.github_username %}
 
-{% endif %}
+          {% endif %}
 
           {% if site.twitter_username %}
-  <li>
-    <a href="https://twitter.com/{{ site.twitter_username }}">
-      <i class="fab fa-twitter" style="color:gray"></i> {{ site.twitter_username }}
-    </a>
-  </li>
-{% endif %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fab fa-twitter" style="color:gray"></i> {{ site.twitter_username }}
+            </a>
+          </li>
+          {% endif %}
 
           {% if site.google_scholar_id %}
-  <li>
-    <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
-      <i class="ai ai-google-scholar" style="color:gray"></i> {{ site.google_scholar_id }}
-    </a>
-  </li>
-{% endif %}
+          <li>
+            <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
+              <i class="ai ai-google-scholar" style="color:gray"></i> {{ site.google_scholar_id }}
+            </a>
+          </li>
+          {% endif %}
 
           {% if site.orcid_id %}
-  <li>
-    <a href="https://orcid.org/{{ site.orcid_id }}">
-      <i class="ai ai-orcid" style="color:gray"></i> {{ site.orcid_id }}
-    </a>
-  </li>
-{% endif %}
+          <li>
+            <a href="https://orcid.org/{{ site.orcid_id }}">
+              <i class="ai ai-orcid" style="color:gray"></i> {{ site.orcid_id }}
+            </a>
+          </li>
+          {% endif %}
 
           {% if site.schoolurl %}
-  <li>
-    <a href="{{site.schoolurl}}">
-      <i class="fas fa-globe" style="color:gray"></i> {{site.schoolurl |  remove: "https://" | remove: "http://" | remove: "www." }}
-    </a>
-  </li>
-{% endif %}
+          <li>
+            <a href="{{site.schoolurl}}">
+              <i class="fas fa-globe" style="color:gray"></i>
+              {{site.schoolurl |  remove: "https://" | remove: "http://" | remove: "www." }}
+            </a>
+          </li>
+          {% endif %}
 
-
-
-       
         </ul>
       </div>
     </div>
