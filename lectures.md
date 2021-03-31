@@ -1,6 +1,7 @@
 ---
 layout: lectures
-title: Lectures
+title: Materiaalit
 permalink: /lectures/
 ---
-You can download the lectures here. We will try to upload lectures prior to their corresponding classes.
+
+Löydät kunkin kurssin aiheen oppimateriaalit omilta sivuiltaan.
