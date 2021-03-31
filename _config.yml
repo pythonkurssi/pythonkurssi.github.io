@@ -3,7 +3,7 @@ course_name: Python-ohjelmointi ja IoT
 course_description: "Python-ohjelmointi ja IoT"
 course_semester: "2021"
 
-baseurl: "/web/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pythonkurssi.github.io/" # the base hostname & protocol for your site
 
 schoolname: "Haaga-Helia"
