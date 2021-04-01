@@ -25,8 +25,11 @@ Kurssi on jaettu kolmeen osa-alueeseen:
 
 ## 2: Soveltava Python (5 viikkoa)
 
+- satunnaisuus
+- ajan käsittely
 - pakettienhallinta
 - tiedostojen käsittely
+- virheisiin varautuminen
 - koodin testaaminen
 - integraatiot (http ja json)
 
