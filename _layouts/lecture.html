@@ -1,0 +1,22 @@
+---
+layout: default
+title: page.title
+---
+<div class="post">
+
+  <p class="breadcrumb">
+    <a href="/">Etusivu</a> /
+    <a href="{{ '/lectures/' | prepend: site.baseurl }}">
+      Oppitunnit </a> / {{ page.title }}
+  </p>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: site.dateformat }} {{ page.date | date: "%-H:%M" }}</p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>

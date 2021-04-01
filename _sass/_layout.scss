@@ -265,10 +265,8 @@ ul#archive {
 }
 
 ul#archive li {
-    //    border-top: #999 1px dotted;
-       border-bottom: #999 1px dotted;
-       padding: .1em 0 .1em .5em;
-       background: #fff;
+       border-bottom: none;
+       padding: .1em 0 .1em 0;
 }
 
 ul#archive  h2 {

@@ -17,12 +17,14 @@ layout: page
       </div>
       {% endif %}
       <div class="content">
+        <div class="lecture-date">
+          {{ lecture.date | date: site.dateformat }}, {{ lecture.date | date: "%H:%M" }}
+        </div>
         <span style="font-weight: bold;">
           <a href="{{ lecture.url | prepend: site.baseurl}}">
             {{ lecture.title }}
           </a>
         </span><br>
-
         {{ lecture.tldr }}
         <br />
         <strong>
