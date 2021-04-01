@@ -12,7 +12,21 @@ Osallistuaksesi kurssille sinulla tulee olla suoritettuna ohjelmistotuotannon or
 
 Kurssin suoritettuasi sinulla on vankka käsitys Python-ohjelmointikielestä ja sen standardikirjastosta. Osaat toteuttaa sekä komentorivillä että mikrokontrollereilla suoritettavia pieniä ohjelmia, ja ymmärrät mikrokontrollerien keskeiset käsitteet. Osaat hyödyntää työskentelysi tukena ohjelmistokehityksen tukitoimia, kuten yksikkötestausta.
 
-Kurssi on jaettu kolmeen osa-alueeseen: 
+## Suositeltavat oppimateriaalit
+
+Jos haluat päästä nopeasti vauhtiin, voit lukea esimerkiksi tutoriaalin ["Learn Python in 10 minutes"](https://www.stavros.io/tutorials/python/) tai tutustua [Cheat sheet -muistiinpanoihin](https://www.pythoncheatsheet.org/).
+
+Tällä kurssisivulla sijaitsevat oppimateriaalit on tarkoitettu ensisijaisesti oppituntien tueksi, eivätkä ne riitä pääasialliseksi Python-materiaaliksi kurssilla. Laajempia ja laadukkaita oppimateriaaleja löytyy mm. seuraavista lähteistä:
+
+* Lappeenrannan Yliopiston Python 3 –ohjelmointiopas: [https://lutpub.lut.fi/handle/10024/162088](https://lutpub.lut.fi/handle/10024/162088)
+* Pythonin oma "The Python Tutorial": [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
+* Mooc.fi:n Ohjelmoinnin perusteet Pythonilla -kurssi: [https://python-k20.mooc.fi/](https://python-k20.mooc.fi/)
+* Codecademy:n "Learn Python 3" -kurssi: [https://www.codecademy.com/courses/learn-python-3/](https://www.codecademy.com/courses/learn-python-3/)
+
+Lisää hyvä lähteitä löydät hakukoneilla. Jaathan vinkkejä hyvistä materiaaleista myös kurssin Teamsissa!
+
+
+# Kurssin jakautuminen aiheittain
 
 ## 1: Python-ohjelmointikielen perusteet (5 viikkoa)
 
