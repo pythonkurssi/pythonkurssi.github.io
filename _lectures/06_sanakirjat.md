@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-02-28-T10:00:00
+date: 2022-02-28T10:00:00+02:00
 title: Sanakirjat
 tldr: "Arvojen käsitteleminen sanakirjan avulla avainten ja arvojen pareina."
 thumbnail: 

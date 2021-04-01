@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-01-31-T10:00:00
+date: 2022-01-31T10:00:00+02:00
 title: Toistorakenteet
 tldr: "While- ja for-toistorakenne. Toistosta poistuminen ja ehdot silmukoissa."
 thumbnail: 

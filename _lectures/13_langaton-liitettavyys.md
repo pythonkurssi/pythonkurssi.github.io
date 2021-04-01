@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-04-25-T10:00:00
+date: 2022-04-25T10:00:00+03:00
 title: MicroPython ja WiFi
 tldr: "Mikrokontrollerin liittäminen langattomaan lähiverkkoon."
 

@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-01-17-T10:00:00
+date: 2022-01-17T10:00:00+02:00
 title: Aloitustunti
 tldr: "Kurssin yleiset järjestelyt, työkalut ja ohjelmoinnin aloitus"
 thumbnail: 

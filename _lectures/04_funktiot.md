@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-02-07-T10:00:00
+date: 2022-02-07T10:00:00+02:00
 title: Funktiot
 tldr: "Funktioiden määrittely. Parametrit ja paluuarvot. Toisessa tiedostossa olevan funktion kutsuminen."
 thumbnail: 

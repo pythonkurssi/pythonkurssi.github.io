@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-04-04-T10:00:00
+date: 2022-04-04T10:00:00+03:00
 title: Yksikkötestaus
 tldr: "Ohjelman toiminnan testaaminen Pytest-kirjaston avulla."
 thumbnail: 

@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-01-24-T10:00:00
+date: 2022-01-24T10:00:00+02:00
 title: Totuusarvot ja ehdolliset rakenteet
 tldr: "Boolean-arvot True ja False, ehtorakenteet if, elif ja else"
 thumbnail: 

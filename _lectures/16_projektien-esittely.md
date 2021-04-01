@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-05-16-T10:00:00
+date: 2022-05-16T10:00:00+03:00
 title: Projektien esittely
 tldr: "Valmiiden projektien esittely ja kokemusten jakaminen"
 
