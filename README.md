@@ -60,7 +60,7 @@ Pro Tip: You don't need to clone your repo to update your website. Use GitHub we
 # How to test your website locally
 
 ```sh
-docker run --rm --volume="${PWD}:/srv/jekyll" -it -p 4000:4000 jekyll/jekyll:3.8 jekyll serve --force-polling
+docker run --rm --volume="${PWD}:/srv/jekyll" --volume="${PWD}/vendor/bundle:/usr/local/bundle" -it -p 4000:4000 jekyll/jekyll:3.8 jekyll serve --force-polling
 ```
 
 1. Install Jekyll ([Installation guide](https://jekyllrb.com/docs/installation/))

@@ -23,7 +23,7 @@ permalink: blog/:year/:month/:title
 excerpt_separator: "<!--more-->"
 
 include: ['_images', '_css']
-exclude: ['develop']
+exclude: ['develop', 'vendor']
 
 dateformat: "%d.%m.%Y"
 
@@ -45,3 +45,8 @@ defaults:
       type: "assignments"
     values:
       layout: "assignment"
+  - scope:
+      path: ""
+      type: "lectures"
+    values:
+      layout: "page"
