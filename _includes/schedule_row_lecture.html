@@ -10,7 +10,7 @@
 </div>
 <div class="col col-2" data-label="Description">
     <a href="{{ include.event.url | prepend: site.baseurl}}">
-        {{ include.event.title }}
+        <strong>{{ include.event.title }}</strong>
     </a>
     <div class="schedule-lecture-links">
         {% include lecture_links.html lecture=include.event %}
