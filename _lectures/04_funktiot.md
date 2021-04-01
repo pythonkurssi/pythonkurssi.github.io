@@ -14,6 +14,29 @@ __links__:
 ---
 
 
-Funktioiden määrittely. Parametrit ja paluuarvot. Toisessa tiedostossa olevan funktion kutsuminen.
+Oppitunnin sisältö:
 
-Tyyppivihjeet.
+1. Funktioiden määrittely
+1. Funktioiden kutsuminen
+1. Parametrit ja paluuarvot
+1. Toisessa tiedostossa olevan funktion kutsuminen
+1. Tyyppivihjeet
+
+
+
+
+# Funktiot
+
+Pythonin funktiot muistuttavat hyvin suuresti esimerkiksi JavaScriptin funktioita. Parametrien ja paluuarvojen välitys tapahtuu samalla tavoin, ainoastaan syntaksissa on pieniä eroja:
+
+```python
+def laske_summa(lista_numeroista):
+    summa = 0
+    for n in lista_numeroista:
+        summa += n
+    return summa
+```
+
+Pythonista löytyy **paljon** perusoperaatioita myös valmiina, eli oman `laske_summa`-funktion sijaan voimme kutsua Pythonin valmista `sum`-funktiota.
+
+
