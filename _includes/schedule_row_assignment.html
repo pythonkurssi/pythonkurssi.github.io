@@ -4,10 +4,9 @@
 </div>
 <div class="col col-1-2" style="color: #31708f ;font-weight: bold;" data-label="Event">Tehtävä</div>
 <div class="col col-2" style="font-weight: bold" data-label="Description">
-    {{ include.event.title }} julkaistu!
+    <a href="{{ include.event.url | prepend: site.baseurl}}">{{ include.event.title }}</a>
 </div>
 <div class="col col-4" data-label="Course Material">
-    [<a href="{{ include.event.url | prepend: site.baseurl}}">{{ include.event.title }}</a>]
     {% if include.event.solutions %}
     [<a href="{{ include.event.solutions | prepend: site.baseurl}}">Malliratkaisu</a>]
     {% endif %}

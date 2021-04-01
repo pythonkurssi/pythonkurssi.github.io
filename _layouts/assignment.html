@@ -6,15 +6,15 @@ title: page.title
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">Julkaisupäivä {{ page.date | date: "%A" }} {{ page.date | date: site.dateformat }}</p>
+    <p class="post-meta">
+      DL: {{ page.due_event.date | date: site.dateformat }}
+      {{ page.due_event.date | date: "%H:%M" }}</p>
   </header>
 
   <div>
     {% if page.due_event %}
-    <span style="font-weight: bold">DL: {{ page.due | date: site.dateformat }}
-      {{ page.due_event.date | date: "%H:%M" }}</span>
     {% endif %}
-    <p style="font-weight: bold">Tiedostot
+    <!--p style="font-weight: bold">Tiedostot
       {% if page.pdf %}
       [<a href="{{ page.pdf | prepend: site.baseurl }}">tehtävänanto</a>]
       {% endif %}
@@ -24,7 +24,7 @@ title: page.title
       {% if page.solutions %}
       [<a href="{{ page.solutions | prepend: site.baseurl }}">malliratkaisu</a>]
       {% endif %}
-    </p>
+    </p-->
   </div>
 
   <br />
