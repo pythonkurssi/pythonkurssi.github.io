@@ -1,10 +1,17 @@
-<div class="col col-1" data-label="Event">Oppitunti</div>
-<div class="col col-1-2" data-label="Date">
+<div class="col col-1" data-label="Date">
     {{ include.event.date | date: site.dateformat }}
-    <br class="date-spliter" />{{ include.event.date | date: "%A" }}
+    <br class="date-spliter" />
+    Klo {{ event.date | date: "%H:%M" }}
+    <br class="date-spliter" />
+    {{ include.event.date | date: "%A" }}
+</div>
+<div class="col col-1-2" data-label="Event">
+    Oppitunti
 </div>
 <div class="col col-2" data-label="Description">
-    {{ include.event.title }}
+    <a href="{{ include.event.url | prepend: site.baseurl}}">
+        {{ include.event.title }}
+    </a>
     <div class="schedule-lecture-links">
         {% include lecture_links.html lecture=include.event %}
     </div>
@@ -20,7 +27,7 @@
         {% endfor %}
     </ul>
     {% endif %} -->
-    {% if include.event.content != '' %}
-    {{ event.content }}
+    {% if include.event.tldr != '' %}
+    {{ event.tldr }}
     {% endif %}
 </div>
