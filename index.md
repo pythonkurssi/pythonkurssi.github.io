@@ -4,11 +4,13 @@ layout: home
 
 # Tervetuloa kurssille!
 
+**Tämä sivusto on Python-ohjelmointikurssin työversio. Kurssi ei ole tällä hetkellä ole suoritettavissa.**
+
 Tämä kurssi kestää 16 viikkoa ja se sisältää viikoittain 3 tuntia yhteistä opiskelua sekä noin 5 tuntia itsenäistä opiskelua. Käymme jokaisella viikolla yhteisesti läpi yhden uuden aiheen teoriaosuuden, jota sovelletaan viikoittain palautettavissa koodausharjoituksissa.
 
-Osallistuaksesi kurssille sinulla tulee olla suoritettuna tietojenkäsittelyn orientaatiokurssi, tai vastaavat tiedot ja taidot.
+Osallistuaksesi kurssille sinulla tulee olla suoritettuna ohjelmistotuotannon orientaatiokurssi, tai vastaavat tiedot ja taidot. Aikaisempi kokemus Pythonista tai IoT:stä ei ole tarpeen.
 
-Tämän kurssin suoritettuasi sinulla on vankka käsitys Python-ohjelmointikielestä ja sen standardikirjastosta. Osaat toteuttaa sekä komentorivillä että mikrokontrollereilla suoritettavia pieniä ohjelmia, ja ymmärrät mikrokontrollerien keskeiset käsitteet. Osaat hyödyntää työskentelysi tukena ohjelmistokehityksen tukitoimia, kuten yksikkötestausta.
+Kurssin suoritettuasi sinulla on vankka käsitys Python-ohjelmointikielestä ja sen standardikirjastosta. Osaat toteuttaa sekä komentorivillä että mikrokontrollereilla suoritettavia pieniä ohjelmia, ja ymmärrät mikrokontrollerien keskeiset käsitteet. Osaat hyödyntää työskentelysi tukena ohjelmistokehityksen tukitoimia, kuten yksikkötestausta.
 
 Kurssi on jaettu kolmeen osa-alueeseen: 
 
