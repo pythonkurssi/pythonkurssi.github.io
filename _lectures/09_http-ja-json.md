@@ -1,10 +1,10 @@
 ---
 type: lecture
-date: 2018-09-16T8:00:00+4:30
-title: Sample Lecture
-tldr: "Short text to discribe what this lecture is about."
+date: 2022-03-28-T10:00:00
+title: HTTP ja JSON
+tldr: "JSON-muotoisen datan lukeminen ja kirjoittaminen, HTTP-pyynnöt."
 thumbnail: 
-links: 
+__links__: 
     - url: /static_files/presentations/lec.zip
       name: notes
     - url: /static_files/presentations/code.zip
@@ -12,6 +12,5 @@ links:
     - url: https://google.com
       name: slides
 ---
-**Suggested Readings:**
-- [Readings 1](http://example.com)
-- [Readings 2](http://example.com)
+
+JSON-muotoisen datan lukeminen ja kirjoittaminen, HTTP-pyynnöt.
