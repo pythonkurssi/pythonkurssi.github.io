@@ -14,7 +14,6 @@ Kurssin suoritettuasi sinulla on vankka käsitys Python-ohjelmointikielestä ja 
 
 ## Suositeltavat oppimateriaalit
 
-Jos haluat päästä nopeasti vauhtiin, voit lukea esimerkiksi tutoriaalin ["Learn Python in 10 minutes"](https://www.stavros.io/tutorials/python/) tai tutustua [Cheat sheet -muistiinpanoihin](https://www.pythoncheatsheet.org/).
 
 Tällä kurssisivulla sijaitsevat oppimateriaalit on tarkoitettu ensisijaisesti oppituntien tueksi, eivätkä ne riitä pääasialliseksi Python-materiaaliksi kurssilla. Laajempia ja laadukkaita oppimateriaaleja löytyy mm. seuraavista lähteistä:
 
@@ -22,6 +21,8 @@ Tällä kurssisivulla sijaitsevat oppimateriaalit on tarkoitettu ensisijaisesti 
 * Pythonin oma "The Python Tutorial": [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
 * Mooc.fi:n Ohjelmoinnin perusteet Pythonilla -kurssi: [https://python-k20.mooc.fi/](https://python-k20.mooc.fi/)
 * Codecademy:n "Learn Python 3" -kurssi: [https://www.codecademy.com/courses/learn-python-3/](https://www.codecademy.com/courses/learn-python-3/)
+
+Jos haluat päästä nopeasti vauhtiin, voit lukea esimerkiksi tutoriaalin ["Learn Python in 10 minutes"](https://www.stavros.io/tutorials/python/) tai tutustua [Cheat sheet -muistiinpanoihin](https://www.pythoncheatsheet.org/).
 
 Lisää hyvä lähteitä löydät hakukoneilla. Jaathan vinkkejä hyvistä materiaaleista myös kurssin Teamsissa!
 
