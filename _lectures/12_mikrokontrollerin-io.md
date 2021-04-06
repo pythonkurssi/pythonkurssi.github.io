@@ -20,3 +20,5 @@ Reagoiminen painikkeisiin.
 Sensorit
 Piirit
 Sensorit ja toimilaitteet (ultraääni, valo, ääni, kosketus, servo, DC-moottori)
+
+Freenove-tutoriaali: [https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf)

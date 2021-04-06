@@ -25,7 +25,20 @@ Oppitunnin aiheet:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QopRAwUP5ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Electric Current: Crash Course Physics
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HXOok3mfMLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 YouTube: [ESP32 Tutorial using MicroPython - Let's Get Started!](https://www.youtube.com/watch?v=QopRAwUP5ds)
+
+
+## Pycom tutorials
+
+[https://core-electronics.com.au/tutorials/pycom/](https://core-electronics.com.au/tutorials/pycom/)
+
+
+[https://www.youtube.com/watch?v=HXOok3mfMLM](https://www.youtube.com/watch?v=HXOok3mfMLM)
 
 ## Arduino IDE:n käyttöönotto (draft, ESP32 CAM)
 

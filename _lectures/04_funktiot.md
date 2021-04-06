@@ -23,7 +23,9 @@ Oppitunnin sisältö:
 1. Tyyppivihjeet
 
 
+# Funktiot Pythonin dokumentaatiossa
 
+[https://docs.python.org/3/tutorial/controlflow.html#defining-functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 
 # Funktiot
 

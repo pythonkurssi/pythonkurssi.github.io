@@ -19,3 +19,10 @@ Sensorien lukemien lähettäminen MQTT-viestien avulla.
 Liitäntöjen ohjaaminen vastaanotettujen viestien avulla.
 
 https://pypi.org/project/micropython-umqtt.simple/
+
+How mqtt works?
+
+* publisher, subscriber and broker
+* topics and messages
+* Quality of Service (0, 1, 2)
+* HTTP vs. MQTT

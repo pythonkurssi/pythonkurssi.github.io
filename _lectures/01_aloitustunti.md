@@ -28,6 +28,68 @@ Oppitunnin aiheet:
 1. Merkkijonot ja numerotyypit
 
 
+## Introducing Python
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-2-of-44-Introducing-Python/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [2 of 44] Introducing Python - Microsoft Channel 9 Video"></iframe>
+
+[https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python)
+
+## Getting started
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-3-of-44-Getting-Started/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [3 of 44] Getting Started - Microsoft Channel 9 Video"></iframe>
+
+## Configuring Visual Studio Code
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-4-of-44-Configuring-Visual-Studio-Code/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [4 of 44] Configuring Visual Studio Code - Microsoft Channel 9 Video"></iframe>
+
+[https://marketplace.visualstudio.com/items?itemName=ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+## Using Print
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-5-of-44-Using-Print/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [5 of 44] Using Print - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Hello, World
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-6-of-44-Demo-Hello-World/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [6 of 44] Demo: Hello, World - Microsoft Channel 9 Video"></iframe>
+
+
+## Comments
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-7-of-44-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [7 of 44] Comments - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Comments
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-8-of-44-Demo-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [8 of 44] Demo: Comments - Microsoft Channel 9 Video"></iframe>
+
+## String Concepts
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-9-of-44-String-Concepts/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [9 of 44] String Concepts - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Strings
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-10-of-44-Demo-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [10 of 44] Demo: Strings - Microsoft Channel 9 Video"></iframe>
+
+## Formatting Strings
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-11-of-44-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [11 of 44] Formatting Strings - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Formatting Strings
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-12-of-44-Demo-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [12 of 44] Demo: Formatting Strings - Microsoft Channel 9 Video"></iframe>
+
+
+## Numeric Data Types
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Numbers
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-14-of-44-Demo-Numbers/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [14 of 44] Demo: Numbers - Microsoft Channel 9 Video"></iframe>
+
+
+----
+
+
 ## "Python as a calculator"
 
 > *"Python can be used as a calculator to compute arithmetic operations like addition, subtraction, multiplication and division. Python can also be used for trigonometric calculations and statistical calculations."*

@@ -21,6 +21,10 @@ Oppitunnin aiheet:
 1. ehdot silmukoissa
 
 
+## Suositeltavaa luettavaa
+
+* [https://docs.python.org/3/tutorial/controlflow.html#for-statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
+
 ## Toistorakenteet
 
 Pythonin `while`-toistorakenne sekä `break`- ja `continue`-komennot toimivat kuten monissa muissakin kielissä:

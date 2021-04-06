@@ -14,3 +14,17 @@ __links__:
 ---
 
 Pythonin aikakirjaston käyttäminen ja satunnaisuus ohjelmissa.
+
+
+## Date Data Types
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-15-of-44-Date-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [15 of 44] Date Data Types - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Dates
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-16-of-44-Demo-Dates/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [16 of 44] Demo: Dates - Microsoft Channel 9 Video"></iframe>
+
+## Error Handling
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-17-of-44-Error-Handling/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [17 of 44] Error Handling - Microsoft Channel 9 Video"></iframe>
+

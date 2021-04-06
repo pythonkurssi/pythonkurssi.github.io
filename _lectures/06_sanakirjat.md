@@ -26,6 +26,10 @@ Oppitunnin aiheet:
 1. Sanakirjan läpikäynti
 1. Avainten ja arvojen etsiminen
 
+## Suositeltavaa luettavaa
+
+[https://docs.python.org/3/tutorial/datastructures.html#dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+
 ## Sanakirjat (dict)
 
 Pythonin sanakirjarakenne muistuttaa monilla tavoilla JSON-tietorakenteita, JavaScript-kielen objekteja sekä Javan map-tietorakenteita. Ne ovat siis kokoelmia avain-arvo-pareja:

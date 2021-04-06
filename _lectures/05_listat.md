@@ -15,6 +15,9 @@ Oppitunnin aiheet:
 1. Listojen läpikäynti
 1. Listan osien käsittely
 
+# Suositeltavaa luettavaa
+
+[https://docs.python.org/3/tutorial/introduction.html#lists](https://docs.python.org/3/tutorial/introduction.html#lists)
 
 # Listan luominen ja arvojen lisääminen
 

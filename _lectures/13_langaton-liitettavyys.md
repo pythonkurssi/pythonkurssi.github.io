@@ -18,3 +18,16 @@ Mikrokontrollerin liittäminen langattomaan lähiverkkoon.
 
 Tiedoston lukeminen verkosta.
 
+ISO/OSI-mallin mukaiset kerrokset vs. IoT-protokollakerrokset
+
+Protokollat:
+
+* Bluetooth
+* BLE
+* ZigBee
+* Z-Wave
+* WiFi
+* NFC
+* LTE, HSPA
+* 433 MHz...
+

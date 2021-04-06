@@ -21,7 +21,10 @@ Oppitunnin aiheet:
 1. Totuusarvojen käyttäminen ehdollisessa logiikassa
 1. Ehtojen kääntäminen ja yhdistely
 
-Suositeltavaa luettavaa: [https://www.pythoncheatsheet.org/#Flow-Control](https://www.pythoncheatsheet.org/#Flow-Control)
+Suositeltavaa luettavaa:
+
+* [https://www.pythoncheatsheet.org/#Flow-Control](https://www.pythoncheatsheet.org/#Flow-Control)
+* [https://docs.python.org/3/tutorial/controlflow.html#if-statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
 
 ## Totuusarvot ja vertailuoperaatiot
 
