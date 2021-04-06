@@ -21,6 +21,12 @@ Oppitunnin aiheet:
 1. Lämpötilasensorin lukeminen
 1. Ledin vilkuttaminen
 
+## Let's Get Started!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QopRAwUP5ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+YouTube: [ESP32 Tutorial using MicroPython - Let's Get Started!](https://www.youtube.com/watch?v=QopRAwUP5ds)
+
 ## Arduino IDE:n käyttöönotto (draft, ESP32 CAM)
 
 Arduino IDE:n asennus Windows storen kautta: [https://www.microsoft.com/fi-fi/p/arduino-ide/9nblggh4rsd8](https://www.microsoft.com/fi-fi/p/arduino-ide/9nblggh4rsd8)
