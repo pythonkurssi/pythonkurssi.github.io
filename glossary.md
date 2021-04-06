@@ -14,7 +14,13 @@ permalink: /lectures/
     https://semiengineering.com/mpu-vs-mcu/
 
 * NodeMCU
+
+* SoC
+
+    System on a Chip
+
 * Firmware
+
 * Development kit
 * Breadboard / koekytkentälevy
 
