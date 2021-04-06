@@ -7,11 +7,18 @@ permalink: /lectures/
 # Sanasto
 
 * ESP32
+
+    Esp32 vs. Esp8266 vs. Arduino vs. Raspberry Pi
+
 * Pyboard
 * MCU / Mikrokontrolleri
 * MPU / Mikroprosessori
 
     https://semiengineering.com/mpu-vs-mcu/
+
+* MicroPython
+
+* CircuitPython
 
 * NodeMCU
 
@@ -22,5 +29,11 @@ permalink: /lectures/
 * Firmware
 
 * Development kit
+
 * Breadboard / koekytkentälevy
 
+* Serial vs. parallel
+
+* GPIO
+
+    General-Purpose Input/Output
