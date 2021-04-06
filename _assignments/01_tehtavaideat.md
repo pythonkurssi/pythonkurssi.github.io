@@ -15,104 +15,146 @@ due_event:
 
 # Mikrokontrolleriosuutta tukevat perustehtävät
 
-Ohjelmat Ohmin lain soveltamiseksi: `U = R * I`
+## Battery Charge Time Calculator
+
+* http://www.csgnetwork.com/batterychgcalc.html
+
+## Ohjelmat Ohmin lain soveltamiseksi: `U = R * I`
 
 * sopivan vastuksen laskeminen?
 * ledit rinnakkain + vastus?
 
-Ohjelma sähköisen tehon laskemiseksi: `P = U * I`
+## Ohjelma sähköisen tehon laskemiseksi: `P = U * I`
 
+## Laitteen akun keston arviointi, kun tiedetään kapasiteetti ja keskimääräinen kulutus
+
+* opetellaan eri SI-määreitä, kuten mikroamppeerit, milliamppeerit jne.
+* bonus: virransäästötila viimeiset 20 %
+* ESP32 deep sleep -virrankulutus
 
 # Aritmetiikka ja funktiot
 
-Tiedoston koon ilmoittaminen muodossa TB, GB, MB, tai KB tiedoston koosta riippuen.Katso esim: [https://stackoverflow.com/a/2104107](https://stackoverflow.com/a/2104107)
+## Tiedoston koon ilmoittaminen muodossa TB, GB, MB, tai KB tiedoston koosta riippuen.Katso esim: [https://stackoverflow.com/a/2104107](https://stackoverflow.com/a/2104107)
 
-Tiedoston latausajan laskuri, kun tiedetään nettiyhteyden nopeus
+## Käyttöjärjestelmän esittämän levytilan vertailu valmistajan ilmoittamaan
 
-Puhelimen akun keston arviointi, kun tiedetään kapasiteetti ja keskimääräinen kulutus. (bonus: virransäästötila viimeiset 20 %)
+* 1GB = 1024 MB vs. 1GiB = 1000 MiB. Katso esim: [https://superuser.com/a/530](https://superuser.com/a/530)
 
 
-Skumppalaskuri? Tuttu javakurssilta.
+## Tiedoston latausajan laskuri, kun tiedetään nettiyhteyden nopeus
 
-Käyttöjärjestelmän esittämän levytilan vertailu valmistajan ilmoittamaan: 1GB = 1024 MB vs. 1GiB = 1000 MiB. Katso esim: [https://superuser.com/a/530](https://superuser.com/a/530).
+
+
+## Skumppalaskuri
+
+* Tuttu javakurssilta.
+
 
 
 # Merkkijonot
 
-Käyttäjätunnusten generointi: Chuck Norris => cnorris tms.
+## Käyttäjätunnusten generointi
 
-Meiliosoitteen varmistaminen: vertaillaan case-insensitiivisesti
+* Chuck Norris => `cnorris` tms.
 
-IP-osoitteiden tai MAC-osoitteiden käsittely 
+## Meiliosoitteen varmistaminen: vertaillaan case-insensitiivisesti
+
+## IP-osoitteiden tai MAC-osoitteiden käsittely 
+
 * selvitetään, onko annettu IP IPV4- vai IPV6-muodossa
 * selvitetään, onko IP validi
 * selvitetään, onko IP julkinen vai ei
 
-ROT13-tehtävä
+## ROT13-tehtävä
 
-Numeronyymit
+* https://en.wikipedia.org/wiki/Substitution_cipher
+* ![ROT13](https://upload.wikimedia.org/wikipedia/commons/2/2a/ROT13.png)
 
-Toistorakenteet
+    By en:User:Matt Crypto - created with Dia, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=387892](https://commons.wikimedia.org/w/index.php?curid=387892)
 
-Satunnaisen salasanan generointi (toistorakenne, merkkijonot jne.)
+## Numeronyymit
+
+* i18n
+* l10n
+* k8s
+
+# Toistorakenteet
+
+## Satunnaisen salasanan generointi
+
+* toistorakenne
+* merkkijonot
 
 # Tiedostot
 
-fileinput-tekstinkäsittely (csv?) => Muodostetaan useita käyttäjätunnuksia (hyödynnä merkkijonot-tehtävää)
+## fileinput-tekstinkäsittely (csv?)
 
-Tiedoston sisällön tulostaminen rivinumeroiden kera, vrt. `cat --number foo.txt`
+* Muodostetaan useita käyttäjätunnuksia (hyödynnä merkkijonot-tehtävää)
+* Tiedoston sisällön tulostaminen rivinumeroiden kera, vrt. `cat --number foo.txt`
+* Kotus-sanalista (yhteiset sanat?)
 
-Kotus-sanalistaan liittyvät tehtävät?
+## Tiedostojen siirtäminen päivämäärien mukaisiin alihakemistoihin
 
-Tiedostojen siirtäminen päivämäärien mukaisiin alihakemistoihin, katso esim: [https://stackoverflow.com/questions/2104080/how-can-i-check-file-size-in-python](https://stackoverflow.com/questions/2104080/how-can-i-check-file-size-in-python) ja [https://stackoverflow.com/a/8858026](https://stackoverflow.com/a/8858026).
+* katso esim: [https://stackoverflow.com/questions/2104080/how-can-i-check-file-size-in-python](https://stackoverflow.com/questions/2104080/how-can-i-check-file-size-in-python) ja [https://stackoverflow.com/a/8858026](https://stackoverflow.com/a/8858026).
 
 # Listat + satunnaisuus
 
-Lottonumeroiden generointi
+## Lottonumeroiden generointi
 
-Lottonumeroiden tarkistaminen
+## Lottonumeroiden tarkistaminen
 
 # Sanakirjat ja JSON
 
-Nimitilasto-tehtävä ([Digi- ja väestötietoviraston aineisto](https://www.avoindata.fi/data/fi/dataset/none))
+## Nimitilasto-tehtävä 
 
-Postinumerot-tehtävä (Javakurssilta)
+* [Digi- ja väestötietoviraston aineisto](https://www.avoindata.fi/data/fi/dataset/none)
 
-Postitoimipaikka-tehtävä (Javakurssilta)
+## Postinumerot-tehtävä (Javakurssilta)
+
+## Postitoimipaikka-tehtävä (Javakurssilta)
 
 
 # Päivämäärät
 
-Eräpäivän laskeminen laskulle
+## Eräpäivän laskeminen laskulle
 
-Juhannuksen päivämäärän selvittäminen
+## Juhannuksen päivämäärän selvittäminen
 
-Eri juhlapyhien selvittäminen tiettynä vuonna
+## Eri juhlapyhien selvittäminen tiettynä vuonna
 
 # Haastavammat
 
-Tiedoston tiivisteen laskeminen
+## Tiedoston tiivisteen laskeminen
 
-Tekstitiedoston pakkaaminen
+## Tekstitiedoston pakkaaminen
+
+
 
 # MicroPython
 
 [https://micropython-workshop.readthedocs.io/en/latest/](https://micropython-workshop.readthedocs.io/en/latest/)
 
-Blink
+## Blink
 
-Wifi signal detector:
+## Wifi signal detector
 
 Skripti, joka skannaa tietyin väliajoin WIFI-verkkoja ja vilkuttaa lediä vastaanottamansa vahvimman signaalin mukaan! Esim. 90 % signaalilla: 100 ms poissa, 900 ms päällä ja 30 % signaalilla 700 ms poissa päältä ja 300 ms päällä. Vaihtoehtona piippaus signaalin vahvuuden mukaan? Ohjelman ei tarvitse liittyä WIFI-verkkoon eikä asetuksiin tarvitse määritellä tiettyä verkkoa, vaan voidaan aina olettaa mitattavan vahvinta verkkoa.
 
-Peruutustutka (parking sensor)
+## Peruutustutka
 
-Reaktioaika
+* etäisyyssensori
+* buzzer
 
-Led-noppa
+## Reaktioaika-peli
 
-Liiketunnistin
+## Led-noppa
 
-Ritari ässän ledivilkku
+## Liiketunnistin / murtohälytin
 
-Nopeustesti-peli ([https://www.coinline.fi/nopeustesti-peli/](https://www.coinline.fi/nopeustesti-peli/))
+* Lähettää esim. mqtt-viestin tai Telegram-viestin
+
+## Ritari ässän ledivilkku
+
+## Nopeustesti-peli
+
+[https://www.coinline.fi/nopeustesti-peli/](https://www.coinline.fi/nopeustesti-peli/)
