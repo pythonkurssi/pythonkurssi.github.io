@@ -16,3 +16,7 @@ __links__:
 Sensorien ja ohjattavien laitteiden kytkeminen sekä niiden hyödyntäminen ohjelmallisesti.
 
 Reagoiminen painikkeisiin.
+
+Sensorit
+Piirit
+Sensorit ja toimilaitteet (ultraääni, valo, ääni, kosketus, servo, DC-moottori)

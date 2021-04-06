@@ -17,3 +17,5 @@ __links__:
 Sensorien lukemien lähettäminen MQTT-viestien avulla.
 
 Liitäntöjen ohjaaminen vastaanotettujen viestien avulla.
+
+https://pypi.org/project/micropython-umqtt.simple/
