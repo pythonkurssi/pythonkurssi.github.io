@@ -19,6 +19,18 @@ Oppitunnin aiheet:
 
 [https://docs.python.org/3/tutorial/introduction.html#lists](https://docs.python.org/3/tutorial/introduction.html#lists)
 
+
+
+## Collections
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-25-of-44-Collections/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [25 of 44] Collections - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Collections
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-26-of-44-Demo-Collections/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [26 of 44] Demo: Collections - Microsoft Channel 9 Video"></iframe>
+
+
+
 # Listan luominen ja arvojen lisääminen
 
 Listan luominen, arvojen lisääminen, poistaminen sekä listojen yhdistäminen:

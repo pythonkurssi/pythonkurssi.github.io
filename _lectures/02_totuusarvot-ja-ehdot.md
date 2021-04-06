@@ -26,6 +26,35 @@ Suositeltavaa luettavaa:
 * [https://www.pythoncheatsheet.org/#Flow-Control](https://www.pythoncheatsheet.org/#Flow-Control)
 * [https://docs.python.org/3/tutorial/controlflow.html#if-statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
 
+
+## Conditional Logic
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-19-of-44-Conditional-Logic/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [19 of 44] Conditional Logic - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Conditional Logic
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-20-of-44-Demo-Conditional-Logic/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [20 of 44] Demo: Conditional Logic - Microsoft Channel 9 Video"></iframe>
+
+
+## Handling Multiple Conditions
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-21-of-44-Handling-Multiple-Conditions/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [21 of 44] Handling Multiple Conditions - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Multiple Conditions
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-22-of-44-Demo-Multiple-Conditions/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [22 of 44] Demo: Multiple Conditions - Microsoft Channel 9 Video"></iframe>
+
+## Complex Conditions
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-23-of-44-Complex-Conditions/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [23 of 44] Complex Conditions - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Complex Conditions
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-24-of-44-Demo-Complex-Conditions/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [24 of 44] Demo: Complex Conditions - Microsoft Channel 9 Video"></iframe>
+
+---
+
+
 ## Totuusarvot ja vertailuoperaatiot
 
 

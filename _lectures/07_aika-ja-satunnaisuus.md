@@ -28,3 +28,8 @@ Pythonin aikakirjaston käyttäminen ja satunnaisuus ohjelmissa.
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-17-of-44-Error-Handling/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [17 of 44] Error Handling - Microsoft Channel 9 Video"></iframe>
 
+## Demo: Error Handling
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-18-of-44-Demo-Error-Handling/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [18 of 44] Demo: Error Handling - Microsoft Channel 9 Video"></iframe>
+
+
