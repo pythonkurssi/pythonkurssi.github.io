@@ -73,3 +73,7 @@ Pythonista löytyy **paljon** perusoperaatioita myös valmiina, eli oman `laske_
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-35-of-44-Demo-Virtual-environments-packages/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [35 of 44] Demo: Virtual environments packages - Microsoft Channel 9 Video"></iframe>
 
 
+
+---
+
+Microsoftin [Python for Beginners -videosarjan](https://channel9.msdn.com/Series/Intro-to-Python-Development/) videot on lisensoitu [Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) -lisenssillä.

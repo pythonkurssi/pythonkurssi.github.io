@@ -117,3 +117,7 @@ Muodostaessasi pitkiä ehtorakenteita, huomaa, että `else if` on Pythonissa `el
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-24-of-44-Demo-Complex-Conditions/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [24 of 44] Demo: Complex Conditions - Microsoft Channel 9 Video"></iframe>
 
 
+
+---
+
+Microsoftin [Python for Beginners -videosarjan](https://channel9.msdn.com/Series/Intro-to-Python-Development/) videot on lisensoitu [Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) -lisenssillä.

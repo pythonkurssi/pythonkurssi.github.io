@@ -353,3 +353,6 @@ import this
     'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 
     'trunc']
 
+---
+
+Microsoftin [Python for Beginners -videosarjan](https://channel9.msdn.com/Series/Intro-to-Python-Development/) videot on lisensoitu [Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) -lisenssillä.
