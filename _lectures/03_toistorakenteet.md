@@ -25,16 +25,6 @@ Oppitunnin aiheet:
 
 * [https://docs.python.org/3/tutorial/controlflow.html#for-statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
 
-
-## Loops
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-27-of-44-Loops/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [27 of 44] Loops - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Loops
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-28-of-44-Demo-Loops/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [28 of 44] Demo: Loops - Microsoft Channel 9 Video"></iframe>
-
-
 ## Toistorakenteet
 
 Pythonin `while`-toistorakenne sekä `break`- ja `continue`-komennot toimivat kuten monissa muissakin kielissä:
@@ -70,3 +60,14 @@ Jos tarkoituksena on käydä läpi kokonaislukuja (vrt. `for (int i=0; i < raja;
 8
 9
 ```
+
+## Loops
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-27-of-44-Loops/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [27 of 44] Loops - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Loops
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-28-of-44-Demo-Loops/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [28 of 44] Demo: Loops - Microsoft Channel 9 Video"></iframe>
+
+
+

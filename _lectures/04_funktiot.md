@@ -23,9 +23,25 @@ Oppitunnin sisältö:
 1. Tyyppivihjeet
 
 
-# Funktiot Pythonin dokumentaatiossa
+## Funktiot Pythonin dokumentaatiossa
 
 [https://docs.python.org/3/tutorial/controlflow.html#defining-functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+
+## Funktioiden määrittely
+
+Pythonin funktiot muistuttavat hyvin suuresti esimerkiksi JavaScriptin funktioita. Parametrien ja paluuarvojen välitys tapahtuu samalla tavoin, ainoastaan syntaksissa on pieniä eroja:
+
+```python
+def laske_summa(lista_numeroista):
+    summa = 0
+    for n in lista_numeroista:
+        summa += n
+    return summa
+```
+
+Pythonista löytyy **paljon** perusoperaatioita myös valmiina, eli oman `laske_summa`-funktion sijaan voimme kutsua Pythonin valmista `sum`-funktiota.
+
+
 
 
 ## Introducing Functions
@@ -55,20 +71,5 @@ Oppitunnin sisältö:
 ## Demo: Virtual environments packages
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-35-of-44-Demo-Virtual-environments-packages/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [35 of 44] Demo: Virtual environments packages - Microsoft Channel 9 Video"></iframe>
-
-
-# Funktiot
-
-Pythonin funktiot muistuttavat hyvin suuresti esimerkiksi JavaScriptin funktioita. Parametrien ja paluuarvojen välitys tapahtuu samalla tavoin, ainoastaan syntaksissa on pieniä eroja:
-
-```python
-def laske_summa(lista_numeroista):
-    summa = 0
-    for n in lista_numeroista:
-        summa += n
-    return summa
-```
-
-Pythonista löytyy **paljon** perusoperaatioita myös valmiina, eli oman `laske_summa`-funktion sijaan voimme kutsua Pythonin valmista `sum`-funktiota.
 
 
