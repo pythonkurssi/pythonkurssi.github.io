@@ -28,11 +28,38 @@ Oppitunnin aiheet:
 1. Merkkijonot ja numerotyypit
 
 
+## Python as a calculator: Read–eval–print loop (REPL)
+
+> *"Python can be used as a calculator to compute arithmetic operations like addition, subtraction, multiplication and division. Python can also be used for trigonometric calculations and statistical calculations."*
+>
+> *Peter D. Kazarinoff. Problem Solving with Python. [Python as a Calculator.](https://problemsolvingwithpython.com/03-The-Python-REPL/03.01-Python-as-a-Calculator/)*
+
+
+Pythonia voidaan käyttää komentoriviltä interaktiivisen tulkin avulla. Se onkin helpoin tapa tutustua kielen ominaisuuksiin. Python käynnistyy oletuksena interaktiivisessa tilassa komennolla `python3`, tai asennuksestasi riippuen esim. `python` tai `py`.
+
+```
+$ python3
+Python 3.8.5 (default, Jul 28 2020, 12:59:40)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> 1 + 2 + 3
+6
+```
+
+Interaktiivisella tulkilla lausekkeiden tuloksia ei tarvitse erikseen tulostaa, vaan sijoittamattomat arvot näytetään automaattisesit ruudulla.
+
+Kokeile Pythonin laskuoperaatioita sivun [https://www.pythoncheatsheet.org/#Python-Basics](https://www.pythoncheatsheet.org/#Python-Basics) ohjeiden mukaan!
+
+
+
+
 ## Introducing Python
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-2-of-44-Introducing-Python/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [2 of 44] Introducing Python - Microsoft Channel 9 Video"></iframe>
 
 [https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python)
+
 
 ## Getting started
 
@@ -44,77 +71,9 @@ Oppitunnin aiheet:
 
 [https://marketplace.visualstudio.com/items?itemName=ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-## Using Print
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-5-of-44-Using-Print/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [5 of 44] Using Print - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Hello, World
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-6-of-44-Demo-Hello-World/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [6 of 44] Demo: Hello, World - Microsoft Channel 9 Video"></iframe>
 
 
-## Comments
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-7-of-44-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [7 of 44] Comments - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Comments
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-8-of-44-Demo-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [8 of 44] Demo: Comments - Microsoft Channel 9 Video"></iframe>
-
-## String Concepts
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-9-of-44-String-Concepts/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [9 of 44] String Concepts - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Strings
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-10-of-44-Demo-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [10 of 44] Demo: Strings - Microsoft Channel 9 Video"></iframe>
-
-## Formatting Strings
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-11-of-44-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [11 of 44] Formatting Strings - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Formatting Strings
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-12-of-44-Demo-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [12 of 44] Demo: Formatting Strings - Microsoft Channel 9 Video"></iframe>
-
-
-## Numeric Data Types
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Numbers
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-14-of-44-Demo-Numbers/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [14 of 44] Demo: Numbers - Microsoft Channel 9 Video"></iframe>
-
-
-----
-
-
-## "Python as a calculator"
-
-> *"Python can be used as a calculator to compute arithmetic operations like addition, subtraction, multiplication and division. Python can also be used for trigonometric calculations and statistical calculations."*
->
-> *Peter D. Kazarinoff. Problem Solving with Python. [Python as a Calculator.](https://problemsolvingwithpython.com/03-The-Python-REPL/03.01-Python-as-a-Calculator/)*
-
-
-### REPL (Read–eval–print loop)
-
-Pythonia voidaan käyttää interaktiivisen tulkin avulla. Se onkin helpoin tapa tutustua kielen ominaisuuksiin. Python käynnistyy oletuksena interaktiivisessa tilassa komennolla `python3`, tai asennuksestasi riippuen esim. `python` tai `py`.
-
-```
-$ python3
-Python 3.8.5 (default, Jul 28 2020, 12:59:40)
-[GCC 9.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
-
-Interaktiivisella tulkilla lausekkeiden tuloksia ei tarvitse erikseen tulostaa, vaan sijoittamattomat arvot näytetään automaattisesit ruudulla.
-
-Kokeile Pythonin laskuoperaatioita sivun [https://www.pythoncheatsheet.org/#Python-Basics](https://www.pythoncheatsheet.org/#Python-Basics) ohjeiden mukaan!
-
-
-### Tulostaminen
+## Tulostaminen
 
 Tulostaminen tapahtuu `print`-funktiolla, jolle voidaan antaa tarvittaessa useampia tulostettavia arvoja:
 
@@ -123,15 +82,22 @@ Tulostaminen tapahtuu `print`-funktiolla, jolle voidaan antaa tarvittaessa useam
 >>> print('Hello', 'world!')
 ```
 
-## Muuttujat ja tietotyypit
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-5-of-44-Using-Print/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [5 of 44] Using Print - Microsoft Channel 9 Video"></iframe>
+
+
+## Demo: Hello, World
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-6-of-44-Demo-Hello-World/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [6 of 44] Demo: Hello, World - Microsoft Channel 9 Video"></iframe>
+
+
+
+## Syötteiden lukeminen
 
 ```python
-kaupunki = "Helsinki"
-vakiluku = 648_553
-
-type(kaupunki) # str
-type(vakiluku) # int
+>>> nimi = input('Mikä on nimesi? ')
 ```
+
+
 
 ## Kommentit
 
@@ -156,6 +122,23 @@ Toisin kuin monissa muissa kielissä, Pythonissa kauttaviivalla ei voida aloitta
 /* tämäkään ei ole kommentti */
 ```
 
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-7-of-44-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [7 of 44] Comments - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Comments
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-8-of-44-Demo-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [8 of 44] Demo: Comments - Microsoft Channel 9 Video"></iframe>
+
+## Muuttujat ja tietotyypit
+
+```python
+kaupunki = "Helsinki"
+vakiluku = 648_553
+
+type(kaupunki) # str
+type(vakiluku) # int
+```
+
+
 ## Merkkijonot
 
 Pythonin merkkijonoissa voidaan käyttää joko heittomerkkejä `'` tai lainausmerkkejä `"`. Moniriviset merkkijonot aloitetaan ja päätetään kolmella merkillä. Merkkijonojen yhdistämiseen voidaan käyttää `+` -merkkiä:
@@ -163,6 +146,7 @@ Pythonin merkkijonoissa voidaan käyttää joko heittomerkkejä `'` tai lainausm
 ```python
 kaupunki = "Helsinki"
 vakiluku = 648_553
+
 print('Kaupungissa ' + kaupunki + ' on ' + str(vakiluku) + ' asukasta!')
 ```
 
@@ -180,9 +164,15 @@ TypeError: can only concatenate str (not "int") to str
 
 Tämän ongelman kiertämiseksi edellisessä esimerkissä väkiluku on ensin muutettu merkkijonoksi (string): `str(vakiluku)`.
 
-### Formatted string literals
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-9-of-44-String-Concepts/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [9 of 44] String Concepts - Microsoft Channel 9 Video"></iframe>
 
-Python 3:ssa merkkijonojen yhdistelemiseksi on myös parempi tapa: [formatted string literals](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals):
+## Demo: Strings
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-10-of-44-Demo-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [10 of 44] Demo: Strings - Microsoft Channel 9 Video"></iframe>
+
+## Formatting Strings
+
+Python 3:ssa merkkijonojen yhdistelemiseksi on myös plus-merkkiä kätevämpi tapa, eli [formatted string literals](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals):
 
 ```python
 kaupunki = "Helsinki"
@@ -201,10 +191,15 @@ muotoiltu = f'merkkijono {muuttuja}'
 ```
 
 
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-11-of-44-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [11 of 44] Formatting Strings - Microsoft Channel 9 Video"></iframe>
 
-### Merkkijonojen käsittely
+## Demo: Formatting Strings
 
-Pythonissa merkkijonojen merkkejä ja osamerkkijonoja voidaan hakea indeksien avulla aivan kuten listojen alkioita. Yksi numero tarkoittaa yksittäistä merkkiä, kun taas `i:j` tarkoittaa väliä. Jos alku- tai loppuindeksi jätetään ilmoittamatta, käytetään alkuna nollaa ja loppuna merkkijonon viimeistä merkkiä. Python sallii myös negatiiviset indeksit, jotka lasketaan merkkijonon lopusta lähtien!
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-12-of-44-Demo-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [12 of 44] Demo: Formatting Strings - Microsoft Channel 9 Video"></iframe>
+
+## Merkkijonojen käsittely
+
+Pythonissa merkkijonojen merkkejä ja osamerkkijonoja voidaan hakea indeksien avulla. Yksi numero tarkoittaa yksittäistä merkkiä, kun taas `i:j` tarkoittaa väliä. Jos alku- tai loppuindeksi jätetään ilmoittamatta, käytetään alkuna nollaa ja loppuna merkkijonon viimeistä merkkiä. Python sallii myös negatiiviset indeksit, jotka lasketaan merkkijonon lopusta lähtien!
 
 ```python
 kaupunki = 'Helsinki'
@@ -231,14 +226,8 @@ Merkkijonojen sisältämiä osamerkkijonoja voidaan selvittää `in`-operaation 
 'ham' in 'hamster'      # True
 ```
 
-### Syötteiden lukeminen
 
-```python
->>> nimi = input('Mikä on nimesi? ')
-```
-
-
-### Lukujen tyyppimuunnokset ja pyöristäminen
+## Lukujen tyyppimuunnokset ja pyöristäminen
 
 Merkkijonoja voidaan muuttaa eri lukutyypeiksi, ja lukutyyppejä voidaan muuttaa toisiksi `int`- ja `float`-funktioilla:
 
@@ -283,7 +272,16 @@ TypeError: can only concatenate str (not "float") to str
 ```
 
 
-### import-käsky
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
+
+## Demo: Numbers
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-14-of-44-Demo-Numbers/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [14 of 44] Demo: Numbers - Microsoft Channel 9 Video"></iframe>
+
+
+
+
+## import-käsky
 
 Pythonissa sekä kielen standardikirjaston moduulit että omat ja `pip`-komennolla asennetut moduulit voidaan ottaa käyttöön `import`-käskyllä:
 
@@ -318,7 +316,7 @@ import this
 
 
 
-### Valikoituja hyödyllisiä komentoja
+## Valikoituja hyödyllisiä komentoja
 
 **help** -funktio näyttää ohjeita sille annetun arvon tai funktion käyttämiseksi:
 
