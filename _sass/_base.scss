@@ -36,11 +36,8 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
-
-
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Set margins to maintain vertical rhythm
  */
 h1,
 h2,
@@ -55,8 +52,10 @@ ul,
 ol,
 dl,
 figure,
+iframe,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+    margin-top: $spacing-unit / 2;
 }
 
 
