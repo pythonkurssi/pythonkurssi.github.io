@@ -2,9 +2,11 @@
 layout: home
 ---
 
-# Tervetuloa kurssille!
+# Tervetuloa kurssille! 
 
-**Tämä sivusto on Python-ohjelmointikurssin työversio. Kurssi ei ole tällä hetkellä ole suoritettavissa.**
+<div class="announcement-box" style="margin:30px 0; font-weight: bold">
+    Tämä sivusto on Python-ohjelmointikurssin työversio. Kurssi ei ole tällä hetkellä ole suoritettavissa.
+</div>
 
 Tämä kurssi kestää 16 viikkoa ja se sisältää viikoittain 3 tuntia yhteistä opiskelua sekä noin 5 tuntia itsenäistä opiskelua. Käymme jokaisella viikolla yhteisesti läpi yhden uuden aiheen teoriaosuuden, jota sovelletaan viikoittain palautettavissa koodausharjoituksissa.
 
@@ -27,9 +29,9 @@ Jos haluat päästä nopeasti vauhtiin, voit lukea esimerkiksi tutoriaalin ["Lea
 Lisää hyvä lähteitä löydät hakukoneilla. Jaathan vinkkejä hyvistä materiaaleista myös kurssin Teamsissa!
 
 
-# Kurssin jakautuminen aiheittain
+## Kurssin jakautuminen aiheittain
 
-## 1: Python-ohjelmointikielen perusteet (5 viikkoa)
+### 1: Python-ohjelmointikielen perusteet (5 viikkoa)
 
 - Python-kielen syntaksi
 - syötteet ja tulosteet
@@ -40,7 +42,7 @@ Lisää hyvä lähteitä löydät hakukoneilla. Jaathan vinkkejä hyvistä mater
 - listat, monikot ja sanakirjat
 - Pythonin standardikirjasto
 
-## 2: Soveltava Python (5 viikkoa)
+### 2: Soveltava Python (5 viikkoa)
 
 - satunnaisuus
 - ajan käsittely
@@ -50,7 +52,7 @@ Lisää hyvä lähteitä löydät hakukoneilla. Jaathan vinkkejä hyvistä mater
 - koodin testaaminen
 - integraatiot (http ja json)
 
-## 3: MicroPython ja IoT (6 viikkoa)
+### 3: MicroPython ja IoT (6 viikkoa)
 
 - perehdytys mikrokontrollereihin
 - MicroPython-ohjelmien kirjoittaminen ja suorittaminen mikrokontrollereilla
