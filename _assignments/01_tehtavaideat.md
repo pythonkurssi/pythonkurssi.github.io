@@ -31,6 +31,7 @@ due_event:
 * opetellaan eri SI-määreitä, kuten mikroamppeerit, milliamppeerit jne.
 * bonus: virransäästötila viimeiset 20 %
 * ESP32 deep sleep -virrankulutus
+* läppärin virransäästötilan vaikutukset akunkestoon (display off, sleep...)
 
 # Aritmetiikka ja funktiot
 
@@ -91,7 +92,10 @@ due_event:
 
 * Muodostetaan useita käyttäjätunnuksia (hyödynnä merkkijonot-tehtävää)
 * Tiedoston sisällön tulostaminen rivinumeroiden kera, vrt. `cat --number foo.txt`
-* Kotus-sanalista (yhteiset sanat?)
+* Kotus-sanalista
+    * yhteiset sanat?
+    * base64-yhteensopivat suomenkieliset sanat? Esim. Mac-osoite: de:ad:be:ef:ca:fe
+
 
 ## Tiedostojen siirtäminen päivämäärien mukaisiin alihakemistoihin
 
@@ -136,24 +140,101 @@ due_event:
 
 ## Blink
 
+Mikrokontrollerien "hello world" -vastine.
+
+Oppimistavoitteet:
+
+* Koodin siirtäminen mikrokontrolleriin
+* Koodin suorittaminen mikrokontrollerilla
+* Yksittäisen GPIO-ulostulon kontrollointi
+
+## Liikennevalot
+
+Ledien kontrolloiminen ajastetusti.
+
+Oppimistavoitteet:
+
+* Ledien tilan muuttaminen GPIO-väylien avulla
+* Tapahtumien ajastaminen
+
+## "Ritari ässän" ledivilkku
+
+Ideana samanlainen kuin liikennevalot, mutta valojen syttymisen ja sammuttamisen järjestys toteutettuna monipuolisemmin tekstitiedoston avulla:
+
+```
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 1 0
+0 0 0 0 1
+0 0 0 1 0
+0 0 1 0 0
+0 1 0 0 0
+```
+
+Tekstitiedostossa 1 vastaa samuutettua lediä ja 1 päällä olevaa ledia.
+
+Oppimistavoitteet:
+
+* Valojen sekvenssin lukeminen tiedostosta
+* Merkkijonomuotoisen syötteen hyödyntäminen IO-ulostulojen ohjauksessa
+
+## Led-noppa
+
+Useaan led-valoon perustuva noppa, joka käynnistyy painikkeesta, ja vilkuttaa valoja satunnaisesti. 
+
+Oppimistavoitteet:
+
+* GPIO-väylän hydyntäminen painikkeen kytkemiseksi
+* Painikkeeseen reagointi 
+
+## Reaktioaika-peli
+
+
+
 ## Wifi signal detector
 
 Skripti, joka skannaa tietyin väliajoin WIFI-verkkoja ja vilkuttaa lediä vastaanottamansa vahvimman signaalin mukaan! Esim. 90 % signaalilla: 100 ms poissa, 900 ms päällä ja 30 % signaalilla 700 ms poissa päältä ja 300 ms päällä. Vaihtoehtona piippaus signaalin vahvuuden mukaan? Ohjelman ei tarvitse liittyä WIFI-verkkoon eikä asetuksiin tarvitse määritellä tiettyä verkkoa, vaan voidaan aina olettaa mitattavan vahvinta verkkoa.
 
+Oppimistavoitteet:
+
+* ESP32:n WiFi-verkkojen skannaus
+* Vahvimman signaalin löytäminen listalta
+* Ohjelmalogiikan toteuttaminen saadun signaalivahvuuden perusteella
+
+## Kukkaruukun kastelumuistutin
+
+Telegram-viestin lähettäminen mullan kosteuden laskettua alle raja-arvon. 
+
+Oppimistavoitteet:
+
+* Deep sleep
+* Soil moisture sensor
+* Telegram
+
+
+
+
 ## Peruutustutka
 
-* etäisyyssensori
-* buzzer
+Oppimistavoitteet:
 
-## Reaktioaika-peli
+* Etäisyyssensorin kytkennät ja analogisten lukemien käsittely
+* Buzzer-summerin kytkennät ja hyödyntäminen
+* Ohjelmalogiikan, eli piippausten pituuden, toteuttaminen mittalaitteen tulosten perusteella
 
-## Led-noppa
 
-## Liiketunnistin / murtohälytin
+## Itsenäinen web-pohjainen murtohälytin (haastava)
 
-* Lähettää esim. mqtt-viestin tai Telegram-viestin
+Hälytin, joka lähettää Telegram-viestin havaittuaan liikettä.
 
-## Ritari ässän ledivilkku
+Oppimistavoitteet:
+
+* Liiketunnistimen kytkentä ja liikkeeseen reagointi
+* Telegram-viestin lähettäminen REST-apin avulla
+* Deep sleep -tilan hyödyntäminen, josta herääminen toteutetaan liiketunnistimen avulla
+
+
 
 ## Nopeustesti-peli
 
