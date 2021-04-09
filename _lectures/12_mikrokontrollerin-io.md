@@ -21,4 +21,10 @@ Sensorit
 Piirit
 Sensorit ja toimilaitteet (ultraääni, valo, ääni, kosketus, servo, DC-moottori)
 
+## Tutoriaali
+
 Freenove-tutoriaali: [https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf)
+
+## Lämpötilasensorin käyttäminen
+
+[Using a Temperature Sensor with Micropython running on an Adafruit Feather Huzzah ESP8266](https://pythonforundergradengineers.com/micropython-temp-sensor.html)

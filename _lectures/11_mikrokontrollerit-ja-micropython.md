@@ -21,9 +21,19 @@ Oppitunnin aiheet:
 1. Lämpötilasensorin lukeminen
 1. Ledin vilkuttaminen
 
+## What is MicroPython?
+
+[What is Micropython?](https://pythonforundergradengineers.com/what-is-micropython.html)
+
 ## Let's Get Started!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QopRAwUP5ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Firmware-tutoriaali
+
+[How to install MicroPython on an ESP32 microcontroller](https://pythonforundergradengineers.com/how-to-install-micropython-on-an-esp32.html)
+
 
 ## Electric Current: Crash Course Physics
 
@@ -156,6 +166,12 @@ Type "help()" for more information.
 ```
 
 ### Ohjelmien siirtäminen mikrokontrolleriin
+
+Hyvä työkalu: [Ampy (Adafruit Industries)](https://github.com/scientifichackers/ampy)
+
+
+
+Hyvä tutoriaali: [How to upload .py-files onto an ESP8266 running MicroPython](https://pythonforundergradengineers.com/upload-py-files-to-esp8266-running-micropython.html)
 
 MicroPython-ohjelmat voidaan siirtää tietokoneelta mikrokontrolleriin useilla eri työkaluilla. Tällä kurssilla hyödynnämme VS Code:a ja [Pycom](https://pycom.io/):in kehittämää Pymakr-laajennosta.
 
