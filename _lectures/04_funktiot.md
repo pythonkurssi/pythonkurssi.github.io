@@ -62,15 +62,15 @@ Pythonista löytyy **paljon** perusoperaatioita myös valmiina, eli oman `laske_
 
 ## Modules and packages
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-33-of-44-Modules-and-packages/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [33 of 44] Modules and packages - Microsoft Channel 9 Video"></iframe>
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-33-of-44-Modules-and-packages/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [33 of 44] Modules and packages - Microsoft Channel 9 Video"></iframe>
 
 ## Exra: Virtual Environments
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-34-of-44-Virtual-Environments/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [34 of 44] Virtual Environments - Microsoft Channel 9 Video"></iframe>
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-34-of-44-Virtual-Environments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [34 of 44] Virtual Environments - Microsoft Channel 9 Video"></iframe>
 
 ## Demo: Virtual environments packages
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-35-of-44-Demo-Virtual-environments-packages/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [35 of 44] Demo: Virtual environments packages - Microsoft Channel 9 Video"></iframe>
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-35-of-44-Demo-Virtual-environments-packages/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [35 of 44] Demo: Virtual environments packages - Microsoft Channel 9 Video"></iframe>
 
 
 

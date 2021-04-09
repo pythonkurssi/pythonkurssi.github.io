@@ -23,11 +23,11 @@ Oppitunnin aiheet:
 
 ## Collections
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-25-of-44-Collections/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [25 of 44] Collections - Microsoft Channel 9 Video"></iframe>
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-25-of-44-Collections/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [25 of 44] Collections - Microsoft Channel 9 Video"></iframe>
 
 ## Demo: Collections
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-26-of-44-Demo-Collections/player" width="960" height="540" allowFullScreen frameBorder="0" title="Python for Beginners [26 of 44] Demo: Collections - Microsoft Channel 9 Video"></iframe>
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-26-of-44-Demo-Collections/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [26 of 44] Demo: Collections - Microsoft Channel 9 Video"></iframe>
 
 
 
