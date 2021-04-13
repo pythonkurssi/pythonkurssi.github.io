@@ -16,10 +16,12 @@ __links__:
 Oppitunnin aiheet:
 
 1. MicroPythonin asentaminen ESP32-mikrokontrolleriin.
-1. Koodin siirtäminen mikrokontrolleriin Pymakr-työkalulla.
+1. Koodin siirtäminen mikrokontrolleriin Ampy- tai Pymakr-työkalulla.
 1. MicroPytonin standardikirjaston käyttäminen
 1. Lämpötilasensorin lukeminen
 1. Ledin vilkuttaminen
+
+
 
 ## What is MicroPython?
 
@@ -35,14 +37,6 @@ Oppitunnin aiheet:
 [How to install MicroPython on an ESP32 microcontroller](https://pythonforundergradengineers.com/how-to-install-micropython-on-an-esp32.html)
 
 
-## Electric Current: Crash Course Physics
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HXOok3mfMLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-YouTube: [ESP32 Tutorial using MicroPython - Let's Get Started!](https://www.youtube.com/watch?v=QopRAwUP5ds)
-
-
 ## Pycom tutorials
 
 [https://core-electronics.com.au/tutorials/pycom/](https://core-electronics.com.au/tutorials/pycom/)
@@ -50,32 +44,6 @@ YouTube: [ESP32 Tutorial using MicroPython - Let's Get Started!](https://www.you
 
 [https://www.youtube.com/watch?v=HXOok3mfMLM](https://www.youtube.com/watch?v=HXOok3mfMLM)
 
-## Arduino IDE:n käyttöönotto (draft, ESP32 CAM)
-
-Arduino IDE:n asennus Windows storen kautta: [https://www.microsoft.com/fi-fi/p/arduino-ide/9nblggh4rsd8](https://www.microsoft.com/fi-fi/p/arduino-ide/9nblggh4rsd8)
-
-Yhdistäminen: [https://randomnerdtutorials.com/program-upload-code-esp32-cam/](https://randomnerdtutorials.com/program-upload-code-esp32-cam/)
-
-Arduino IDE:n käyttöönotto:
-[https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
-
-Asetustiedoston osoite: 
-
-```
-https://dl.espressif.com/dl/package_esp32_index.json
-```
-
-Lähdekoodien korjaus (compilation terminated -virhe) [https://forum.arduino.cc/index.php?topic=577858.0](https://forum.arduino.cc/index.php?topic=577858.0)
-
-## Pinnien kytkennät
-
-Laitteen pinnit: [https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/](https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/)
-
-Arduinon esimerkki *LEDCSoftwareFade* toimii, kun muuttaa siitä piirilevyn LED-pinnin id:ksi 4:
-
-```c++
-#define LED_PIN            4
-```
 
 ## MicroPythonin asentaminen
 
@@ -88,48 +56,57 @@ Heikki Hietalan erinomaiset oppaat ja esimerkit:
 ## Esptool-työkalun asennus
 
 ```
-py -m pip install --upgrade pip --user
-pip install esptool
+> py -m pip install --upgrade pip --user
+> pip install esptool
 ```
 
-ESP32 CAM -laitteella firmwareasennus tulee tehdä IO0-pinnin ollessa kytkettynä maahan. Asennuksen jälkeen IO0 pitää irrottaa.
+Huom! ESP32 CAM -laitteella firmwareasennus tulee tehdä IO0-pinnin ollessa kytkettynä maahan. Asennuksen jälkeen IO0 pitää irrottaa.
 
 Firmwaren lataus: [https://micropython.org/download/esp32/](https://micropython.org/download/esp32/). Tallenna itsellesi firmware-tiedosto, joka on muodossa `esp32-idf4-vvvvkkpp-vX.YZ.bin`.
 
-Tarkista järjestelmäsi asetuksista ESP32:n käyttämän COM-portin numero (ohje). Tämän jälkeen voit asentaa firmwaren komentorivillä seuraavilla komennoilla:
+Tarkista järjestelmäsi asetuksista ESP32:n käyttämän COM-portin numero:
+
+![Device Manager](./device-manager-com4.jpg)
+
+Tämän jälkeen voit asentaa firmwaren komentorivillä seuraavilla komennoilla:
 
 ### erase_flash
 
-```
-> python32 -m esptool --chip esp32 --port COM3 erase_flash
+`py -m esptool --chip esp32 --port COM4 erase_flash`
 
+```terminal
+> py -m esptool --chip esp32 --port COM4 erase_flash
 esptool.py v3.0
-Serial port COM3
+Serial port COM4
 Connecting....
 Chip is ESP32-D0WDQ6 (revision 1)
 Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
 Crystal is 40MHz
-MAC: 24:6f:28:15:45:24
+MAC: 8c:aa:b5:8b:fa:40
 Uploading stub...
 Running stub...
 Stub running...
 Erasing flash (this may take a while)...
-Chip erase completed successfully in 7.1s
+Chip erase completed successfully in 7.3s
 Hard resetting via RTS pin...
 ```
 
+
+
 ### write_flash
 
-```
-> python -m esptool --chip esp32 --port COM3 --baud 460800 write_flash -z 0x1000 `esp32-idf4-vvvvkkpp-vX.YZ.bin
+`py -m esptool --chip esp32 --port COM4 --baud 460800 write_flash -z 0x1000 esp32-idf4-20210202-v1.14.bin`
 
+```
+> py -m esptool --chip esp32 --port COM4 --baud 460800 write_flash -z 0x1000 esp32-idf4-20210202-v1.14.bin
 esptool.py v3.0
-Serial port COM3
-Connecting........_____.....__
+Serial port COM4
+Connecting.....
 Chip is ESP32-D0WDQ6 (revision 1)
 Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 41.01MHz is quite different to normalized freq 40MHz. Unsupported crystal in use?
 Crystal is 40MHz
-MAC: 24:6f:28:15:45:24
+MAC: 8c:aa:b5:8b:fa:40
 Uploading stub...
 Running stub...
 Stub running...
@@ -137,16 +114,17 @@ Changing baud rate to 460800
 Changed.
 Configuring flash size...
 Compressed 1484624 bytes to 951640...
-Wrote 1484624 bytes (951640 compressed) at 0x00001000 in 21.8 seconds (effective 546.0 kbit/s)...
+Wrote 1484624 bytes (951640 compressed) at 0x00001000 in 22.0 seconds (effective 539.0 kbit/s)...
 Hash of data verified.
 
 Leaving...
 Hard resetting via RTS pin...
 ```
 
+
 ### Putty-yhteyden testaus
 
-Katso edeltä sabulo.com-ohje tekstiyhteyden muodostamiseksi Putty-sovelluksella. 
+Katso Heikki Hietalan kirjoittama ohje tekstiyhteyden muodostamiseksi Putty-sovelluksella osoitteessa [http://www.sabulo.com/sb/arduino/moving-on-from-arduino-to-esp32-part-2-micropython/](http://www.sabulo.com/sb/arduino/moving-on-from-arduino-to-esp32-part-2-micropython/).
 
 ```
 ets Jun  8 2016 00:22:57
@@ -165,17 +143,127 @@ Type "help()" for more information.
 >>>
 ```
 
+
 ### Ohjelmien siirtäminen mikrokontrolleriin
 
-Hyvä työkalu: [Ampy (Adafruit Industries)](https://github.com/scientifichackers/ampy)
+Edellä esitetty interaktiivinen tulkki toimii komentojen kokeilemisessa. Saadaksesi ohjelmia asennettua pysyvästi mikrokontrolleriin, lähdekooditiedostot täytyy siirtää mikrokontrollerin flash-muistiin.
 
+MicroPython-ohjelmat voidaan siirtää tietokoneelta mikrokontrolleriin useilla eri työkaluilla.
 
+Tällä kurssilla hyödynnämme Ampy-työkalua: [Ampy (Adafruit Industries)](https://github.com/scientifichackers/ampy)
 
-Hyvä tutoriaali: [How to upload .py-files onto an ESP8266 running MicroPython](https://pythonforundergradengineers.com/upload-py-files-to-esp8266-running-micropython.html)
-
-MicroPython-ohjelmat voidaan siirtää tietokoneelta mikrokontrolleriin useilla eri työkaluilla. Tällä kurssilla hyödynnämme VS Code:a ja [Pycom](https://pycom.io/):in kehittämää Pymakr-laajennosta.
+Toinen varteenotettava vaihtoehto on asentaa VS Code -työkaluun ja [Pycom](https://pycom.io/):in kehittämä Pymakr-laajennos.
 
 Pymakr-laajennuksen käyttöohjeet löytyvät osoitteesta [https://docs.pycom.io/gettingstarted/software/vscode/](https://docs.pycom.io/gettingstarted/software/vscode/).
 
 Laajennus voidaan asentaa VS Coden sovelluskaupasta: [https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr).
+
+
+### Ampy
+
+```
+ampy - Adafruit MicroPython Tool
+
+Ampy is a tool to control MicroPython boards over a serial connection.
+Using ampy you can manipulate files on the board's internal filesystem and
+even run scripts.
+```
+
+Ampy-työkalun asennukseen tarvitset Pythonin venv-virtuaaliympäristön.
+
+```terminal
+> py -m venv .
+> .\Scripts\Activate.ps1
+```
+
+Lisätietoja virtuaaliympäristöstä ja venv-työkalusta löydät Pythonin dokumentaatiosta [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html).
+
+Tämän jälkeen Ampy-työkalu voidaan asentaa seuraavasti:
+
+```terminal
+> py -m pip install adafruit-ampy
+```
+
+Kokeile lopuksi suorittaa uusi `ampy`-komento seuraaavsti:
+
+```terminal
+> ampy --help
+```
+
+#### Tiedostojen listaaminen: `ls`
+
+```terminal
+> ampy -p COM4 ls
+/boot.py
+```
+
+#### Tiedostojen lataaminen: `get`
+
+Voit tarkastella muistissa olevia tiedostoja get-komennolla:
+
+```terminal
+> ampy -p COM4 get boot.py
+# This file is executed on every boot (including wake-boot from deepsleep)
+#import esp
+#esp.osdebug(None)
+#import webrepl
+#webrepl.start()
+```
+
+Get ei automaattisesti tallenna tiedostoa, vaan voit halutessasi ohjata tiedoston listauksen tiedostoon komentorivin `>`-operaatiolla:
+
+```terminal
+> ampy -p COM4 get boot.py > boot.py
+```
+
+
+#### Tiedostojen lähettäminen: `put`
+
+Voit tehdä `boot.py`-tiedostoon muutoksia ja siirtää päivitetyn tiedoston muistiin `put`-komennolla:
+
+```terminal
+> ampy -p COM4 put boot.py
+```
+
+Tiedoston siirtäminen muistiin ei automaattisesti aiheuta ohjelman uudelleenkäynnistystä, joten koodiin tekemäsi muutokset eivät tule heti voimaan.
+
+#### Uudelleenkäynnistys
+
+```terminal
+> ampy -p COM4 reset
+```
+
+#### Yleisiä ongelmatilanteita
+
+**ampy.pyboard.PyboardError: failed to access COM4**
+
+Voit olla kerrallaan vain yhdessä sarjaporttiyhteydessä yhden portin kautta. Sulje Putty ja mahdolliset muut käynnissä olevat ohjelmat, jotka käyttävät sarjaporttia.
+
+### Lisätietoja
+
+Hyvä tutoriaali: [How to upload .py-files onto an ESP8266 running MicroPython](https://pythonforundergradengineers.com/upload-py-files-to-esp8266-running-micropython.html)
+
+
+
+
+
+
+
+## Extra: Arduino IDE:n käyttöönotto (draft, ESP32 CAM)
+
+Arduino IDE:n asennus Windows storen kautta: [https://www.microsoft.com/fi-fi/p/arduino-ide/9nblggh4rsd8](https://www.microsoft.com/fi-fi/p/arduino-ide/9nblggh4rsd8)
+
+Yhdistäminen: [https://randomnerdtutorials.com/program-upload-code-esp32-cam/](https://randomnerdtutorials.com/program-upload-code-esp32-cam/)
+
+Arduino IDE:n käyttöönotto:
+[https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
+
+Asetustiedoston osoite: 
+
+```
+https://dl.espressif.com/dl/package_esp32_index.json
+```
+
+Lähdekoodien korjaus (compilation terminated -virhe) [https://forum.arduino.cc/index.php?topic=577858.0](https://forum.arduino.cc/index.php?topic=577858.0)
+
 
