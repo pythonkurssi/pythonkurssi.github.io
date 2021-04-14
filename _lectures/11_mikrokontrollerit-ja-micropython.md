@@ -76,8 +76,9 @@ Tämän jälkeen voit asentaa firmwaren komentorivillä seuraavilla komennoilla 
 
 Muuta komennossa COM4-portin tilalle oma COM-porttisi.
 
-```ps
+```terminal
 > py -m esptool --chip esp32 --port COM4 erase_flash
+
 esptool.py v3.0
 Serial port COM4
 Connecting....
@@ -101,6 +102,7 @@ Hard resetting via RTS pin...
 
 ```terminal
 > py -m esptool --chip esp32 --port COM4 --baud 460800 write_flash -z 0x1000 esp32-idf4-20210202-v1.14.bin
+
 esptool.py v3.0
 Serial port COM4
 Connecting.....
@@ -261,6 +263,10 @@ Tiedoston siirtäminen muistiin ei automaattisesti aiheuta ohjelman uudelleenkä
 
 Lisää tietoa ampy-työkalun komennoista löydät esimerkiksi [Adafruitin artikkelista](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/file-operations).
 
+
+## ESP32:n tiedostojärjestelmän käyttäminen MicroPythonilla
+
+[https://docs.micropython.org/en/latest/reference/filesystem.html](https://docs.micropython.org/en/latest/reference/filesystem.html)
 
 #### Yleisiä ongelmatilanteita
 
