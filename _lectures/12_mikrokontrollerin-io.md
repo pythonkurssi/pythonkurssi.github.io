@@ -105,6 +105,24 @@ def keskiarvo(tulokset):
     return sum(tulokset) / len(tulokset)
 ```
 
+### Analogisen signaalin vaimentaminen
+
+Lämpötilasensorin kohdalla mittaväli nollasta yhteen volttiin riittää normaalin huoneenlämmön mittaamiseen. Jännitteen nousu yli yhden voltin johtaa kuitenkin aina samaan tulokseen, eli maksimiarvoon 4095. Mikäli oletuksena käytettävä jänniteväli ei riitä, joudutaan signaalia vaimentamaan.
+
+[MicroPythonin koodiesimerkin](https://docs.micropython.org/en/latest/esp32/quickref.html#adc-analog-to-digital-conversion) mukaisesti vaimennus voidaan tehdä esimerkiksi 11dB:n tasolla, jolloin sama mitta-asteikko 0 - 4095 vastaakin jänniteväliä 0 V - 3.6 V:
+
+```python
+adc.atten(ADC.ATTN_11DB)  # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+
+lukema = adc.read()       # esim. 2277
+jannite_mv = lukema / 4_095 * 3_600
+
+jannite_mv                # 2002 mV => 2 V
+```
+
+
+Signaalin vaimennuksen avulla voimme käyttää esimerkiksi valovastusta (photoresistor) mitataksemme eri tilojen valaistusta: [Reading a photoresistor on ESP32 with MicroPython](https://blog.gypsyengineer.com/en/diy-electronics/reading-photoresistor-on-esp32-with-micropython.html).
+
 
 ## Electric Current: Crash Course Physics
 
