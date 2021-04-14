@@ -24,6 +24,19 @@ due_event:
 * sopivan vastuksen laskeminen?
 * ledit rinnakkain + vastus?
 
+## Lämpötila Fahrenheitista Celsiukseksi
+
+* Monet sensorit, kuten ESP32-mikrokontrollerin sisäänrakennettu lämpömittari, ilmoittavat lämpötilan Fahrenheit-yksikössä:
+
+    ```
+    > import esp32
+    > esp32.raw_temperature()
+    124
+    ```
+
+    Kirjoita ohjelma, joka muuttaa esimerkiksi yllä esitetyn lämpötilan 124 Fahrenheitia Celsius-asteiksi (51.1 &deg;C). Muunnoskaavan löydät esimerkiksi osoitteesta [https://www.laskurini.fi/hyoty/yksikkomuuntimet/lampotilamuunnin](https://www.laskurini.fi/hyoty/yksikkomuuntimet/lampotilamuunnin).
+
+
 ## Ohjelma sähköisen tehon laskemiseksi: `P = U * I`
 
 ## Laitteen akun keston arviointi, kun tiedetään kapasiteetti ja keskimääräinen kulutus
@@ -40,6 +53,15 @@ due_event:
 ## Käyttöjärjestelmän esittämän levytilan vertailu valmistajan ilmoittamaan
 
 * 1GB = 1024 MB vs. 1GiB = 1000 MiB. Katso esim: [https://superuser.com/a/530](https://superuser.com/a/530)
+
+    ```
+    >>> import esp
+    >>>
+    >>> esp.flash_size()
+    4194304
+    ```
+
+    Mikä on ESP32:n flash-muistin koko megatavuina, kun tavuina se on yllä esitetty 4&nbsp;194&nbsp;304 tavua?
 
 
 ## Tiedoston latausajan laskuri, kun tiedetään nettiyhteyden nopeus
