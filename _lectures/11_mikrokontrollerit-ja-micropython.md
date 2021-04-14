@@ -68,13 +68,15 @@ Tarkista järjestelmäsi asetuksista ESP32:n käyttämän COM-portin numero:
 
 ![Device Manager](./device-manager-com4.jpg)
 
-Tämän jälkeen voit asentaa firmwaren komentorivillä seuraavilla komennoilla:
+Tämän jälkeen voit asentaa firmwaren komentorivillä seuraavilla komennoilla (muuta COM4-portin tilalle oma COM-porttisi).
 
 ### erase_flash
 
 `py -m esptool --chip esp32 --port COM4 erase_flash`
 
-```terminal
+Muuta komennossa COM4-portin tilalle oma COM-porttisi.
+
+```ps
 > py -m esptool --chip esp32 --port COM4 erase_flash
 esptool.py v3.0
 Serial port COM4
@@ -150,28 +152,29 @@ Edellä esitetty interaktiivinen tulkki toimii komentojen kokeilemisessa. Saadak
 
 MicroPython-ohjelmat voidaan siirtää tietokoneelta mikrokontrolleriin useilla eri työkaluilla.
 
-Tällä kurssilla hyödynnämme Ampy-työkalua: [Ampy (Adafruit Industries)](https://github.com/scientifichackers/ampy)
+Tällä kurssilla hyödynnämme [Ampy-työkalua](https://github.com/scientifichackers/ampy).
 
 Toinen varteenotettava vaihtoehto on asentaa VS Code -työkaluun ja [Pycom](https://pycom.io/):in kehittämä Pymakr-laajennos.
 
-Pymakr-laajennuksen käyttöohjeet löytyvät osoitteesta [https://docs.pycom.io/gettingstarted/software/vscode/](https://docs.pycom.io/gettingstarted/software/vscode/).
-
-Laajennus voidaan asentaa VS Coden sovelluskaupasta: [https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr).
+Pymakr-laajennuksen käyttöohjeet löytyvät osoitteesta [https://docs.pycom.io/gettingstarted/software/vscode/](https://docs.pycom.io/gettingstarted/software/vscode/) ja itse laajennus voidaan asentaa VS Coden sovelluskaupasta: [https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr).
 
 
-### Ampy
+### Video: MicroPython Basics: Load Files & Run Code with Tony D!
 
-```
-ampy - Adafruit MicroPython Tool
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hrjtAYMrxF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ampy is a tool to control MicroPython boards over a serial connection.
-Using ampy you can manipulate files on the board's internal filesystem and
-even run scripts.
-```
+Videon oheislukemisto: [https://learn.adafruit.com/micropython-basics-load-files-and-run-code](https://learn.adafruit.com/micropython-basics-load-files-and-run-code)
+
+### Ampy - Adafruit MicroPython Tool
+
+
+> *"Ampy is meant to be a simple command line tool to manipulate files and run code on a CircuitPython or MicroPython board over its serial connection. With ampy you can send files from your computer to the board's file system, download files from a board to your computer, and even send a Python script to a board to be executed."*
+>
+> [https://github.com/scientifichackers/ampy](https://github.com/scientifichackers/ampy)
 
 Ampy-työkalun asennukseen tarvitset Pythonin venv-virtuaaliympäristön.
 
-```powershell
+```terminal
 > py -m venv .
 > .\Scripts\Activate.ps1
 ```
@@ -184,7 +187,7 @@ Tämän jälkeen Ampy-työkalu voidaan asentaa seuraavasti:
 > py -m pip install adafruit-ampy
 ```
 
-Kokeile lopuksi suorittaa uusi `ampy`-komento seuraaavsti:
+Kokeile lopuksi suorittaa uusi `ampy`-komento seuraavasti:
 
 ```terminal
 > ampy --help
@@ -192,10 +195,24 @@ Kokeile lopuksi suorittaa uusi `ampy`-komento seuraaavsti:
 
 #### Tiedostojen listaaminen: `ls`
 
+Muuta seuraavassa komennossa COM4-portin tilalle oma COM-porttisi:
+
 ```terminal
 > ampy -p COM4 ls
 /boot.py
 ```
+
+#### Valinnainen: COM-portin tallentaminen
+
+Voit tallentaa käyttämäsi asetukset, kuten COM-portin, erilliseen asetustiedostoon [Ampy-työkalun dokumentaation mukaisesti](https://github.com/scientifichackers/ampy#configuration).
+
+Luo joko samaan hakemistoon, jossa annat komennot, tai vaihtoehtoisesti kotihakemistoosi tiedosto nimeltä `.ampy`. Lisää tiedostoon seuraava rivi (muuta tilalle oma COM-porttisi):
+
+```
+AMPY_PORT=COM4
+```
+
+Nyt voit jatkossa jättää `-p` tai `--port` parametrin pois käyttäessäsi `ampy`-komentoa.
 
 #### Tiedostojen lataaminen: `get`
 
@@ -210,12 +227,19 @@ Voit tarkastella muistissa olevia tiedostoja get-komennolla:
 #webrepl.start()
 ```
 
-Get ei automaattisesti tallenna tiedostoa, vaan voit halutessasi ohjata tiedoston listauksen tiedostoon komentorivin `>`-operaatiolla:
+Get ei automaattisesti tallenna tiedostoa, vaan voit halutessasi tallentaa tiedoston paikalliseen hakemistoon kirjoittamalla komennon loppuun nimen, jolla haluat tallentaa tiedoston:
 
 ```terminal
-> ampy -p COM4 get boot.py > boot.py
+> ampy -p COM4 get boot.py boot.py
 ```
 
+Yllä olevassa esimerkissä tallennamme flash-muistissa olevan `boot.py`-tiedoston nykyiseen hakemistoon samalla nimellä.
+
+#### Tiedoston suorittaminen
+
+```terminal
+> ampy run testi.py
+```
 
 #### Tiedostojen lähettäminen: `put`
 
@@ -233,7 +257,16 @@ Tiedoston siirtäminen muistiin ei automaattisesti aiheuta ohjelman uudelleenkä
 > ampy -p COM4 reset
 ```
 
+#### Muut komennot
+
+Lisää tietoa ampy-työkalun komennoista löydät esimerkiksi [Adafruitin artikkelista](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/file-operations).
+
+
 #### Yleisiä ongelmatilanteita
+
+**UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte**
+
+Tiedoston enkoodaus ei ole UTF-8 merkistön mukaista. Käytä editorina ainoastaan VS Codea tai vastaavaa ohjelmistokehitykseen tarkoitettua työkalua.
 
 **ampy.pyboard.PyboardError: failed to access COM4**
 
