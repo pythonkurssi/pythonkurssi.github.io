@@ -195,33 +195,20 @@ h1 /* .post-title */ {
 
     h2, h3, h4 {
         margin-top: $spacing-unit;
+        font-weight: 500;
     }
 
     h2 {
-		font-family: 'Titillium Web', sans-serif;
-	font-weight: 500;
-/*        font-size: 32px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 28px; */
-        }
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 32px;
     }
 
     h3 {
-		font-style: italic;
-/*        font-size: 26px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 22px; */
-        }
+        font-size: 26px;
     }
 
     h4 {
-/*       font-size: 20px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 18px; */
-        }
+        font-size: 20px;
     }
 
     iframe {
