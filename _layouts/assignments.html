@@ -4,15 +4,22 @@ layout: page
 
 {{ content }}
 <ul id="archive">
-{% for asg in site.assignments %}
+      {% for asg in site.assignments %}
       <li class="archiveposturl" style="background: transparent">
-        <span><a href="{{ asg.url | prepend: site.baseurl}}">{{ asg.title }}</a></span>
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">
-<a title="Download problems (pdf)" href="{{ asg.pdf | prepend: site.baseurl }}"><i class="fas fa-file-pdf"></i></a> 
-{% if asg.attachment %}
-&nbsp; <a title="Download attachments (zip)" href="{{ asg.attachment | prepend: site.baseurl }}"><i class="fas fa-file-archive"></i></a>
-{% endif %}
-</strong> 
+            <div class="assignment-container">
+                  <div class="content">
+                        <div class="lecture-date">
+                              {{ asg.date | date: site.dateformat }}, {{ asg.date | date: "%H:%M" }}
+                              -
+                              {{ asg.due_event.date | date: site.dateformat }}, {{ asg.due_event.date | date: "%H:%M" }}
+                        </div>
+                        <span style="font-weight: bold;">
+                              <a href="{{ asg.url | prepend: site.baseurl}}">
+                                    {{ asg.title }}
+                              </a>
+                        </span><br>
+                  </div>
+            </div>
       </li>
-{% endfor %}
+      {% endfor %}
 </ul>
