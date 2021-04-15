@@ -120,8 +120,9 @@ jannite_mv = lukema / 4_095 * 3_600
 jannite_mv                # 2002 mV => 2 V
 ```
 
-
 Signaalin vaimennuksen avulla voimme käyttää esimerkiksi valovastusta (photoresistor) mitataksemme eri tilojen valaistusta: [Reading a photoresistor on ESP32 with MicroPython](https://blog.gypsyengineer.com/en/diy-electronics/reading-photoresistor-on-esp32-with-micropython.html).
+
+Huomaa, että ESP32:n GPIO-väylien sallitun jännitteen yläraja on 3,6 V ja suuremmat jännitteet rikkovat laitteesi.
 
 
 ## Electric Current: Crash Course Physics
@@ -145,6 +146,7 @@ Arduinon esimerkki *LEDCSoftwareFade* toimii, kun muuttaa siitä piirilevyn LED-
 ## Tutoriaali
 
 Freenove-tutoriaali: [https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf)
+
 
 ## Lämpötilasensorin käyttäminen
 
