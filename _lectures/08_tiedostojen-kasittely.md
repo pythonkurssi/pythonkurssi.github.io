@@ -13,6 +13,8 @@ __links__:
       name: slides
 ---
 
-Tiedostojen lukeminen ja kirjoittaminen ohjelmallisesti.
+Tiedostojen lukeminen ja kirjoittaminen ohjelmallisesti. CSV-tyyppisen datan käsitteleminen.
 
-CSV-tyyppisen datan käsitteleminen.
+## Suositeltavaa luettavaa
+
+* [PY4E: Files](https://www.py4e.com/html3/07-files)

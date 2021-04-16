@@ -20,7 +20,10 @@ Oppitunnin aiheet:
 1. JSON-datan kirjoittaminen
 1. HTTP-pyynnöt
 
+## Suositeltavaa luettavaa
 
+* [PY4E: Networked Programs](https://www.py4e.com/html3/12-network)
+* [PY4E: Using Web Services](https://www.py4e.com/html3/13-web)
 
 ## Postinumeroaineisto
 

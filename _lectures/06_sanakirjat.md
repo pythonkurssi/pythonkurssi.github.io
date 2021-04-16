@@ -28,7 +28,8 @@ Oppitunnin aiheet:
 
 ## Suositeltavaa luettavaa
 
-[https://docs.python.org/3/tutorial/datastructures.html#dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+* [PY4E: Dictionaries](https://www.py4e.com/html3/09-dictionaries)
+* [Sanakirjat Pythonin dokumentaatiossa](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 ## Sanakirjat (dict)
 

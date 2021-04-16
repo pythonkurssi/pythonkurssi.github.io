@@ -27,6 +27,9 @@ Oppitunnin aiheet:
 1. Muuttujat
 1. Merkkijonot ja numerotyypit
 
+## Suositeltavaa luettavaa
+
+* [PY4E: Strings](https://www.py4e.com/lessons/strings)
 
 ## Python as a calculator: Read–eval–print loop (REPL)
 

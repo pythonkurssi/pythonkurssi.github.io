@@ -22,10 +22,10 @@ Oppitunnin sisältö:
 1. Toisessa tiedostossa olevan funktion kutsuminen
 1. Tyyppivihjeet
 
+## Suositeltavaa luettavaa
 
-## Funktiot Pythonin dokumentaatiossa
-
-[https://docs.python.org/3/tutorial/controlflow.html#defining-functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+* [PY4E: Functions](https://www.py4e.com/html3/04-functions)
+* [Funktiot Pythonin dokumentaatiossa](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 
 ## Funktioiden määrittely
 

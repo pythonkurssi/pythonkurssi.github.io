@@ -21,8 +21,12 @@ Oppitunnin aiheet:
 1. Totuusarvojen käyttäminen ehdollisessa logiikassa
 1. Ehtojen kääntäminen ja yhdistely
 
-Suositeltavaa luettavaa:
 
+
+
+## Suositeltavaa luettavaa:
+
+* [PY4E: Conditional execution](https://www.py4e.com/html3/03-conditional)
 * [https://www.pythoncheatsheet.org/#Flow-Control](https://www.pythoncheatsheet.org/#Flow-Control)
 * [https://docs.python.org/3/tutorial/controlflow.html#if-statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
 

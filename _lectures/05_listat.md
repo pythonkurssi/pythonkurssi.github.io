@@ -17,7 +17,8 @@ Oppitunnin aiheet:
 
 # Suositeltavaa luettavaa
 
-[https://docs.python.org/3/tutorial/introduction.html#lists](https://docs.python.org/3/tutorial/introduction.html#lists)
+* [PY4E: Lists](https://www.py4e.com/html3/08-lists)
+* [Listat Pythonin dokumentaatiossa](https://docs.python.org/3/tutorial/introduction.html#lists)
 
 
 

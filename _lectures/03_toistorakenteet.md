@@ -23,6 +23,7 @@ Oppitunnin aiheet:
 
 ## Suositeltavaa luettavaa
 
+* [PY4E: Loops and Iterations](https://www.py4e.com/lessons/loops)
 * [https://docs.python.org/3/tutorial/controlflow.html#for-statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
 
 ## Toistorakenteet
