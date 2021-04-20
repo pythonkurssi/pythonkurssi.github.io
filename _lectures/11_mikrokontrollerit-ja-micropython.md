@@ -154,7 +154,7 @@ Edellä esitetty interaktiivinen tulkki toimii komentojen kokeilemisessa. Saadak
 
 MicroPython-ohjelmat voidaan siirtää tietokoneelta mikrokontrolleriin useilla eri työkaluilla.
 
-Tällä kurssilla hyödynnämme [Ampy-työkalua](https://github.com/scientifichackers/ampy).
+Tällä kurssilla hyödynnämme [Ampy-työkalua](https://github.com/scientifichackers/ampy) ja [Pyboard-komentoa](https://docs.micropython.org/en/latest/reference/pyboard.py.html).
 
 Toinen varteenotettava vaihtoehto on asentaa VS Code -työkaluun ja [Pycom](https://pycom.io/):in kehittämä Pymakr-laajennos.
 
@@ -166,6 +166,7 @@ Pymakr-laajennuksen käyttöohjeet löytyvät osoitteesta [https://docs.pycom.io
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hrjtAYMrxF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Videon oheislukemisto: [https://learn.adafruit.com/micropython-basics-load-files-and-run-code](https://learn.adafruit.com/micropython-basics-load-files-and-run-code)
+
 
 ### Ampy - Adafruit MicroPython Tool
 
@@ -263,6 +264,16 @@ Tiedoston siirtäminen muistiin ei automaattisesti aiheuta ohjelman uudelleenkä
 
 Lisää tietoa ampy-työkalun komennoista löydät esimerkiksi [Adafruitin artikkelista](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/file-operations).
 
+
+### Pyboard
+
+> *This is a standalone Python tool that runs on your PC that provides a way to:*
+>
+> * *Quickly run a Python script or command on a MicroPython device. This is useful while developing MicroPython programs to quickly test code without needing to copy files to/from the device.*
+>
+> * *Access the filesystem on a device. This allows you to deploy your code to the device (even if the board doesn’t support USB MSC).*
+>
+> [https://docs.micropython.org/en/latest/reference/pyboard.py.html](https://docs.micropython.org/en/latest/reference/pyboard.py.html)
 
 ## ESP32:n tiedostojärjestelmän käyttäminen MicroPythonilla
 
