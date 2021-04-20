@@ -35,7 +35,12 @@ due_event:
         Mikä on ESP32:n flash-muistin koko megatavuina, kun tavuina se on yllä esitetty 4&nbsp;194&nbsp;304 tavua?
 
 
-* Tiedoston latausajan laskuri, kun tiedetään nettiyhteyden nopeus
+* Tiedoston latausajan laskuri, kun tiedetään nettiyhteyden nopeus ja tiedoston koko
+
+    * käsitteet tavu ja bitti: muutos biteistä tavuiksi
+    * muutokset sekunneista tunneiksi, minuuteiksi ja sekunneiksi
+    * bonus: huomioidaan HTTP-protokollan overhead?
+
 
 * Skumppalaskuri
 
