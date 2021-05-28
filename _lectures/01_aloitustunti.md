@@ -31,6 +31,14 @@ Oppitunnin aiheet:
 
 * [PY4E: Strings](https://www.py4e.com/lessons/strings)
 
+
+## Pythonin ja Visual Studio Coden (VS Code) asentaminen
+
+Kurssin suorittamiseksi tarvitset omalle tietokoneellesi Python-ohjelmointiympäristön, VS Code -editorin sekä Python-laajennoksen VS Code'en. Asenna nämä seuraamalla [mooc.fi-asennusohjeen kohtia 1 ja 3](https://www.mooc.fi/fi/installation/vscode#VSCoden-asentaminen). Tällä kurssilla et tarvitse asennusohjeissa käsiteltävää Javaa etkä TestMyCode-laajennosta.
+
+[https://www.mooc.fi/fi/installation/vscode](https://www.mooc.fi/fi/installation/vscode)
+[https://code.visualstudio.com/docs/python/python-tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
+
 ## Python as a calculator: Read–eval–print loop (REPL)
 
 > *"Python can be used as a calculator to compute arithmetic operations like addition, subtraction, multiplication and division. Python can also be used for trigonometric calculations and statistical calculations."*
