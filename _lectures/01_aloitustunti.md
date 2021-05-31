@@ -263,18 +263,23 @@ Ohjelmissa halutaan usein rajata luvuista näytettävän desimaaliosan pituutta.
 
 Usein lukujen pyöristäminen halutaan tehdä perinteisen pyöristämissäännön sijasta joko ylös- tai alaspäin lähimpään kokonaislukuun. Nämä onnistuvat Pythonin `math.ceil`- ja `math.floor`-funktioilla, esimerkiksi seuraavasti:
 
-```
-import math
+```python
+import math  # ceil ja floor löytyvät math-moduulista
 
 maalipurkin_koko = 2.7
 maalin_tarve = 5.7
 
-maalipurkkeja_ostettava = math.ceil(maalin_tarve / maalipurkin_koko)
+maalipurkkeja_ostettava = math.ceil(maalin_tarve / maalipurkin_koko) # ceil pyöristää aina ylöspäin
 
-print('Tarvitset ' + str(maalipurkkeja_ostettava) + ' maalipurkkia') # Tarvitset 3 maalipurkkia
+print('Tarvitset ' + str(maalipurkkeja_ostettava) + ' maalipurkkia')
 ```
 
+Yllä olevassa ohjelmassa maalia tarvitaan liukulukuna `2.111111111111111` purkkia, mutta olettaen että maali myydään vain kokonaisina purkillisina, pyöristetään luku ylöspäin lähimpään kokonaislukuun:
 
----
+```
+Tarvitset 3 maalipurkkia
+```
 
-Microsoftin [Python for Beginners -videosarjan](https://channel9.msdn.com/Series/Intro-to-Python-Development/) videot on lisensoitu [Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) -lisenssillä.
+## Videoiden tekijänoikeudet 
+
+Tässä oppimateriaalissa hyödynnetyt Microsoftin [Python for Beginners -videosarjan](https://channel9.msdn.com/Series/Intro-to-Python-Development/) videot on lisensoitu [Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) -lisenssillä.
