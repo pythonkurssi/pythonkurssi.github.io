@@ -191,14 +191,11 @@ type(kaupunki) # str
 type(vakiluku) # int
 ```
 
-Eri tietotyyppien tiedostaminen ja taito muuttaa data toiseen tietotyyppiin ovat keskeisiä tällä kurssilla ja yleisesti ohjelmoitaessa. Yksi suoraviivainen esimerkki tietotyyppeihin liittyvässä logiikassa on `+`-operaatio, joka lukujen tapauksessa laskee kaksi lukua yhteen, mutta merkkijonojen tapauksessa liittää kaksi merkkijonoa peräkkäin. 
+Eri tietotyyppien tiedostaminen ja taito muuttaa data toiseen tietotyyppiin ovat keskeisiä tällä kurssilla ja yleisesti ohjelmoitaessa. Yksi suoraviivainen esimerkki tietotyyppeihin liittyvässä logiikassa on `+`-operaatio, joka lukujen tapauksessa laskee kaksi lukua yhteen, mutta merkkijonojen tapauksessa liittää kaksi merkkijonoa peräkkäin.
 
-Seuraavalla videolla käsitellään näitä tietotyyppejä sekä käyttäjältä saatujen syötteiden muuttamista numeroiksi `int` ja `float` funktioilla:
+Vaikka `+`-operaatio toimii sekä merkkijonojen että numeroiden kanssa, et voi käyttää sitä ristiin yhdistääksesi esimerkiksi numeroa merkkijonoon. Seuraavalla videolla käsitellään näitä tietotyyppejä sekä käyttäjältä saatujen syötteiden muuttamista numeroiksi `int` ja `float` funktioilla:
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
-
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-14-of-44-Demo-Numbers/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [14 of 44] Demo: Numbers - Microsoft Channel 9 Video"></iframe>
 
 
 ## Lukujen tyyppimuunnokset ja pyöristäminen
@@ -206,122 +203,77 @@ Seuraavalla videolla käsitellään näitä tietotyyppejä sekä käyttäjältä
 Merkkijonoja voidaan muuttaa eri lukutyypeiksi, ja lukutyyppejä voidaan muuttaa toisiksi `int`- ja `float`-funktioilla:
 
 ```python
-kymmenen = int('10')
-
 ika = int(input('Kerro ikäsi: '))
 ```
 
 ```python
-pii = float('3.14')
+alennusprosentti = 0.1 # 10 % alennus
 
 hinta = float(input('Syötä pizzan hinta: '))
+
+alennettu_hinta = hinta - (hinta * alennusprosentti)
+
+print('Hinta alennuksen jälkeen: ' + str(alennettu_hinta))
 ```
 
-Pyöristäminen onnistuu `round`-funktiolla, jolle voidaan myös kertoa, kuinka monen desimaalin tarkkuudella pyöristys halutaan tehdä:
+Sama tulostus ei toimisi ilman `str`-muunnosta, koska Python ei salli katenoida lukuja sekä merkkijonoja:
 
 ```python
->>> round(3.14)
-3
->>> round(3.14, 1)
-3.1
-```
-
-Luvut voidaan muuttaa merkkijonoiksi `str`-funktiolla:
-
-```python
->>> hinta = 9.90
->>> print("Hinta: " + str(hinta))
-Hinta: 9.9
-```
-
-Sama koodi ei toimisi ilman `str`-muunnosta, koska Python ei salli katenoida lukuja sekä merkkijonoja:
-
-```python
->>> hinta = 9.90
->>> print("Hinta: " + hinta)
+print('Hinta alennuksen jälkeen: ' + alennettu_hinta)
 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "float") to str
 ```
 
+Seuraavassa videossa esitellään käytännön esimerkin kautta yllä esitettyjen numeeristen syötteiden kysymistä, annettujen syötteiden muuntaminen numeroiksi laskuoperaatioita varten ja muuntaminen taas merkkijonoiksi tulostamista varten:
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-14-of-44-Demo-Numbers/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [14 of 44] Demo: Numbers - Microsoft Channel 9 Video"></iframe>
 
 
+## Liukuluvut ja niiden tarkkuus
 
+Pythonissa on kaksi paljon käytettyä lukutyyppiä: `int` ja `float`. Int-tyypin avulla pystytään esittämään ainoastaan kokonaislukuja, kun taas float sisältää myös desimaaliosan. Python huolehtii lukujen muuttamisesta oikean tyyppisiksi automaattisesit, joten meidän ei usein tarvitse huolehtia siitä.
 
+Liukuluvut esitetään aina käyttäen desimaalierottimena pistettä. Liukuluvun nimi tulee siitä, että numeron binääriesityksessä ei ole ennalta määrättyä määrää bittejä kokonaisosalle ja desimaaliosalle, vaan erottimen sijainti ja bittien määrä "liukuu" luvusta riippuen. 
 
+Laskutoimitukset liukuluvuilla ovat erittäin nopeita. Tietokoneet käsittelevät mm. pelien grafiikkaa ja muuta matematiikkaa liukuluvuilla. Liukulukujen toteutuksesta johtuen niillä laskettaessa esiintyy kuitenkin usein pieniä laskuvirheitä, minkä vuoksi niitä ei tule käyttää täydellistä tarkkuutta vaativissa tarkoituksissa.
 
-## import-käsky
-
-Pythonissa sekä kielen standardikirjaston moduulit että omat ja `pip`-komennolla asennetut moduulit voidaan ottaa käyttöön `import`-käskyllä:
+Kokeile suorittaa seuraava yhteenlasku. Minkä tuloksen saat?
 
 ```python
->>> import math
->>> math.pi
-3.141592653589793
->>> round(math.pi, 5)
-3.14159
->>> math.floor(math.pi)
+print(0.1 + 0.2) # minkä tuloksen saat?
+```
+
+Liukulukujen laskuvirhe ei niinkään liity Pythoniin, vaan yleisesti siihen, miten liukuluvut esitetään tietokoneen muistissa rajallisella määrällä ykkösiä ja nollia. Kaikkia lukuja ei vain ole mahdollista esittää täydellisellä tarkkuudella. Vastaavasti kymmenjärjestelmässä ei voida tarkasti esittää desimaalilukuna lukua 1/3.
+
+💸 Tarkkuus- ja laskuvirheiden vuoksi esimerkiksi rahaa ei tulisi käsitellä liukulukuina. Hyvä taustoitus aiheeseen vaihtoehtoisine ratkaisuineen löytyy mm. [tästä StackOverflow-vastauksesta](https://stackoverflow.com/a/3730040).
+
+## Lukujen pyöristäminen
+
+Ohjelmissa halutaan usein rajata luvuista näytettävän desimaaliosan pituutta. Esimerkiksi hinnat esitetään tyypillisesti kahden desimaalin tarkkuudella. Pyöristäminen eri tarkkuuksille onnistuu `round`-funktiolla, jolle voidaan myös kertoa, kuinka monen desimaalin tarkkuudella pyöristys halutaan tehdä:
+
+```python
+>>> round(3.14)     # pyöristys lähimpään kokonaislukuun
 3
->>> math.ceil(math.pi)
-4
+
+>>> round(3.14, 1)  # pyöristys yhden desimaalin tarkkuudella
+3.1
 ```
 
-Yksittäisiä funktioita, arvoja tai luokkia voidaan ottaa käyttöön syntaksilla `from moduuli import asia`:
+Usein lukujen pyöristäminen halutaan tehdä perinteisen pyöristämissäännön sijasta joko ylös- tai alaspäin lähimpään kokonaislukuun. Nämä onnistuvat Pythonin `math.ceil`- ja `math.floor`-funktioilla, esimerkiksi seuraavasti:
 
-```python
->>> from math import log2
->>> log2(50_000)
-15.609640474436812
+```
+import math
+
+maalipurkin_koko = 2.7
+maalin_tarve = 5.7
+
+maalipurkkeja_ostettava = math.ceil(maalin_tarve / maalipurkin_koko)
+
+print('Tarvitset ' + str(maalipurkkeja_ostettava) + ' maalipurkkia') # Tarvitset 3 maalipurkkia
 ```
 
-**Bonus**: Kokeile myös seuraavia:
-
-```python
-import __hello__
-import antigravity
-import this
-```
-
-
-
-
-## Valikoituja hyödyllisiä komentoja
-
-**help** -funktio näyttää ohjeita sille annetun arvon tai funktion käyttämiseksi:
-
-    >>> help(print)
-    Help on built-in function print in module builtins:
-
-    print(...)
-        print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
-
-        Prints the values to a stream, or to sys.stdout by default.
-        Optional keyword arguments:
-        file:  a file-like object (stream); defaults to the current sys.stdout.
-        sep:   string inserted between values, default a space.
-        end:   string appended after the last value, default a newline.
-        flush: whether to forcibly flush the stream.
-
-**type** -funktio kertoo sille annetun arvon tyypin:
-
-    >>> type(mysteerimuuttuja)
-    <class 'list'>
-
-**dir** -funktio kertoo moduulin sisältämät arvot, funktiot ja luokat:
-
-    >>> import math
-    >>> dir(math)
-    ['__doc__', '__loader__', '__name__', '__package__', 
-    '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 
-    'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 
-    'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 
-    'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd',
-    'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 
-    'isqrt', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 
-    'modf', 'nan', 'perm', 'pi', 'pow', 'prod', 'radians', 
-    'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 
-    'trunc']
 
 ---
 
