@@ -15,43 +15,54 @@ __links__:
 
 # Python-ohjelmoinnin aloitus
 
-Oppitunnilla käytämme aluksi Pythonia komentoriviltä interaktiivisella tulkilla, jotta opimme nopeasti kokeilemisen kautta käyttämään Pythonin perusrakenteita. Tämän jälkeen tutustumme Python-tiedostojen editointiin VS Codella.
+Kurssin suorittamiseksi tarvitset omalle tietokoneellesi Python-ohjelmointiympäristön, VS Code -editorin sekä Python-laajennoksen VS Code -editoriin. Saat käyttää myös muita työkaluja, mutta niihin ei voida tarjota käyttötukea.
 
-Lopuksi tutustumme myös muihin tapoihin hyödyntää Pythonia: "Python as a swiss army knife".
+Tällä oppitunnilla tutustumme Python-koodin kirjoittamiseen ja suorittamiseen komentorivillä sekä VS Code -sovelluskehittimessä. Käsittelemme numeerisia sekä tekstimuotoisia tietotyyppejä ja teemme yksinkertaista vuorovaikutusta käyttäjän kanssa tulosteiden ja syötteiden avulla. 
 
-Oppitunnin aiheet:
+Lopuksi tunnilla opittuja asioita harjoitellaan ohjelmointitehtävien avulla.
+
+
+**Oppitunnin aiheet**
 
 1. Kurssin järjestelmät ja työkalut
-1. Python-koodin suorittaminen ja tulkin käyttäminen
-1. VSCode-editori
+1. Python-tulkin käyttäminen
+1. Lähdekooditiedostot ja niiden suorittaminen
+1. VS Code-editori
 1. Muuttujat
+1. Tekstin tulostaminen ja syötteen kysyminen käyttäjältä
 1. Merkkijonot ja numerotyypit
-
-## Suositeltavaa luettavaa
-
-* [PY4E: Strings](https://www.py4e.com/lessons/strings)
+1. Lukujen pyöristäminen
+1. Kommentit
 
 
-## Pythonin ja Visual Studio Coden (VS Code) asentaminen
+## Mikä Python on ja miksi käytämme sitä?
 
-Kurssin suorittamiseksi tarvitset omalle tietokoneellesi Python-ohjelmointiympäristön, VS Code -editorin sekä Python-laajennoksen VS Code'en. Asenna nämä seuraamalla [mooc.fi-asennusohjeen kohtia 1 ja 3](https://www.mooc.fi/fi/installation/vscode#VSCoden-asentaminen). Tällä kurssilla et tarvitse asennusohjeissa käsiteltävää Javaa etkä TestMyCode-laajennosta.
+Seuraava video esittelee Pythonin käyttömahdollisuuksia ja sen perusperiaatteita.
 
-[https://www.mooc.fi/fi/installation/vscode](https://www.mooc.fi/fi/installation/vscode)
-[https://code.visualstudio.com/docs/python/python-tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-2-of-44-Introducing-Python/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [2 of 44] Introducing Python - Microsoft Channel 9 Video"></iframe>
 
-## Python as a calculator: Read–eval–print loop (REPL)
-
-> *"Python can be used as a calculator to compute arithmetic operations like addition, subtraction, multiplication and division. Python can also be used for trigonometric calculations and statistical calculations."*
->
-> *Peter D. Kazarinoff. Problem Solving with Python. [Python as a Calculator.](https://problemsolvingwithpython.com/03-The-Python-REPL/03.01-Python-as-a-Calculator/)*
+[https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python)
 
 
-Pythonia voidaan käyttää komentoriviltä interaktiivisen tulkin avulla. Se onkin helpoin tapa tutustua kielen ominaisuuksiin. Python käynnistyy oletuksena interaktiivisessa tilassa komennolla `python3`, tai asennuksestasi riippuen esim. `python` tai `py`.
+
+## Pythonin asentaminen
+
+Tallenna ja asenna Pythonin asennuspaketti Pythonin  viralliselta sivustolta [https://www.python.org/downloads/](https://www.python.org/downloads/). Valitse käyttöjärjestelmäsi mukaan Windows, Linux tai Mac OS versio.
+
+Mikäli sinulla on jo valmiiksi asennettuna Python, voit käyttää sitä. Kurssilla käytettävän Python-version on kuitenkin oltava vähintään 3.7. Voit tarkistaa Python-asennuksesi version suorittamalla komentorivillä komennon `python --version`.
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-3-of-44-Getting-Started/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [3 of 44] Getting Started - Microsoft Channel 9 Video"></iframe>
+
+
+
+## Pythonin käyttäminen komentoriviltä: read–eval–print loop (REPL)
+
+Pythonia voidaan käyttää suoraan komentoriviltä interaktiivisen tulkin avulla. Se onkin helpoin tapa tutustua kielen ominaisuuksiin. Python käynnistyy oletuksena interaktiivisessa tilassa, kun käynnistät sen komennolla `python`. Asennuksestasi riippuen Pythonin käynnistyskomento saattaa olla vaihtoehtoisesti `python3` tai `py`.
 
 ```
-$ python3
-Python 3.8.5 (default, Jul 28 2020, 12:59:40)
-[GCC 9.3.0] on linux
+> python
+
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> 1 + 2 + 3
@@ -63,50 +74,77 @@ Interaktiivisella tulkilla lausekkeiden tuloksia ei tarvitse erikseen tulostaa, 
 Kokeile Pythonin laskuoperaatioita sivun [https://www.pythoncheatsheet.org/#Python-Basics](https://www.pythoncheatsheet.org/#Python-Basics) ohjeiden mukaan!
 
 
+## Lähdekooditiedostot
+
+Pythonin interaktiivinen tulkki on erittäin helppo ja nopea ympäristö erilaisten pienten kokeilujen tekemiseksi, mutta sinne kirjoittamasi ohjelmat eivät jää talteen myöhemmin suoritettaviksi. Ohjelmat kirjoitetaankin siksi erillisiin lähdekooditiedostoihin, jossa ne pysyvät tallessa useampia suoritus- ja muokkauskertoja varten.
+
+Pythonin tapauksessa lähdekooditiedostot kirjoitetaan aina pienillä kirjaimilla ja tiedostojen päätteeksi kirjoitetaan `.py`. Lähdekooditiedostojen nimissä ei käytetä välilyöntejä, vaan välilyöntien tilalla käytetään alaviivaa `_`. Ääkköset korvataan a:lla ja o:lla: `lahdekooditiedoston_nimi.py`.
+
+Python-lähdekooditiedostot ovat aivan tavallisia tekstitiedostoja, joita voitaisiin muokata jopa muistiolla. Ohjelmien kehittämiseksi on kuitenkin paljon parempia kehitystyökaluja, jotka avustavat koodin kirjoittamisessa ja löytävät automaattisesti koodissa olevia virheitä. 
+
+Tällä kurssilla käytämme kehitysympäristönä (Integrated Development Environment, IDE) Visual Studio Codea, jonka asentamista käsitellään seuraavaksi.
 
 
-## Introducing Python
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-2-of-44-Introducing-Python/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [2 of 44] Introducing Python - Microsoft Channel 9 Video"></iframe>
+## VS Coden asentaminen
 
-[https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python)
+Tallenna ja asenna Visual Studio Coden (VS Code) asennuspaketti sen viralliselta sivustolta [https://code.visualstudio.com/](https://code.visualstudio.com/). VS Code on saatavilla sekä Windowsille, Linuxille että Mac OS:lle.
 
+Lisäksi tarvitset VS Coden Python-laajennoksen, jonka voit asentaa kätevästi extensions-näkymästä [Microsoftin ohjeen mukaisesti](https://code.visualstudio.com/docs/editor/extension-marketplace).
 
-## Getting started
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-3-of-44-Getting-Started/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [3 of 44] Getting Started - Microsoft Channel 9 Video"></iframe>
-
-## Configuring Visual Studio Code
+Seuraava video käy asennuksen läpi vaihe vaiheelta. Huomaa, että videolla esiintyvän vanhemman VS Code -version "extensions"-kuvake on hieman erinäköinen kuin nykyisessä versiossa. Laajennokset saa vaihtoehtoisesti näkyviin näppäinyhdistelmällä `Ctrl` + `Shift` + `X`.
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-4-of-44-Configuring-Visual-Studio-Code/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [4 of 44] Configuring Visual Studio Code - Microsoft Channel 9 Video"></iframe>
 
-[https://marketplace.visualstudio.com/items?itemName=ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+Videolla esiintyvä suora asennuslinkki: [https://marketplace.visualstudio.com/items?itemName=ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 
 
-## Tulostaminen
+
+## Tekstin tulostaminen ruudulle
 
 Tulostaminen tapahtuu `print`-funktiolla, jolle voidaan antaa tarvittaessa useampia tulostettavia arvoja:
 
 ```python
->>> print('Hello world!')
->>> print('Hello', 'world!')
+print('Hello world!')
 ```
+
+Alla oleva video käsittelee kaksi tällä kurssilla keskeistä **funktiota**: `print` ja `input`. Näiden funktioiden avulla voimme näyttää käyttäjälle tekstiä ja pyytää käyttäjältä syötteitä.
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-5-of-44-Using-Print/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [5 of 44] Using Print - Microsoft Channel 9 Video"></iframe>
 
 
-## Demo: Hello, World
+## Lähdekooditiedostojen kanssa työskentely
+
+Ohjelman kirjoittamiseksi tiedostoon ja sen suorittamiseksi tiedostosta tarvitset lähdekoodihakemiston ja lähdekooditiedostoja. Seuraava video ohjeistaa hakemiston ja tiedostojen luomisessa, sekä lähdekooditiedostojen suorittamisessa VS Code:n terminaalissa.
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-6-of-44-Demo-Hello-World/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [6 of 44] Demo: Hello, World - Microsoft Channel 9 Video"></iframe>
 
 
-
 ## Syötteiden lukeminen
 
+> *"Syöte tarkoittaa tietoa, jonka ohjelman käyttäjä antaa ohjelmalle. Pythonissa voimme lukea rivin käyttäjän antamaa syötettä `input`-komennolla. Komento näyttää samalla viestin käyttäjälle, jossa voi pyytää syötettä."*
+>
+> [Agile Education Research -tutkimusryhmä](https://www.helsinki.fi/en/researchgroups/data-driven-education). [https://ohjelmointi-21.mooc.fi/osa-1/2-tietoa-kayttajalta](https://ohjelmointi-21.mooc.fi/osa-1/2-tietoa-kayttajalta). [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)
+
+Alla olevassa koodiesimerkissä pyydetään käyttäjältä syötettä, eli nimeä, joka otetaan talteen `nimi`-muuttujaan:
+
 ```python
->>> nimi = input('Mikä on nimesi? ')
+nimi = input('Mikä on nimesi? ')
+print('Hei ' + nimi + '!')
 ```
+
+Yllä olevassa esimerkissä esiintyy Python-kielen lausekkeiden lisäksi tekstidataa, eli kysymys `'Mikä on nimesi?'` sekä tervehdys `'Hei'`! Tällaista tekstidataa kutsutaan ohjelmoinnin yhteydessä **merkkijonoiksi**. 
+
+Pythonin merkkijonoissa voidaan käyttää joko heittomerkkejä `'` tai lainausmerkkejä `"`.
+
+Seuraava video esittelee tarkemmin muuttujien käyttämistä, merkkijonojen yhdistelyä sekä yhdisteltyjen merkkijonojen tulostamista:
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-9-of-44-String-Concepts/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [9 of 44] String Concepts - Microsoft Channel 9 Video"></iframe>
+
+Kuten huomasimme, merkkijonoja voidaan yhdistellä toisiinsa `+`-operaatiolla. Merkkijonoja voidaan myös asettaa muuttujiin ja voimme kysyä niitä käyttäjältä. Seuraava video esittelee esimerkin etu- ja sukunimien kysymiseksi sekä niiden muotoilemisen isoille alkukirjaimille tulostusta varten.
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-10-of-44-Demo-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [10 of 44] Demo: Strings - Microsoft Channel 9 Video"></iframe>
 
 
 
@@ -122,7 +160,7 @@ Yksirivisiä kommentteja voidaan kätevästi kirjoittaa myös koodirivin loppuun
 
 ```python
 """ tämä on monirivinen merkkijono, joita
-    käytetään pythonissa myös usein kommentteina """
+    käytetään myös usein kommentteina """
 ```
 
 Toisin kuin monissa muissa kielissä, Pythonissa kauttaviivalla ei voida aloittaa kommenttia:
@@ -135,107 +173,32 @@ Toisin kuin monissa muissa kielissä, Pythonissa kauttaviivalla ei voida aloitta
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-7-of-44-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [7 of 44] Comments - Microsoft Channel 9 Video"></iframe>
 
-## Demo: Comments
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-8-of-44-Demo-Comments/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [8 of 44] Demo: Comments - Microsoft Channel 9 Video"></iframe>
 
 ## Muuttujat ja tietotyypit
 
-```python
-kaupunki = "Helsinki"
-vakiluku = 648_553
+Pythonissa on lukuisia eri tietotyyppejä, joita voidaan hyödyntää lukuisin eri tavoin. Tyypillisiä tietotyyppejä ovat aikaisemmin näkemämme merkkijonot (str) sekä kokonaisluvut (int):
 
+```python
+kaupunki = 'Helsinki'
+vakiluku = 648_553
+```
+
+Halutessamme voimme hyödyntää Pythonin `type`-funktiota tarkistaaksemme, minkä tyyppinen arvo tietyssä muuttujassa on tallennettuna:
+
+```python
 type(kaupunki) # str
 type(vakiluku) # int
 ```
 
+Eri tietotyyppien tiedostaminen ja taito muuttaa data toiseen tietotyyppiin ovat keskeisiä tällä kurssilla ja yleisesti ohjelmoitaessa. Yksi suoraviivainen esimerkki tietotyyppeihin liittyvässä logiikassa on `+`-operaatio, joka lukujen tapauksessa laskee kaksi lukua yhteen, mutta merkkijonojen tapauksessa liittää kaksi merkkijonoa peräkkäin. 
 
-## Merkkijonot
+Seuraavalla videolla käsitellään näitä tietotyyppejä sekä käyttäjältä saatujen syötteiden muuttamista numeroiksi `int` ja `float` funktioilla:
 
-Pythonin merkkijonoissa voidaan käyttää joko heittomerkkejä `'` tai lainausmerkkejä `"`. Moniriviset merkkijonot aloitetaan ja päätetään kolmella merkillä. Merkkijonojen yhdistämiseen voidaan käyttää `+` -merkkiä:
-
-```python
-kaupunki = "Helsinki"
-vakiluku = 648_553
-
-print('Kaupungissa ' + kaupunki + ' on ' + str(vakiluku) + ' asukasta!')
-```
-
-Yllä oleva koodi tulostaa seuraavan rivin:
-
-```
-Kaupungissa Helsinki on 648553 asukasta!
-```
-
-Huomaa, että Pythonissa `+`-operaatiolla merkkijonoihin voidaan yhdistää ainoastaan toisia merkkijonoja. Mikäli yrittäisimme yhdistää numeromuotoisen väkiluvun suoraan sitä edeltävän merkkijonon perään, saisimme seuraavan virheen:
-
-```
-TypeError: can only concatenate str (not "int") to str
-```
-
-Tämän ongelman kiertämiseksi edellisessä esimerkissä väkiluku on ensin muutettu merkkijonoksi (string): `str(vakiluku)`.
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-9-of-44-String-Concepts/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [9 of 44] String Concepts - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Strings
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-10-of-44-Demo-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [10 of 44] Demo: Strings - Microsoft Channel 9 Video"></iframe>
-
-## Formatting Strings
-
-Python 3:ssa merkkijonojen yhdistelemiseksi on myös plus-merkkiä kätevämpi tapa, eli [formatted string literals](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals):
-
-```python
-kaupunki = "Helsinki"
-vakiluku = 648_553
-print(f'Kaupungissa {kaupunki} on {vakiluku} asukasta!')
-```
-
-```
-Kaupungissa Helsinki on 648553 asukasta!
-```
-
-Yllä muotoiluja sisältävän merkkijonon eteen on laitettu f-kirjain ja merkkijonoon sijoitettavat arvot on kirjoitettu aaltosulkujen sisään:
-
-```python
-muotoiltu = f'merkkijono {muuttuja}'
-```
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
 
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-11-of-44-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [11 of 44] Formatting Strings - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Formatting Strings
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-12-of-44-Demo-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [12 of 44] Demo: Formatting Strings - Microsoft Channel 9 Video"></iframe>
-
-## Merkkijonojen käsittely
-
-Pythonissa merkkijonojen merkkejä ja osamerkkijonoja voidaan hakea indeksien avulla. Yksi numero tarkoittaa yksittäistä merkkiä, kun taas `i:j` tarkoittaa väliä. Jos alku- tai loppuindeksi jätetään ilmoittamatta, käytetään alkuna nollaa ja loppuna merkkijonon viimeistä merkkiä. Python sallii myös negatiiviset indeksit, jotka lasketaan merkkijonon lopusta lähtien!
-
-```python
-kaupunki = 'Helsinki'
-kaupunki[0]     # 'H'
-kaupunki[0:2]   # 'He'
-kaupunki[2:4]   # 'ls'
-kaupunki[-1]    # 'i'
-kaupunki[-2:]   # 'ki'
-```
-
-Tavallisten `upper` ja `lower` -metodien lisäksi Pythonin merkkijonoilla on kätevä `title`-metodi:
-
-```python
-kaupunki = 'vantaa'
-kaupunki.upper() # 'VANTAA'
-kaupunki.lower() # 'vantaa'
-kaupunki.title() # 'Vantaa'
-```
-
-Merkkijonojen sisältämiä osamerkkijonoja voidaan selvittää `in`-operaation avulla:
-
-```python
-'java' in 'javascript'  # True
-'ham' in 'hamster'      # True
-```
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-14-of-44-Demo-Numbers/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [14 of 44] Demo: Numbers - Microsoft Channel 9 Video"></iframe>
 
 
 ## Lukujen tyyppimuunnokset ja pyöristäminen
@@ -283,11 +246,7 @@ TypeError: can only concatenate str (not "float") to str
 ```
 
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
 
-## Demo: Numbers
-
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-14-of-44-Demo-Numbers/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [14 of 44] Demo: Numbers - Microsoft Channel 9 Video"></iframe>
 
 
 
