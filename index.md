@@ -4,8 +4,8 @@ layout: home
 
 # Tervetuloa kurssille! 
 
-<div class="announcement-box" style="margin:30px 0; font-weight: bold">
-    Tämä sivusto on Python-ohjelmointikurssin työversio. Kurssi ei ole tällä hetkellä ole suoritettavissa.
+<div class="announcement-box" style="margin:30px 0;">
+    Tämä sivusto on Python-ohjelmointikurssin työversio. Kurssi ei ole tällä hetkellä suoritettavissa.
 </div>
 
 Tämä kurssi kestää 16 viikkoa ja se sisältää viikoittain 3 tuntia yhteistä opiskelua sekä noin 5 tuntia itsenäistä opiskelua. Käymme jokaisella viikolla yhteisesti läpi yhden uuden aiheen teoriaosuuden, jota sovelletaan viikoittain palautettavissa koodausharjoituksissa.
