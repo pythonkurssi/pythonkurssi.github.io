@@ -21,18 +21,15 @@ Tällä oppitunnilla tutustumme Python-koodin kirjoittamiseen ja suorittamiseen 
 
 Lopuksi tunnilla opittuja asioita harjoitellaan ohjelmointitehtävien avulla.
 
+**Sisällysluettelo**
 
-**Oppitunnin aiheet**
+<div class="js-toc"></div>
 
-1. Kurssin järjestelmät ja työkalut
-1. Python-tulkin käyttäminen
-1. Lähdekooditiedostot ja niiden suorittaminen
-1. VS Code-editori
-1. Muuttujat
-1. Tekstin tulostaminen ja syötteen kysyminen käyttäjältä
-1. Merkkijonot ja numerotyypit
-1. Lukujen pyöristäminen
-1. Kommentit
+**Suositeltavaa luettavaa**
+
+* Ohjelmoinnin perusteet (mooc.fi): [Laskentaa luvuilla](https://ohjelmointi-21.mooc.fi/osa-1/4-laskentaa-luvuilla)
+* Python for Everybody (py4e.com): [Variables, expressions, and statements](https://www.py4e.com/html3/02-variables)
+* Python 3 – ohjelmointiopas: [luvut 1 ja 2](http://urn.fi/URN:ISBN:978-952-335-622-1)
 
 
 ## Mikä Python on ja miksi käytämme sitä?
@@ -198,6 +195,25 @@ Vaikka `+`-operaatio toimii sekä merkkijonojen että numeroiden kanssa, et voi 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
 
 
+## Pythonin laskuoperaattorit
+
+Pythonissa numeroarvoille voidaan tehdä laskuoperaatioita seuraavilla operaattoreilla, esim. `11 + 3`, `11 ** 3`, `11 // 3`  tai `11 % 3`:
+
+Operaattori | Käyttötarkoitus
+------------|----------------
+`+`         | Yhteenlasku (myös merkkijonojen yhdistäminen)
+`-`         | Vähennyslasku
+`*`         | Kertolasku
+`**`        | Potenssi
+`/`         | Jakolasku (tarkka)
+`//`        | Jakolasku (katkaiseva)
+`%`         | Jakojäännös
+
+"Normaali" jakolasku `/` tuottaa tulokseksi liukulukuja. On myös yleistä, että jakolaskun tuloksena halutaan kokonaisluku, jolloin voit käyttää katkaisevaa jakolaskua `//`. **Katkaiseva jakolasku ei pyöristä tulosta,** vaan desimaaliosa yksinkertaisesti katkeaa pois. 
+
+Toisinaan tarvitset myös jakolaskun jakojäännöstä. Jakojäännös-operaatio tuottaa aina tulokseksi yli jäävän osan, kun `a` jaetaan `b`:llä: `a % b` käyttäen ainoastaan kokonaislukuja.
+
+
 ## Lukujen tyyppimuunnokset ja pyöristäminen
 
 Merkkijonoja voidaan muuttaa eri lukutyypeiksi, ja lukutyyppejä voidaan muuttaa toisiksi `int`- ja `float`-funktioilla:
@@ -268,7 +284,7 @@ print(0.1 + 0.2) # minkä tuloksen saat?
 
 Liukulukujen laskuvirhe ei niinkään liity Pythoniin, vaan yleisesti siihen, miten liukuluvut esitetään tietokoneen muistissa rajallisella määrällä ykkösiä ja nollia. Kaikkia lukuja ei vain ole mahdollista esittää täydellisellä tarkkuudella. Vastaavasti kymmenjärjestelmässä ei voida tarkasti esittää desimaalilukuna lukua 1/3.
 
-💸 Tarkkuus- ja laskuvirheiden vuoksi esimerkiksi rahaa ei tulisi käsitellä liukulukuina. Hyvä taustoitus aiheeseen vaihtoehtoisine ratkaisuineen löytyy mm. [tästä StackOverflow-vastauksesta](https://stackoverflow.com/a/3730040).
+💸 Tarkkuus- ja laskuvirheiden vuoksi esimerkiksi rahaa ei tulisi käsitellä liukulukuina. Hyvä taustoitus aiheeseen löytyy mm. [tästä StackOverflow-vastauksesta](https://stackoverflow.com/a/3730040).
 
 ## Lukujen pyöristäminen
 

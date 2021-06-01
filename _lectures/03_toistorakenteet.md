@@ -20,20 +20,17 @@ Ehtorakenteiden tavoin toistorakenteilla voidaan vaikuttaa koodin suorituksen et
 Tällä opetusviikolla harjoittelemme pääasiassa koodin toistamista tietyn määrän kertoja, toiston keskeyttämistä, sekä käymään läpi kokonaislukuja. Toistorakenteita hyödynnetään myöhemmin myös listojen ja taulukoiden yhteydessä, jolloin käymme läpi niissä olevia arvoja yksitellen.
 
 
-**Oppitunnin aiheet:**
+**Sisällysluettelo**
 
-1. While-toistorakenne
-1. For-toistorakenne
-1. Toistosta poistuminen
-1. ehdot silmukoissa
+<div class="js-toc"></div>
 
 
-**Suositeltavaa luettavaa:**
+**Suositeltavaa luettavaa**
 
-* [PY4E: Loops and Iterations](https://www.py4e.com/lessons/loops)
-* [https://docs.python.org/3/tutorial/controlflow.html#for-statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
-
-
+* Ohjelmoinnin perusteet (mooc.fi): [Ehdot silmukoissa](https://ohjelmointi-21.mooc.fi/osa-3/1-ehdot-silmukoissa)
+* Python for Everybody (py4e.com): [Loops and Iterations](https://www.py4e.com/lessons/loops)
+* Python documentation (docs.python.org): [For statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
+* Python 3 – ohjelmointiopas: [luku 4](http://urn.fi/URN:ISBN:978-952-335-622-1)
 
 
 ## While-toistorakenne

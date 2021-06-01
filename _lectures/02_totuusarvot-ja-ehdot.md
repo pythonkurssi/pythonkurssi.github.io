@@ -20,23 +20,16 @@ Tällä tunnilla tutustumme Pythonin totuusarvoihin `True` ja `False` sekä niih
 
 Myöhemmin tällä kurssilla hyödynnämme totuusarvoja ja ehtoja toteuttaessamme toistorakenteita, joissa koodia toistetaan haluamiemme ehtojen mukaisesti.
 
+**Sisällysluettelo**
 
-**Oppitunnin aiheet:**
+<div class="js-toc"></div>
 
-1. Totuusarvot
-1. Eri arvojen vertailu
-1. Totuusarvojen käyttäminen ehdollisessa logiikassa
-1. Koodilohkojen sisentäminen
-1. If-else-rakenteet
-1. Ehtojen kääntäminen ja yhdistely
+**Suositeltavaa luettavaa**
 
-
-**Suositeltavaa luettavaa:**
-
-* [PY4E: Conditional execution](https://www.py4e.com/html3/03-conditional)
-* [https://www.pythoncheatsheet.org/#Flow-Control](https://www.pythoncheatsheet.org/#Flow-Control)
-* [https://docs.python.org/3/tutorial/controlflow.html#if-statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
-
+* Ohjelmoinnin perusteet (mooc.fi): [ehtorakenne](https://ohjelmointi-21.mooc.fi/osa-1/5-ehtorakenne)
+* Python for Everybody (py4e.com): [Conditional execution](https://www.py4e.com/html3/03-conditional)
+* Python documentation (docs.python.org): [If statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
+* Python 3 – ohjelmointiopas: [luku 3](http://urn.fi/URN:ISBN:978-952-335-622-1)
 
 ## Totuusarvot (boolean)
 
