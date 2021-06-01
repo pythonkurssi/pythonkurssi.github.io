@@ -21,46 +21,12 @@ Tällä kurssisivulla sijaitsevat oppimateriaalit on tarkoitettu ensisijaisesti 
 
 * Lappeenrannan Yliopiston Python 3 –ohjelmointiopas: [https://lutpub.lut.fi/handle/10024/162088](https://lutpub.lut.fi/handle/10024/162088)
 * Pythonin oma "The Python Tutorial": [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
-* Mooc.fi:n Ohjelmoinnin perusteet Pythonilla -kurssi: [https://python-k20.mooc.fi/](https://python-k20.mooc.fi/)
+* Mooc.fi:n Ohjelmoinnin perusteet -kurssi: [https://ohjelmointi-21.mooc.fi/](https://ohjelmointi-21.mooc.fi/)
 * Codecademy:n "Learn Python 3" -kurssi: [https://www.codecademy.com/courses/learn-python-3/](https://www.codecademy.com/courses/learn-python-3/)
 
 Jos haluat päästä nopeasti vauhtiin, voit lukea esimerkiksi tutoriaalin ["Learn Python in 10 minutes"](https://www.stavros.io/tutorials/python/) tai tutustua [Cheat sheet -muistiinpanoihin](https://www.pythoncheatsheet.org/).
 
 Lisää hyvä lähteitä löydät hakukoneilla. Jaathan vinkkejä hyvistä materiaaleista myös kurssin Teamsissa!
-
-
-## Kurssin jakautuminen aiheittain
-
-### 1: Python-ohjelmointikielen perusteet (5 viikkoa)
-
-- Python-kielen syntaksi
-- syötteet ja tulosteet
-- ehtorakenteet
-- toistorakenteet
-- funktiot
-- oliot
-- listat, monikot ja sanakirjat
-- Pythonin standardikirjasto
-
-### 2: Soveltava Python (5 viikkoa)
-
-- satunnaisuus
-- ajan käsittely
-- pakettienhallinta
-- tiedostojen käsittely
-- virheisiin varautuminen
-- koodin testaaminen
-- integraatiot (http ja json)
-
-### 3: MicroPython ja IoT (6 viikkoa)
-
-- perehdytys mikrokontrollereihin
-- MicroPython-ohjelmien kirjoittaminen ja suorittaminen mikrokontrollereilla
-- sensorien kytkeminen mikrokontrollerin liitäntöihin
-- sensorien lukeminen
-- painikkeisiin reagointi
-- valojen ja moottorien kontrollointi Pythonilla
-- langaton tiedonsiirto IoT-laitteesta pilvipalveluun
 
 &nbsp;
 
