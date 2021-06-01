@@ -213,6 +213,8 @@ h1 /* .post-title */ {
 
     iframe {
         border: solid silver 1px;
+        padding: 10px;
+        resize: both;
     }
 }
 
@@ -297,21 +299,6 @@ ul#archive li span.postlower a {
 	font-weight: normal;
 	font-family: Arial, sans-serif;
 
-}
-
-article ul {
-  list-style-type: none;
-}
-
-article ul > li:before {
-  content: "–"; /* en dash */
-  position: absolute;
-  margin-left: -1.1em; 
-}
-
-article ul#archive > li:before {
-  list-style-type: none;
-  content: none;
 }
 
 
