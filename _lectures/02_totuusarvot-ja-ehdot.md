@@ -376,7 +376,7 @@ Seuraavat videot esittelevät toisiinsa liittyvien ehtojen tarkastamista if- ja 
 
 
 
-## Extra: "Truthy" ja "Falsy" 
+## Extra: "Truthy" ja "Falsy" arvot
 
 Pythonissa, toisin kuin monissa muissa kielissä, kaikkia kaikkia arvoja voidaan käyttää myös totuusarvojen paikalla ehtolauseissa.
 
@@ -384,10 +384,13 @@ Pääsääntöisesti kaikki nollaa vastaavat sekä tyhjät arvot ovat epätosia,
 
 ```python
 if 'kissa':
-     print('Kaikki ei-tyhjät merkkijonot ovat tosia!')
+    print('Kaikki ei-tyhjät merkkijonot ovat tosia!')
+
+if 42:
+    print('Kaikki nollasta poikkeavat numerot ovat tosia!')
 ```
 
-Yllä oleva koodinpätkä tulostaa `Kaikki ei-tyhjät merkkijonot ovat tosia!`.
+Yllä oleva koodinpätkä tulostaa `Kaikki ei-tyhjät merkkijonot ovat tosia!` ja `Kaikki nollasta poikkeavat numerot ovat tosia!`.
 
 Tämä ominaisuus on oikein käytettynä erittäin hyödyllinen, ja sillä voidaan myöhemmin esimerkiksi varmistaa, että lista ei ole tyhjä, ennen kuin sitä käytetään. Ominaisuuden kanssa on kuitenkin oltava tarkkana, koska esimerkiksi `'False'` on ei-tyhjä merkkijono, joka vastaa loogisesti arvoa `True`:
 
