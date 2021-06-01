@@ -203,13 +203,32 @@ Vaikka `+`-operaatio toimii sekä merkkijonojen että numeroiden kanssa, et voi 
 Merkkijonoja voidaan muuttaa eri lukutyypeiksi, ja lukutyyppejä voidaan muuttaa toisiksi `int`- ja `float`-funktioilla:
 
 ```python
+syote = input('Kerro ikäsi: ')  # Merkkijono, esim. '22'
+ika = int(syote)                # Muuttaa numeerisen merkkijonon numeroksi
+```
+
+Halutessasi voit kirjoittaa funktiokutsut myös sisäkkäin:
+
+```python
 ika = int(input('Kerro ikäsi: '))
 ```
+
+Yllä olevassa esimerkissä suoritetaan ensin sisempi funktio `input`, jonka tulos välitetään `int`-funktiolle. Lopuksi palautettu numero asetetaan `ika`-muuttujaan. Sisäkkäiset funktiokutsut voivat aluksi vaikeuttaa lukemista, mutta niiden ymmärtäminen on tärkeää koodiesimerkkien ymmärtämiseksi.
+
+Muunnos voidaan tehdä myös toiseen suuntaa, eli numerosta merkkijonoksi, `str`-funktion avulla:
+
+```python
+hinta = 10.90
+hinta_str = str(hinta)  # '10.9'
+```
+
+Numeroiden muuntaminen merkkijonoiksi on tarpeen erityisesti silloin, kun numeroita yhdistetään osaksi merkkijonoja.
 
 ```python
 alennusprosentti = 0.1 # 10 % alennus
 
-hinta = float(input('Syötä pizzan hinta: '))
+syote = input('Syötä pizzan hinta: ')   # hinta merkkijonona
+hinta = float(syote)                    # merkkijonon muuttaminen liukuluvuksi
 
 alennettu_hinta = hinta - (hinta * alennusprosentti)
 
@@ -225,6 +244,8 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "float") to str
 ```
+
+Pythonissa on myös muita tapoja numeroiden esittämiseksi osana merkkijonoja. Palaamme näihin tapoihin myöhemmin tällä kurssilla.
 
 Seuraavassa videossa esitellään käytännön esimerkin kautta yllä esitettyjen numeeristen syötteiden kysymistä, annettujen syötteiden muuntaminen numeroiksi laskuoperaatioita varten ja muuntaminen taas merkkijonoiksi tulostamista varten:
 
