@@ -110,7 +110,7 @@ pienempi_tai_sama = luku <= 1
 eri_suuruinen = luku != 0
 ```
 
-# If-ehtolause
+## If-ehtolause
 
 Totuusarvojen yleinen käyttötarkoitus on koodin suorittaminen vain tietyn ehdon täyttyessä. Tällöin tietyt koodirivit suoritetaan ainoastaan silloin, kun niille asetettu ehto toteutuu.
 

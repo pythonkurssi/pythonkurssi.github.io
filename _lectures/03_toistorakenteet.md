@@ -184,7 +184,7 @@ print('</select>')
 muodossa eli silmukoiden tekemisessä. Listoihin ja niiden läpikäyntiin palaamme
 myöhemmin."
 >
-> Vanhala, E., Nikula, U. (2020). Python 3 – ohjelmointiopas versio 1.2.1. LUT-yliopisto. Saatavilla: [http://urn.fi/URN:ISBN:978-952-335-622-1](http://urn.fi/URN:ISBN:978-952-335-622-1)
+> *Vanhala, E., Nikula, U. (2020). [Python 3 – ohjelmointiopas versio 1.2.1](http://urn.fi/URN:ISBN:978-952-335-622-1). LUT-yliopisto. [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)*
 
 ### Toiston rajojen määrittely: range
 
@@ -194,7 +194,7 @@ Tämä voidaan tehdä suoraviivaisesti Pythonin valmiin `range`-tyypin avulla:
 
 > "The range type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in for loops."
 > 
-> Python documentation. Range. [https://docs.python.org/3/library/stdtypes.html#typesseq-range](https://docs.python.org/3/library/stdtypes.html#typesseq-range)
+> *Python documentation. Range. [https://docs.python.org/3/library/stdtypes.html#typesseq-range](https://docs.python.org/3/library/stdtypes.html#typesseq-range)*
 
 `range`:lle voidaan antaa yhdestä kolmeen parametria: **start**, **stop** ja **step**. Jos haluamme käydä läpi kaikki arvot väliltä 0-23, muodostamme `range`:n seuraavasti: `range(0, 24, 1)`. **Huomaa, että *stop*-arvo on yläraja, joka ei enää tule mukaan lukujoukkoon**.
 

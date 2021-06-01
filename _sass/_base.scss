@@ -141,14 +141,16 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border: 1px solid $grey-color-light;
+    border-left-width: 4px;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
+    }
+
+    p em {
+        font-size: 80%;
     }
 }
 
