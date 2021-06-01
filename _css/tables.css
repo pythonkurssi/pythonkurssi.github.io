@@ -4,22 +4,22 @@ Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE
 */
-table {
+.page-content table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
 	border: 1px solid #cbcbcb
 }
 
-table caption {
+.page-content table caption {
 	color: #000;
 	font: italic 85%/1 arial, sans-serif;
 	padding: 1em 0;
 	text-align: center
 }
 
-table td,
-table th {
+.page-content table td,
+.page-content table th {
 	border-left: 1px solid #cbcbcb;
 	border-width: 0 0 0 1px;
 	font-size: inherit;
@@ -28,13 +28,13 @@ table th {
 	padding: .5em 1em
 }
 
-table thead {
+.page-content table thead {
 	background-color: #e0e0e0;
 	color: #000;
 	text-align: left;
 	vertical-align: bottom
 }
 
-table td {
+.page-content table td {
 	background-color: transparent
 }
