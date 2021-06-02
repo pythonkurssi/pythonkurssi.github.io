@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-03-14T10:00:00+02:00
+date: 2022-03-28T10:00:00+03:00
 title: Tiedostojen käsittely
 tldr: "Tiedostojen lukeminen ja kirjoittaminen ohjelmallisesti."
 thumbnail: 

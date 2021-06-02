@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-05-02T10:00:00+03:00
+date: 2022-05-09T10:00:00+03:00
 title: Pilvi-IoT ja MQTT-protokolla
 tldr: "MQTT-viestien lähettäminen ja vastaanottaminen pilvipalvelun kanssa"
 

@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-03-07T10:00:00+02:00
+date: 2022-03-14T10:00:00+02:00
 title: Ajan käsittely ja satunnaisuus
 tldr: "Pythonin aikakirjaston käyttäminen ja satunnaisuus ohjelmissa."
 thumbnail: 

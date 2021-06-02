@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-04-18T10:00:00+03:00
+date: 2022-04-25T10:00:00+03:00
 title: Mikrokontrollerin liitännät
 tldr: "Sensorien ja ohjattavien laitteiden kytkeminen sekä niiden hyödyntäminen ohjelmallisesti."
 thumbnail: 
