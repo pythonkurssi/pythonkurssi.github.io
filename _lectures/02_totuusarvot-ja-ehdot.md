@@ -114,7 +114,7 @@ eri_suuruinen = luku != 0
 
 Totuusarvojen yleinen käyttötarkoitus on koodin suorittaminen vain tietyn ehdon täyttyessä. Tällöin tietyt koodirivit suoritetaan ainoastaan silloin, kun niille asetettu ehto toteutuu.
 
-Tarkastettava ehto kirjoitetaan `if`-avainsanan jälkeen sulkujen sisään: `if ehto:`. Ehdon toteutuessa suoritettavat koodirivit kirjoitetaan uuteen koodilohkoon heti `if`-lauseen jälkeen. Pythonissa koodilohkot erotetaan toisistaan sisennyksillä, jotka ovat tyypillisesti neljä välilyöntiä:
+Tarkastettava ehto kirjoitetaan `if`-avainsanan jälkeen: `if ehto:`. Ehdon toteutuessa suoritettavat koodirivit kirjoitetaan uuteen koodilohkoon heti `if`-lauseen jälkeen. Pythonissa koodilohkot erotetaan toisistaan sisennyksillä, jotka ovat tyypillisesti neljä välilyöntiä:
 
 ```python
 if ehto:
