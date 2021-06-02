@@ -13,16 +13,29 @@ __links__:
       name: slides
 ---
 
-Merkkijonon pituus, osajonot, metodit
+Tällä oppitunnilla perehdymme tarkemmin jo aikaisemmilta viikoilta tuttuihin merkkijonoihin. Opettelemme muotoilemaan merkkijonoja tehokkaammin Pythonin `f''`-syntaksilla, muuttamaan eri kirjaimet eri kokoisiksi sekä poimimaan merkkijonoista osia.
 
 
-* [PY4E: Strings](https://www.py4e.com/lessons/strings)
+**Sisällysluettelo**
+
+<div class="js-toc"></div>
+
+
+**Suositeltavaa luettavaa**
+
+* Ohjelmoinnin perusteet (mooc.fi): [Merkkijonojen käsittely](https://ohjelmointi-21.mooc.fi/osa-3/2-merkkijonojen-kasittely)
+* Python for Everybody (py4e.com): [Strings](https://www.py4e.com/lessons/strings)
+* Python documentation (docs.python.org): [Text Sequence Type — str](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+* Python 3 – ohjelmointiopas: [sivut 15-20](http://urn.fi/URN:ISBN:978-952-335-622-1)
+
 
 
 
 ## Merkkijonot
 
-Pythonin merkkijonoissa voidaan käyttää joko heittomerkkejä `'` tai lainausmerkkejä `"`. Moniriviset merkkijonot aloitetaan ja päätetään kolmella merkillä. Merkkijonojen yhdistämiseen voidaan käyttää `+` -merkkiä:
+Pythonin merkkijonoissa voidaan käyttää joko heittomerkkejä `'` tai lainausmerkkejä `"`. Sillä, kumpia merkkejä käytät merkkijonosi ympärillä, ei ole käytännössä merkitystä. Tärkeintä on käyttää systemaattisesti jompaa kumpaa tapaa.
+
+Merkkijonojen yhdistämiseen voidaan käyttää `+` -merkkiä:
 
 ```python
 kaupunki = 'Helsinki'
@@ -46,17 +59,23 @@ TypeError: can only concatenate str (not "int") to str
 Tämän ongelman kiertämiseksi edellisessä esimerkissä väkiluku on ensin muutettu merkkijonoksi (string): `str(vakiluku)`.
 
 
-
-
 ## Formatting Strings
 
-Python 3:ssa merkkijonojen yhdistelemiseksi on myös plus-merkkiä kätevämpi tapa, eli [formatted string literals](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals):
+Python 3:ssa merkkijonojen yhdistelemiseksi on myös plus-merkkiä kätevämpiä tapoja, joita käsitellään seuraavalla videolla:
+
+<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-11-of-44-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [11 of 44] Formatting Strings - Microsoft Channel 9 Video"></iframe>
+
+
+Soveltaen videolla esitettyä [formatted string literals](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) -syntaksia, aiempi kaupungin nimen ja väkiluvun tulostaminen voidaan kirjoittaa kätevämmin:
 
 ```python
 kaupunki = 'Helsinki'
 vakiluku = 648_553
+
 print(f'Kaupungissa {kaupunki} on {vakiluku} asukasta!')
 ```
+
+Koodin tuloste on edelleen identtinen:
 
 ```
 Kaupungissa Helsinki on 648553 asukasta!
@@ -65,116 +84,184 @@ Kaupungissa Helsinki on 648553 asukasta!
 Yllä muotoiluja sisältävän merkkijonon eteen on laitettu f-kirjain ja merkkijonoon sijoitettavat arvot on kirjoitettu aaltosulkujen sisään:
 
 ```python
-muotoiltu = f'merkkijono {muuttuja}'
+muuttuja = 'mikä tahansa arvo'
+muotoiltu = f'{muuttuja} voidaan sijoittaa merkkijonoon!'
+
+print(muotoiltu)  # mikä tahansa arvo voidaan sijoittaa merkkijonoon!
 ```
 
+Huomaa, että `'{muuttuja} voidaan sijoittaa merkkijonoon!'` ei toimi toivotulla tavalla ilman merkkijonon edessä olevaa `f`-kirjainta.
 
-<iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-11-of-44-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [11 of 44] Formatting Strings - Microsoft Channel 9 Video"></iframe>
-
-## Demo: Formatting Strings
+Seuraavalla videolla esitellään vielä yksi vaihtoehtoinen tapa arvojen sisällyttämiseksi merkkijonoihin, eli merkkijonojen `format`-metodi:
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-12-of-44-Demo-Formatting-Strings/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [12 of 44] Demo: Formatting Strings - Microsoft Channel 9 Video"></iframe>
 
-## Merkkijonojen käsittely
 
-Pythonissa merkkijonojen merkkejä ja osamerkkijonoja voidaan hakea indeksien avulla. Yksi numero tarkoittaa yksittäistä merkkiä, kun taas `i:j` tarkoittaa väliä. Jos alku- tai loppuindeksi jätetään ilmoittamatta, käytetään alkuna nollaa ja loppuna merkkijonon viimeistä merkkiä. Python sallii myös negatiiviset indeksit, jotka lasketaan merkkijonon lopusta lähtien!
 
-```python
-kaupunki = 'Helsinki'
-kaupunki[0]     # 'H'
-kaupunki[0:2]   # 'He'
-kaupunki[2:4]   # 'ls'
-kaupunki[-1]    # 'i'
-kaupunki[-2:]   # 'ki'
-```
+## Kirjainkoon muuttaminen
 
-Tavallisten `upper` ja `lower` -metodien lisäksi Pythonin merkkijonoilla on kätevä `title`-metodi:
+Pythonissa on useita eri metodeja merkkijonon kirjainkoon vaihtamiseksi. Merkkijonon kaikki merkit saadaan isoiksi `upper()`-metodilla ja pieniksi `lower()`-metodilla:
 
 ```python
 kaupunki = 'vantaa'
-kaupunki.upper() # 'VANTAA'
-kaupunki.lower() # 'vantaa'
-kaupunki.title() # 'Vantaa'
+
+print(kaupunki.upper())       # 'VANTAA'
+print(kaupunki.lower())       # 'vantaa'
 ```
+
+`upper()` ja `lower()` ovat erityisen käteviä silloin, kun vertaat käyttäjän kirjoittamaa merkkijonoa johonkin ennalta tunnettuun. Et voi olla varma käyttäjän tekstin kirjainkoosta, mutta kutsumalla sille `lower()`-metodia saat merkkijonon varmasti oikeaan muotoon:
+
+```python
+vastaus = input('Haluatko jatkaa? ')
+
+if vastaus.lower() == 'kyllä':
+  print('jatketaan')
+```
+
+`title()`-metodi muuttaa jokaisen sanan alkukirjaimen isoksi ja muut pieniksi, kun taas `capitalize()` muuttaa vain merkkijonon ensimmäisen kirjaimen isoksi:
+
+```python
+elokuva = 'the dark knight'
+
+print(elokuva.title())       # The Dark Knight
+print(elokuva.capitalize())  # The dark knight
+```
+
+**Huomaa, että Pythonin merkkijonot ovat muuttumattomia.** Edellä mainitut metodit eivät siis muuta alkuperäistä merkkijonoa, vaan ne luovat siitä kopioita, jotka voit esimerkiksi tulostaa tai asettaa talteen muuttujaan.
+
+
+## Tyhjien merkkien poistaminen alusta ja lopusta
+
+Merkkijonojen metodi `strip()` poistaa tyhjät merkit merkkijonon alusta ja lopusta:
+
+```python
+siistitty = ' käyttäjän syöte voi päättyä tyhjiin merkkeihin '.strip()
+
+print(siistitty) # 'käyttäjän syöte voi päättyä tyhjiin merkkeihin'
+```
+
+Huomaa, että tämäkään metodi ei muuta alkuperäistä merkkijonoa, vaan palauttaa siitä lyhennetyn kopion.
+
+
+## Moniriviset merkkijonot
+
+Moniriviset merkkijonot aloitetaan ja päätetään kolmella merkillä:
+
+```python
+loru = """Kuita nelisen kiurusta kesään
+
+Pari kolme peipposesta
+
+Västäräkistä vähintään puolitoista 
+
+Pääskysestäkin vielä pitkään"""
+
+print(loru)
+
+# Loru: Maija Tuunila ja Antto Mäkinen. https://yle.fi/uutiset/3-9587146
+```
+
+Monirivisten merkkijonojen sisentämisessä on omat haasteensa, joita käsitellään esimerkiksi [tässä keskustelussa](https://stackoverflow.com/questions/2504411/proper-indentation-for-python-multiline-strings).
+
+
+
+## Erikoismerkit
+
+Kaikkia erikoismerkkejä ei voida esittää sellaisenaan merkkijonoissa. Esimerkiksi lainausmerkki merkkijonon sisällä voi sekoittua merkkijonon päättävään lainausmerkkiin. Erikoismerkit täytyykin esittää erityisten kontrollimerkkien avulla:
+
+Syntaksi       | Kuvaus
+---------------| ------
+`\t`           | Lisää sisennyksen merkkijonoon
+`\n`           | Lisää rivinvaihdon merkkijonoon
+`\"`           | Lisää lainausmerkin merkkijonoon
+`\\`           | Lisää kenoviivan merkkijonoon
+
+Jos siis haluat esittää merkkijonossa esimerkiksi hakemistopolun 'C:\Users\Minä\Documents\', joudut käyttämään kenoviivan kohdalla kontrollimerkkiä:
+
+```python
+polku = 'C:\\Users\\Minä\\Documents\\'
+
+print(polku)  # C:\Users\Minä\Documents\
+```
+
+Tapauksesta riippuen kenoviivoja joudutaan joskus laittamaan hyvin monia peräkkäin:
+
+[![Backslashes](https://imgs.xkcd.com/comics/backslashes.png)](https://xkcd.com/1638/)
+
+Kuva: [XKCD, Backslashes](https://xkcd.com/1638/). Creative Commons Attribution-NonCommercial 2.5
+
+
+## Merkkijonon pituus
+
+Pythonin funktio `len` palauttaa sille annetun merkkijonon pituuden. Välilyönnit, erikoismerkit ja rivinvaihdot lasketaan kukin yhden merkin pituisiksi, vaikka ne esitettäisiinkin lähdekoodissa kontrollimerkkien avulla:
+
+```python
+pituus = len('C:\\Users\\Minä\\Documents\\') # 24
+```
+
+## Merkit ja osajonot
+
+Pythonissa merkkijonojen merkkejä ja osamerkkijonoja voidaan hakea hakasulkujen ja indeksien avulla. Huomaa, että indeksit alkavat aina nollasta:
+
+```python
+pvm = '2022-06-01'
+
+print(pvm[0])   # '2'
+print(pvm[1])   # '0'
+```
+
+Osamerkkijonoja puolestaan voidaan hakea antamalla yhden indeksin sijasta kaksi indeksiä: `[alku:loppu]`:
+
+```python
+pvm = '2022-06-01'
+
+print(pvm[0:4])   # '2022'
+print(pvm[5:7])   # '06'
+```
+
+Python sallii myös negatiiviset indeksit, jotka lasketaan merkkijonon lopusta lähtien:
+
+```python
+pvm = '2022-06-01'
+
+print(pvm[-2])   # 0
+print(pvm[-1])   # 1
+```
+
+Perehdy merkkijonojen leikkauksiin ja osanojoihin tarkemmin mooc.fi:n ohjelmoinnin perusteet -kurssin [Osajonot-kappaleen avulla](https://ohjelmointi-21.mooc.fi/osa-3/2-merkkijonojen-kasittely#osajonot)!
+
+
+
+## Merkkijonojen toistaminen
+
+Vähemmän käytetty, mutta toisinaan hyödyllinen ominaisuus Pythonin merkkijonojen parissa on merkkijonojen toistaminen kertomalla ne tietyllä kokonaisluvulla. Toistaminen voi tulla hyödyksi esimerkiksi silloin, kun haluat korostaa tai sisentää tulostettavaa tekstiä:
+
+```python
+otsikko = 'Merkkijonojen toistaminen'
+
+print(otsikko)
+print('=' * len(otsikko))
+```
+
+Yllä oleva koodi tulostaa ensin otsikon, ja sen jälkeen toistaa otsikon pituuden verran `=`-merkkiä:
+
+```
+Merkkijonojen toistaminen
+=========================
+```
+
+Toisto-operaation tuloksena syntyy aivan tavallisia uusia merkkijonoja, joita voit muiden merkkijonojen tapaan yhdistellä, tulostaa tai käsitellä muilla tavoin:
+
+```python
+print('we will ' * 2 + 'rock you!') # we will we will rock you!
+```
+
+## Osajonojen etsiminen
 
 Merkkijonojen sisältämiä osamerkkijonoja voidaan selvittää `in`-operaation avulla:
 
 ```python
-'java' in 'javascript'  # True
-'ham' in 'hamster'      # True
+print('java' in 'javascript')  # True
+print('ham' in 'hamster')      # True
 ```
 
-
-
-
-## import-käsky
-
-Pythonissa sekä kielen standardikirjaston moduulit että omat ja `pip`-komennolla asennetut moduulit voidaan ottaa käyttöön `import`-käskyllä:
-
-```python
->>> import math
->>> math.pi
-3.141592653589793
->>> round(math.pi, 5)
-3.14159
->>> math.floor(math.pi)
-3
->>> math.ceil(math.pi)
-4
-```
-
-Yksittäisiä funktioita, arvoja tai luokkia voidaan ottaa käyttöön syntaksilla `from moduuli import asia`:
-
-```python
->>> from math import log2
->>> log2(50_000)
-15.609640474436812
-```
-
-**Bonus**: Kokeile myös seuraavia:
-
-```python
-import __hello__
-import antigravity
-import this
-```
-
-
-
-
-## Valikoituja hyödyllisiä komentoja
-
-**help** -funktio näyttää ohjeita sille annetun arvon tai funktion käyttämiseksi:
-
-    >>> help(print)
-    Help on built-in function print in module builtins:
-
-    print(...)
-        print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
-
-        Prints the values to a stream, or to sys.stdout by default.
-        Optional keyword arguments:
-        file:  a file-like object (stream); defaults to the current sys.stdout.
-        sep:   string inserted between values, default a space.
-        end:   string appended after the last value, default a newline.
-        flush: whether to forcibly flush the stream.
-
-**type** -funktio kertoo sille annetun arvon tyypin:
-
-    >>> type(mysteerimuuttuja)
-    <class 'list'>
-
-**dir** -funktio kertoo moduulin sisältämät arvot, funktiot ja luokat:
-
-    >>> import math
-    >>> dir(math)
-    ['__doc__', '__loader__', '__name__', '__package__', 
-    '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 
-    'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 
-    'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 
-    'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd',
-    'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 
-    'isqrt', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 
-    'modf', 'nan', 'perm', 'pi', 'pow', 'prod', 'radians', 
-    'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 
-    'trunc']
