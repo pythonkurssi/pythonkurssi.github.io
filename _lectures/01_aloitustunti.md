@@ -194,6 +194,16 @@ Vaikka `+`-operaatio toimii sekä merkkijonojen että numeroiden kanssa, et voi 
 
 <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-13-of-44-Numeric-Data-Types/player" width="640" height="360" allowFullScreen frameBorder="0" title="Python for Beginners [13 of 44] Numeric Data Types - Microsoft Channel 9 Video"></iframe>
 
+## Muuttujien nimeäminen
+
+> Muuttujan nimi on esimerkki tunnisteesta. Tunniste tarkoittaa nimeä, jolla yksilöidään jokin tietty asia. Samanniminen muuttuja ei siis voi kohdistua kahteen sisältöön. Muuttujien nimeäminen on melko vapaata, joskin seuraavat säännöt pätevät muuttujien sekä kaikkeen muuhunkin nimeämiseen Pythonissa:
+>
+> * Nimen ensimmäinen merkki on oltava kirjain (iso tai pieni) taikka alaviiva '_'.
+> * Loput merkit voivat olla joko kirjaimia (isoja tai pieniä), alaviivoja tai numeroita (0-9).
+> * Skandinaaviset merkit (å, ä, ö, Å, Ä, Ö) ja välilyönnit eivät kelpaa muuttujien nimiin. Huom. Python 3:n myötä ääkköset periaatteessa käyvät, mutta niitä EI tule käyttää.
+> * Nimet ovat aakkoskoosta riippuvaisia (eng. case sensitive), eli isot ja pienet kirjaimet ovat tulkille eri merkkejä. Tulkin kannalta ”talo” ja ”Talo” ovat eri sanoja samalla tavoin kuin ”talo” ja ”valo”.
+>
+> *Vanhala, E., Nikula, U. (2020). [Python 3 – ohjelmointiopas versio 1.2.1](http://urn.fi/URN:ISBN:978-952-335-622-1). LUT-yliopisto. [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)*
 
 ## Pythonin laskuoperaattorit
 
