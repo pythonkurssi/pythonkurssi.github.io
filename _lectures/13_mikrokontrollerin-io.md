@@ -25,17 +25,21 @@ Tämän oppitunnin aikana perehdymme sensorien ja ohjattavien laitteiden kytkemi
   * servo
   * DC-moottori)
 
-## Digitaaliset syötteet
+## Esimerkkiprojekti
 
-TODO: digitaalisen signaalin lukeminen
+Oppitunnilla perehdytään etäisyyttä, lämpötilaa, kosteutta ja liikettä mittaavaan esimerkkiprojektiin, joka löytyy osoitteesta [https://github.com/pythonkurssi/esp32-sensor-demo](https://github.com/pythonkurssi/esp32-sensor-demo).
 
-TODO: pull-up- ja pull-down-vastukset
+<!-- ## Digitaaliset syötteet -->
 
-## Painikkeeseen reagointi
+<!-- TODO: digitaalisen signaalin lukeminen -->
 
-TODO: Digitaalisen pinnin alustaminen
+<!-- TODO: pull-up- ja pull-down-vastukset -->
 
-TODO: Arvon lukeminen ja arvojen heilahteluun varautuminen
+<!-- ## Painikkeeseen reagointi -->
+
+<!-- TODO: Digitaalisen pinnin alustaminen -->
+
+<!-- TODO: Arvon lukeminen ja arvojen heilahteluun varautuminen -->
 
 
 ## Analogiset syötteet
@@ -142,12 +146,13 @@ Arduinon esimerkki *LEDCSoftwareFade* toimii, kun muuttaa siitä piirilevyn LED-
 #define LED_PIN            4
 ```
 
+## Lisämateriaalit
 
-## Tutoriaali
+**Tutoriaali**
 
 Freenove-tutoriaali: [https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit/blob/master/Tutorial.pdf)
 
 
-## Lämpötilasensorin käyttäminen
+**Lämpötilasensorin käyttäminen**
 
 [Using a Temperature Sensor with Micropython running on an Adafruit Feather Huzzah ESP8266](https://pythonforundergradengineers.com/micropython-temp-sensor.html)

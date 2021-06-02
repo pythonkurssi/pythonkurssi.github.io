@@ -14,11 +14,11 @@ __links__:
       name: slides
 ---
 
-Mikrokontrollerin liittäminen langattomaan lähiverkkoon.
+**Tämän oppitunnin aiheita:**
 
-Tiedoston lukeminen verkosta.
-
-ISO/OSI-mallin mukaiset kerrokset vs. IoT-protokollakerrokset
+* Mikrokontrollerin liittäminen langattomaan lähiverkkoon.
+* Tiedoston lukeminen verkosta.
+* ISO/OSI-mallin mukaiset kerrokset vs. IoT-protokollakerrokset
 
 Protokollat:
 
@@ -31,3 +31,10 @@ Protokollat:
 * LTE, HSPA
 * 433 MHz...
 
+## Oppitunnin esimerkkiprojektit
+
+Telegram-viestien lähettäminen ja vastaanottaminen mikrokontrollerilla: [https://github.com/pythonkurssi/micropython-utelegram](https://github.com/pythonkurssi/micropython-utelegram)
+
+Lämpötila-, kosteus- ja kaasusensorin tietojen välittäminen MQTT-palvelimelle MicroPythonilla: [https://github.com/pythonkurssi/environmental-development-board](https://github.com/pythonkurssi/environmental-development-board)
+
+ESP32:n käyttäminen tukiasemana oikeaan Wifi-verkkoon yhdistämiseksi: WifiManager [https://github.com/pythonkurssi/WiFiManager](https://github.com/pythonkurssi/WiFiManager)

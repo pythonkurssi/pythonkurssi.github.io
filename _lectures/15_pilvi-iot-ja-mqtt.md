@@ -14,15 +14,26 @@ __links__:
       name: slides
 ---
 
-Sensorien lukemien lähettäminen MQTT-viestien avulla.
+## Sensorien lukemien lähettäminen MQTT-viestien avulla.
 
-Liitäntöjen ohjaaminen vastaanotettujen viestien avulla.
 
-https://pypi.org/project/micropython-umqtt.simple/
 
-How mqtt works?
+## Liitäntöjen ohjaaminen vastaanotettujen viestien avulla.
+
+[https://pypi.org/project/micropython-umqtt.simple/](https://pypi.org/project/micropython-umqtt.simple/)
+
+## How mqtt works?
 
 * publisher, subscriber and broker
 * topics and messages
 * Quality of Service (0, 1, 2)
 * HTTP vs. MQTT
+
+## Kurssin aiheiden soveltaminen IoT-projektissa.
+
+**Aihe-ehdotukset:**
+
+* Pysäköintitutka
+* WiFi-skanneri
+* Reaktiopeli
+* Langaton hälytinjärjestelmä
