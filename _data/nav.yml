@@ -11,9 +11,9 @@ items:
   name: Oppitunnit
   icon_class: fas fa-book-reader
   
-- url: /assignments/
-  name: Tehtävät
-  icon_class: fas fa-user-graduate
+#- url: /assignments/
+#  name: Tehtävät
+#  icon_class: fas fa-user-graduate
 
 - url: /licenses/
   name: Lisenssit
