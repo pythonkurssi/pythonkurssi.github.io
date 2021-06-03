@@ -13,7 +13,6 @@ __links__:
       name: slides
 ---
 
-**Sisällysluettelo**
 
 Olemme käyttäneet tällä ohjelmointikurssilla aikaisempien aiheiden yhteydessä lukuisia valmiita funktioita, kuten `input`, `round`, `floor`, `ceil`, `range` ja `print`. Funktiot ovat olleet luonteva osa ongelmanratkaisua, vaikka emme ole toistaiseksi kiinnittäneet niihin suurta huomiota tai toteuttaneet omia funktioita.
 
@@ -21,6 +20,7 @@ Tällä kertaa perehdymme tarkemmin omien funktioiden toteuttamiseen ja kutsumis
 
 Syitä oman ohjelman jakamiseksi useisiin funktioihin on lukuisia. Ensinnäkin niiden avulla voidaan vähentää toisteisuutta, jos samoja operaatioita tehdään useita kertoja tai useissa eri kohdissa koodia. Toiseksi funktioiden avulla voidaan vähentää kompleksisuutta, eli pilkkoa iso monimutkainen kokonaisuus pienemmiksi, helpommin ymmärrettäviksi paloiksi. 
 
+**Sisällysluettelo**
 
 <div class="js-toc"></div>
 
