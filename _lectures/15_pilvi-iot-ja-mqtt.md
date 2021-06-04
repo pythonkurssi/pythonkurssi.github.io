@@ -20,13 +20,17 @@ __links__:
 
 <div class="js-toc"></div>
 
-
-## Sensorien lukemien lähettäminen MQTT-viestien avulla
+## ESP32 MicroPython MQTT Tutorial with Raspberry Pi, DHT-22 & OLED
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_vcQTyLU1WY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Liitäntöjen ohjaaminen vastaanotettujen viestien avulla.
+## Sensorien lukemien lähettäminen MQTT-viestien avulla
+
+Lämpötila-, kosteus- ja kaasusensorin tietojen välittäminen MQTT-palvelimelle MicroPythonilla: [https://github.com/pythonkurssi/environmental-development-board](https://github.com/pythonkurssi/environmental-development-board)
+
+
+## Liitäntöjen ohjaaminen vastaanotettujen viestien avulla
 
 [https://pypi.org/project/micropython-umqtt.simple/](https://pypi.org/project/micropython-umqtt.simple/)
 
@@ -39,10 +43,9 @@ __links__:
 
 ## Oppitunnin esimerkkiprojektit
 
-Lämpötila-, kosteus- ja kaasusensorin tietojen välittäminen MQTT-palvelimelle MicroPythonilla: [https://github.com/pythonkurssi/environmental-development-board](https://github.com/pythonkurssi/environmental-development-board)
 
 
-## Kurssin aiheiden soveltaminen IoT-projektissa.
+## Kurssin aiheiden soveltaminen IoT-projektissa
 
 **Aihe-ehdotukset:**
 
