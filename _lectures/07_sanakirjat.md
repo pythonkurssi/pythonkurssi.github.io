@@ -16,101 +16,185 @@ __links__:
       name: Python mooc
 ---
 
-Tällä oppitunnilla opettelemme käsittelemään dataa avainten ja arvojen pareina.
+> Lista on kätevä tietorakenne, mutta sen rajoituksena on, että alkiot ovat indekseissä 0, 1, 2, jne. Tämä hankaloittaa alkioiden etsimistä listalta: jotta löydämme tietyn alkion, on pahimmassa tapauksessa käytävä läpi koko lista.
+>
+> Tutustumme seuraavaksi sanakirjaan, (englanniksi dictionary) joka on listan lisäksi toinen Pythonin perustietorakenne. Sanakirjassa jokainen alkio koostuu avaimesta ja arvosta, ja voimme etsiä ja muuttaa tietoa avaimen perusteella.
+>
+> *[Agile Education Research -tutkimusryhmä](https://www.helsinki.fi/en/researchgroups/data-driven-education). [Sanakirja](https://ohjelmointi-21.mooc.fi/osa-5/3-dictionary). [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)*
 
-Oppitunnin aiheet:
 
-1. Sanakirjan luominen
-1. Arvojen lisääminen sanakirjaan
-1. Arvojen poistaminen sanakirjasta
-1. Sanakirjan läpikäynti
-1. Avainten ja arvojen etsiminen
+**Sisällysluettelo**
 
-## Suositeltavaa luettavaa
+<div class="js-toc"></div>
 
-* [PY4E: Dictionaries](https://www.py4e.com/html3/09-dictionaries)
-* [Sanakirjat Pythonin dokumentaatiossa](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
-## Sanakirjat (dict)
+Tämän oppitunnin sivu toimii muistilappuna erilaisista listaoperaatioista, joten tarvitset aiheen syvälliseksi ymmärtämiseksi myös muuta lähdemateriaalia esimerkiksi seuraavista lähteistä:
 
-Pythonin sanakirjarakenne muistuttaa monilla tavoilla JSON-tietorakenteita, JavaScript-kielen objekteja sekä Javan map-tietorakenteita. Ne ovat siis kokoelmia avain-arvo-pareja:
+
+* Ohjelmoinnin perusteet (mooc.fi): [Sanakirja](https://ohjelmointi-21.mooc.fi/osa-5/3-dictionary)
+* Python for Everybody (py4e.com): [Dictionaries](https://www.py4e.com/html3/09-dictionaries)
+* Python documentation (docs.python.org): [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+* Python 3 – ohjelmointiopas: [luku 10](http://urn.fi/URN:ISBN:978-952-335-622-1)
+
+
+
+## Sanakirjan luonti
+
+Pythonin sanakirjarakenne muistuttaa monilla tavoilla JSON-tietorakenteita, JavaScript-kielen objekteja sekä Javan map-tietorakenteita. Ne ovat siis kokoelmia avain-arvo-pareja. Toisin kuin listoissa, arvoja ei käsitellä pelkästään numeeristen indeksien avulla, vaan voimme määritellä avaimiksi halutessamme vaikka merkkijonoja:
+
 
 ```python
 vakiluvut = {
-    'Helsinki': 648553,
-    'Espoo': 285018,
-    'Vantaa': 229593
+    'Helsinki': 648_553,
+    'Espoo': 285_018,
+    'Vantaa': 229_593
 }
+
+print(vakiluvut)  # {'Helsinki': 648553, 'Espoo': 285018, 'Vantaa': 229593}
 ```
 
-Arvojen hakeminen, lisääminen ja korvaaminen toimivat kuten JavaScriptissä:
+Yllä olevassa esimerkissä sanakirjan **avaimet**  ovat merkkijonoja eli kaupunkien nimiä. Avaimina voidaan käyttää monipuolisesti eri tyyppejä, kuten merkkijonoja tai numeroita. Huomaa, että merkkijonon kirjainkoolla on tässäkin merkitystä, eli `'Helsinki'` on eri avain kuin `'helsinki'`.
+
+Kutakin **avainta** vastaa sanakirjassa yksi **arvo**. Tässä esimerkissä arvot ovat tiettyyn kaupunkiin kuuluvia väkilukuja, eli kokonaislukuja (int). Arvoina voidaan tallentaa **mitä tahansa tyyppejä** ja sama arvo voi esiintyä sanakirjassa moneen kertaan. Monimutkaisemmissa ohjelmissa arvoina on tyypillisesti myös sisäkkäisiä sanakirjoja.
+
+Sanakirjat luodaan usein tyhjinä, ja niihin kerätään aineistoa muista lähteistä, kuten komentoriviltä tai tiedostoista. Tyhjä sanakirja voidaan luoda Pythonissa vastaavasti tyhjien aaltosulkujen `{}` avulla:
 
 ```python
->>> # Arvon hakeminen:
->>> vakiluvut['Helsinki']
-648553
->>> 
->>> # Arvon lisääminen:
->>> vakiluvut['Turku'] = 186_756
->>>
->>> # Arvon asettaminen (ja hakeminen):
->>> vakiluvut['Helsinki'] = vakiluvut['Helsinki'] + 1
+vakiluvut = {}
 ```
 
-Sanakirjan avaimet ja arvot omina kokoelminaan:
+
+## Arvojen asettaminen
+
+Sanakirjaan lisätään arvoja hakasulkujen `[]` avulla. Hakasulkujen sisään kirjoitetaan se **avain**, jolle uusi **arvo** halutaan asettaa.
 
 ```python
->>> vakiluvut.keys()
-dict_keys(['Helsinki', 'Espoo', 'Vantaa', 'Turku'])
->>>
->>> vakiluvut.values()
-dict_values([648554, 285018, 229593, 186756])
+vakiluvut = {}
+
+# 'Turku' on avain, 186_756 on arvo:
+vakiluvut['Turku'] = 186_756
 ```
 
-Jos haluat selvittää, löytyykö tiettyä avainta tai arvoa sanakirjasta, voit käyttää `in`-operaatiota:
+Mikäli kyseinen arvo löytyy jo valmiiksi sanakirjasta, uusi arvo korvaa vanhan arvon.
+
+
+## Arvojen hakeminen
 
 ```python
->>> 'Helsinki' in vakiluvut
-True
->>>
->>> # in tarkistaa vain avaimista:
->>> 648554 in vakiluvut
-False
->>> 
->>> # voit tehdä tarkistuksen myös suoraan sanakirjan arvoihin
->>> 648554 in vakiluvut.values()
-True
+vakiluvut = { 'Helsinki': 648_553, 'Espoo': 285_018, 'Vantaa': 229_593 }
 
+# Arvon hakeminen tietyllä arvolla
+hki_vakiluku = vakiluvut['Helsinki']
+
+print(hki_vakiluku)   # 648553
 ```
 
-Sanakirjan avaimia ja arvoja voidaan käsitellä myös pareina (monikkoina):
+## Olemattoman arvon hakeminen
+
+Mikäli haet hakasulkujen avulla arvoa, jota ei löydy sanakirjasta, aiheutuu siitä `KeyError`-virhe!
 
 ```python
->>> vakiluvut.items()
-dict_items([('Helsinki', 648554), ('Espoo', 285018), ('Vantaa', 229593), ('Turku', 186756)])
+vakiluvut = { 'Helsinki': 648_553, 'Espoo': 285_018, 'Vantaa': 229_593 }
+
+oulu_vakiluku = vakiluvut['Oulu'] # Virhe!
 ```
+
+Normaalitapauksessa edellä esiintyvä virhe kaataa ohjelman seuraavan ilmoituksen kaltaisella virheilmoituksella:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Oulu'
+```
+
+## Arvojen tarkastaminen
+
+Edellä esiintynyt ongelma ohjelman kaatumisesta avaimen puuttuessa voidaan ratkaista monella tapaa. Yksi suoraviivainen tapa on tarkistaa `in`-operaatiolla, löytyykö kyseistä avainta sanakirjasta:
+
+
+```python
+vakiluvut = { 'Helsinki': 648_553, 'Espoo': 285_018, 'Vantaa': 229_593 }
+
+if 'Oulu' in vakiluvut:
+    print(vakiluvut['Oulu'])
+else:
+    print('Oulun väkilukua ei löytynyt')
+```
+
+
+## get-metodi
+
+Hakasulkujen lisäksi sanakirjasta voidaan hakea arvoja `get`-metodilla:
+
+```
+>>> help(dict.get)
+Help on method_descriptor:
+
+get(self, key, default=None, /)
+    Return the value for key if key is in the dictionary, else default.
+```
+
+Yllä on esitetty esimerkki Pythonin `help`-funktion käyttämisestä metodin dokumentaation lukemiseksi. Ohjeesta voidaan lukea, että metodille annetaan parametrina avain, sekä vapaaehtoinen oletusarvo, joka palautetaan jos avainta ei löydy sanakirjasta. Mikäli oletusarvoa ei anneta, palautuu tuloksena `None`, jos avainta ei löydy:
+
+```python
+vakiluvut = { 'Helsinki': 648_553, 'Espoo': 285_018, 'Vantaa': 229_593 }
+
+luku = vakiluvut.get('Oulu', 0)
+
+print(luku)   # 0
+```
+
+
+## Avainten ja arvojen poistaminen sanakirjasta
+
+Avain-arvo-parit voidaan poistaa sanakirjasta `del`-operaattorilla kuten poistimme arvoja listoilta:
+
+```python
+vakiluvut = { 'Helsinki': 648_553, 'Espoo': 285_018, 'Vantaa': 229_593 }
+
+print('Helsinki' in vakiluvut)  # True
+
+del vakiluvut['Helsinki']
+
+print('Helsinki' in vakiluvut)  # False
+```
+
+## Sanakirjan läpikäynti (avaimet)
 
 Sanakirjan avaimet voidaan käydä läpi yksinkertaisella `for`-toistorakenteella:
 
 ```python
->>> for avain in vakiluvut:
-...     print(avain)
-... 
+vakiluvut = { 'Helsinki': 648_553, 'Espoo': 285_018, 'Vantaa': 229_593 }
+
+for avain in vakiluvut:
+    print(avain)
+```
+
+Edellä esitetty koodi tulostaa yksi kerrallaan kaikki **avaimet**:
+
+```
 Helsinki
 Espoo
 Vantaa
-Turku
 ```
 
-Jos toistossa halutaan käsitellä sekä avaimia että arvoja, kannattaa ne käydä läpi pareina (ks. yllä items() sekä monikot):
+## Sanakirjan läpikäynti (avaimet ja arvot)
+
+Voimme jatkojalostaa edellä esitettyä toistorakennetta sekä avaimien että arvojen läpikäymiseksi. Käsitellessämme kutakin **avainta**, voimma käyttää sitä hakeaksemme samasta sanakirjasta sitä vastaavan **arvon**:
 
 ```python
->>> for nimi, luku in vakiluvut.items():
-...     print(f'{nimi} ({luku})')
-... 
-Helsinki (648554)
-Espoo (285018)
-Vantaa (229593)
-Turku (186756)
+vakiluvut = { 'Helsinki': 648_553, 'Espoo': 285_018, 'Vantaa': 229_593 }
+
+for avain in vakiluvut:
+    vakiluku = vakiluvut[avain]  # hakee vuorollaan kutakin nimeä vastaavan väkiluvun
+    print(avain, vakiluku)
+```
+
+Tällä kertaa toistorakenteessa tulostetaan:
+
+```
+Helsinki 648553
+Espoo 285018
+Vantaa 229593
 ```
 
