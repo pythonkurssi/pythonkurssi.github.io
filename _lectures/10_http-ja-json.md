@@ -13,7 +13,20 @@ __links__:
       name: slides
 ---
 
+> Pythonin standardikirjaston funktion [urllib.request.urlopen](https://docs.python.org/3/library/urllib.request.html#urllib.request.urlopen) avulla on helppo hakea internetistä sisältöä ohjelmista käsin.
+>
+>Esim. seuraava koodi tulostaa Helsingin yliopiston etusivun sisällön:
+>
+>      import urllib.request
+>
+>      pyynto = urllib.request.urlopen("https://helsinki.fi")
+>      print(pyynto.read())
+>
+> Ihmisille tarkoitetut sivut tosin eivät tulostu kovin selkeinä, mutta internetissä on myös runsaasti koneluettavaa dataa, joka on usein JSON-muodossa.
+>
+> *[Agile Education Research -tutkimusryhmä](https://www.helsinki.fi/en/researchgroups/data-driven-education). [Netissä olevan tiedon hakeminen](https://ohjelmointi-21.mooc.fi/osa-7/4-datan-kasittely#netissa-olevan-tiedoston-hakeminen). [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)*
 
+Tällä oppitunnilla perehdymme tiedon hakemiseen internetistä ja ladatun tiedon käsittelemiseen Pythonilla.
 
 **Sisällysluettelo**
 
@@ -69,7 +82,7 @@ JSON-muotoisen merkkijonon parsiminen Pythonin tietorakenteiksi onnistuu standar
 Hyväksyttyyn suoritukseen sinun ei tarvitse toteuttaa kumpaakaan tehtävää täydellisesti. Palauta siis ohjelmat siinä kunnossa mihin saat ne toteutettua. Arviointi skaalataan suuntaa-antavasti siten, että ensimmäisen tehtävän ratkaisulla saat arvosanan 3 ja **molemmat tehtävät** ratkaisemalla arvosanan 5.
 
 
-## Osa 1 (arvosanatavoite 3)
+## Osa 1
 
 Kirjoita Python-kielinen ohjelma `postitoimipaikka.py`, joka kysyy  käyttäjältä postinumeron ja kertoo, mihin postitoimipaikkaan kyseinen postinumero kuuluu. 
 
@@ -82,7 +95,7 @@ Esimerkkisuoritus:
     Kirjoita postinumero: 00100
     HELSINKI
 
-## Osa 2 (arvosanatavoite 5)
+## Osa 2
 
 Kirjoita Python-kielinen ohjelma `postinumerot.py`, joka kysyy käyttäjältä postitoimipaikan nimen, ja listaa kaikki kyseisen postitoimipaikan postinumerot.
 
@@ -100,9 +113,9 @@ Yritä toteuttaa ohjelma siten, että syötetyn postitoimipaikan kirjainkoolla e
 
 ## Lähteitä
 
-Pythonin dict-tietorakenne, eli sanakirja, muistuttaa Javan map-tietorakennetta. Tulet tarvitsemaan sanakirjaa tausta-aineiston käsittelemisessä: [https://docs.python.org/3/tutorial/datastructures.html#dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+Tulet tarvitsemaan tausta-aineiston käsittelemisessä aikaisemmalla oppitunnilla käsiteltyä Pythonin sanakirjaa: [https://docs.python.org/3/tutorial/datastructures.html#dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
-Tiedoston lataaminen verkosta onnistuu esim Python 3: standardikirjastoon kuuluvalla `urllib`-kirjastolla: [https://docs.python.org/3/howto/urllib2.html](https://docs.python.org/3/howto/urllib2.html).
+Tiedoston lataaminen verkosta onnistuu esim Python 3:n standardikirjastoon kuuluvalla `urllib`-kirjastolla on esitetty Pythonin dokumentaatiossa: [https://docs.python.org/3/howto/urllib2.html](https://docs.python.org/3/howto/urllib2.html).
 
 JSON-muotoisen merkkijonon parsiminen Pythonin listoiksi, sanakirjoiksi ja muiksi tietorakenteiksi onnistuu standardikirjaston `json`-kirjastolla: [https://docs.python.org/3/library/json.html](https://docs.python.org/3/library/json.html).
 
