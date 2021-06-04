@@ -120,9 +120,9 @@ Ohjelman kirjoittamiseksi tiedostoon ja sen suorittamiseksi tiedostosta tarvitse
 
 ## Syötteiden lukeminen
 
-> *"Syöte tarkoittaa tietoa, jonka ohjelman käyttäjä antaa ohjelmalle. Pythonissa voimme lukea rivin käyttäjän antamaa syötettä `input`-komennolla. Komento näyttää samalla viestin käyttäjälle, jossa voi pyytää syötettä."*
+> Syöte tarkoittaa tietoa, jonka ohjelman käyttäjä antaa ohjelmalle. Pythonissa voimme lukea rivin käyttäjän antamaa syötettä `input`-komennolla. Komento näyttää samalla viestin käyttäjälle, jossa voi pyytää syötettä.
 >
-> [Agile Education Research -tutkimusryhmä](https://www.helsinki.fi/en/researchgroups/data-driven-education). [https://ohjelmointi-21.mooc.fi/osa-1/2-tietoa-kayttajalta](https://ohjelmointi-21.mooc.fi/osa-1/2-tietoa-kayttajalta). [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)
+> *[Agile Education Research -tutkimusryhmä](https://www.helsinki.fi/en/researchgroups/data-driven-education). [https://ohjelmointi-21.mooc.fi/osa-1/2-tietoa-kayttajalta](https://ohjelmointi-21.mooc.fi/osa-1/2-tietoa-kayttajalta). [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)*
 
 Alla olevassa koodiesimerkissä pyydetään käyttäjältä syötettä, eli nimeä, joka otetaan talteen `nimi`-muuttujaan:
 

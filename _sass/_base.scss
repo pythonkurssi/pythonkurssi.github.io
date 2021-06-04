@@ -144,6 +144,18 @@ blockquote {
     border: 1px solid $grey-color-light;
     border-left-width: 20px;
     padding-left: $spacing-unit / 2;
+    position: relative;
+
+    &:before {
+        content: '”';
+        position: absolute;
+        top: 0;
+        left: -17px;
+        font-size: 50px;
+        font-family: serif;
+        font-style: italic;
+        color: #777;
+    }
 
     > :last-child {
         margin-bottom: 0;
