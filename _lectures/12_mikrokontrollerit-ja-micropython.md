@@ -13,19 +13,16 @@ __links__:
       name: slides
 ---
 
-Oppitunnin aiheet:
 
-1. MicroPythonin asentaminen ESP32-mikrokontrolleriin.
-1. Koodin siirtäminen mikrokontrolleriin Ampy- tai Pymakr-työkalulla.
-1. MicroPytonin standardikirjaston käyttäminen
-1. Lämpötilasensorin lukeminen
-1. Ledin vilkuttaminen
+**Sisällysluettelo**
 
+<div class="js-toc"></div>
 
 
 ## What is MicroPython?
 
 [What is Micropython?](https://pythonforundergradengineers.com/what-is-micropython.html)
+
 
 ## Let's Get Started!
 
@@ -126,7 +123,7 @@ Hard resetting via RTS pin...
 ```
 
 
-### Putty-yhteyden testaus
+## Putty-yhteyden testaus
 
 Katso Heikki Hietalan kirjoittama ohje tekstiyhteyden muodostamiseksi Putty-sovelluksella osoitteessa [http://www.sabulo.com/sb/arduino/moving-on-from-arduino-to-esp32-part-2-micropython/](http://www.sabulo.com/sb/arduino/moving-on-from-arduino-to-esp32-part-2-micropython/).
 
@@ -148,7 +145,7 @@ Type "help()" for more information.
 ```
 
 
-### Ohjelmien siirtäminen mikrokontrolleriin
+## Ohjelmien siirtäminen mikrokontrolleriin
 
 Edellä esitetty interaktiivinen tulkki toimii komentojen kokeilemisessa. Saadaksesi ohjelmia asennettua pysyvästi mikrokontrolleriin, lähdekooditiedostot täytyy siirtää mikrokontrollerin flash-muistiin.
 
@@ -161,14 +158,14 @@ Toinen varteenotettava vaihtoehto on asentaa VS Code -työkaluun ja [Pycom](http
 Pymakr-laajennuksen käyttöohjeet löytyvät osoitteesta [https://docs.pycom.io/gettingstarted/software/vscode/](https://docs.pycom.io/gettingstarted/software/vscode/) ja itse laajennus voidaan asentaa VS Coden sovelluskaupasta: [https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr).
 
 
-### Video: MicroPython Basics: Load Files & Run Code with Tony D!
+## Video: MicroPython Basics: Load Files & Run Code with Tony D!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hrjtAYMrxF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Videon oheislukemisto: [https://learn.adafruit.com/micropython-basics-load-files-and-run-code](https://learn.adafruit.com/micropython-basics-load-files-and-run-code)
 
 
-### Ampy - Adafruit MicroPython Tool
+## Ampy - Adafruit MicroPython Tool
 
 
 > *"Ampy is meant to be a simple command line tool to manipulate files and run code on a CircuitPython or MicroPython board over its serial connection. With ampy you can send files from your computer to the board's file system, download files from a board to your computer, and even send a Python script to a board to be executed."*
@@ -196,7 +193,7 @@ Kokeile lopuksi suorittaa uusi `ampy`-komento seuraavasti:
 > ampy --help
 ```
 
-#### Tiedostojen listaaminen: `ls`
+### Tiedostojen listaaminen: `ls`
 
 Muuta seuraavassa komennossa COM4-portin tilalle oma COM-porttisi:
 
@@ -205,7 +202,7 @@ Muuta seuraavassa komennossa COM4-portin tilalle oma COM-porttisi:
 /boot.py
 ```
 
-#### Valinnainen: COM-portin tallentaminen
+### Valinnainen: COM-portin tallentaminen
 
 Voit tallentaa käyttämäsi asetukset, kuten COM-portin, erilliseen asetustiedostoon [Ampy-työkalun dokumentaation mukaisesti](https://github.com/scientifichackers/ampy#configuration).
 
@@ -217,7 +214,7 @@ AMPY_PORT=COM4
 
 Nyt voit jatkossa jättää `-p` tai `--port` parametrin pois käyttäessäsi `ampy`-komentoa.
 
-#### Tiedostojen lataaminen: `get`
+### Tiedostojen lataaminen: `get`
 
 Voit tarkastella muistissa olevia tiedostoja get-komennolla:
 
@@ -238,13 +235,13 @@ Get ei automaattisesti tallenna tiedostoa, vaan voit halutessasi tallentaa tiedo
 
 Yllä olevassa esimerkissä tallennamme flash-muistissa olevan `boot.py`-tiedoston nykyiseen hakemistoon samalla nimellä.
 
-#### Tiedoston suorittaminen
+### Tiedoston suorittaminen
 
 ```terminal
 > ampy run testi.py
 ```
 
-#### Tiedostojen lähettäminen: `put`
+### Tiedostojen lähettäminen: `put`
 
 Voit tehdä `boot.py`-tiedostoon muutoksia ja siirtää päivitetyn tiedoston muistiin `put`-komennolla:
 
@@ -254,18 +251,18 @@ Voit tehdä `boot.py`-tiedostoon muutoksia ja siirtää päivitetyn tiedoston mu
 
 Tiedoston siirtäminen muistiin ei automaattisesti aiheuta ohjelman uudelleenkäynnistystä, joten koodiin tekemäsi muutokset eivät tule heti voimaan.
 
-#### Uudelleenkäynnistys
+### Uudelleenkäynnistys
 
 ```terminal
 > ampy -p COM4 reset
 ```
 
-#### Muut komennot
+### Muut komennot
 
 Lisää tietoa ampy-työkalun komennoista löydät esimerkiksi [Adafruitin artikkelista](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/file-operations).
 
 
-### Pyboard
+## Pyboard
 
 > *This is a standalone Python tool that runs on your PC that provides a way to:*
 >
@@ -279,7 +276,7 @@ Lisää tietoa ampy-työkalun komennoista löydät esimerkiksi [Adafruitin artik
 
 [https://docs.micropython.org/en/latest/reference/filesystem.html](https://docs.micropython.org/en/latest/reference/filesystem.html)
 
-#### Yleisiä ongelmatilanteita
+## Yleisiä ongelmatilanteita
 
 **UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte**
 
@@ -289,7 +286,7 @@ Tiedoston enkoodaus ei ole UTF-8 merkistön mukaista. Käytä editorina ainoasta
 
 Voit olla kerrallaan vain yhdessä sarjaporttiyhteydessä yhden portin kautta. Sulje Putty ja mahdolliset muut käynnissä olevat ohjelmat, jotka käyttävät sarjaporttia.
 
-### Lisätietoja
+## Lisätietoja
 
 Hyvä tutoriaali: [How to upload .py-files onto an ESP8266 running MicroPython](https://pythonforundergradengineers.com/upload-py-files-to-esp8266-running-micropython.html)
 

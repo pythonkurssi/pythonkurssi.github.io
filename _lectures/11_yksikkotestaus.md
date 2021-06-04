@@ -20,6 +20,10 @@ Tämän oppitunnin tavoitteena on tutustua testauksen eri tasoihin yksikköteste
 Aiheen opiskelun jälkeen osaat kirjoittaa Python-funktioillesi yksikkötestit ja tiedät mistä lähteä liikkeelle, kun sinulle tulee tarve kirjoittaa automatisoituja testejä. Osaat myös huomioida testausnäkökulmaa jäsentäessäsi Python-ohjelmiasi eri moduuleihin ja funktioihin.
 
 
+**Sisällysluettelo**
+
+<div class="js-toc"></div>
+
 
 ## Suositeltava oheisvideo: [What is Automated Testing?](https://www.youtube.com/watch?v=Nd31XiSGJLw)
 
@@ -30,7 +34,7 @@ Aiheen opiskelun jälkeen osaat kirjoittaa Python-funktioillesi yksikkötestit j
 > The Startup Lab. [What is Automated Testing?](https://www.youtube.com/watch?v=Nd31XiSGJLw)
 
 
-# Oppitunnin sisältö ja tavoitteet
+## Oppitunnin sisältö ja tavoitteet
 
 Oppitunnin tavoitteena on erityisesti tustua yksikkötestauksen käsitteisiin ja hahmottaa hyviä käytäntöjä testauksen toteuttamiseksi ja testattavan koodin kirjoittamiseksi.
 
@@ -46,7 +50,6 @@ Pytestin sijaan testejä voitaisiin kirjoittaa myös muita työkaluja hyödyntä
 
 Mikäli haluat tutustua pytest-työkaluun oppituntia syvällisemmin, suosittelen lukemaan esimerkiksi artikkelin [Testing Python Applications with Pytest](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest).
 
-# Testauksen käsitteet
 
 <!--Testauksen käsitteistöön kuuluu oleellisena osana eri tasot, joilla erityisesti automatisoitua testausta suoritetaan. 
 
@@ -72,7 +75,7 @@ def swap(lista, i, j):
 
 Tämä `swap`-funktio voisi olla yksi yksittäinen yksikkö esimerkiksi lajittelualgoritmin toteuttavassa Python-moduulissa. Mutta miten tätä funktiota voitaisiin testata? 
 
-### Testitapaus
+## Testitapaus
 
 Yksinkertaisimmillaan voimme kirjoittaa yksittäisen testifunktion, **eli testitapauksen**, joka kutsuu yllä esitettyä testattavaa funktiota ja tarkistaa sen tuloksen.
 
@@ -99,7 +102,7 @@ test_swapping_two_strings() # TODO: tästä halutaan myöhemmin eroon
 Tämä testi luo ensin listan kahdesta merkkijonosta, minkä jälkeen se yrittää vaihtaa niiden paikkoja. Lopuksi testi hyödyntää `assert` -komentoa varmistaakseen, että lopputulos vastaa odotuksia.
 
 
-### assert-komento
+## assert-komento
 
 Python-kielessä on valmiina [`assert`-komento](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement), jolla voidaan suoraviivaisesti varmistaa, että tietyn lausekkeen arvo on `True`:
 
@@ -154,7 +157,7 @@ Testien automatisoimiseksi käytämme mieluummin aiemmin mainittua `pytest`-modu
 
 Jotta Pytest käsittelee tiedostojamme testimoduuleina ja niissä olevia funktioita testitapauksina, sekä tiedostojen että funktioiden nimen alussa tulee olla etuliite `test_`.
 
-### Pytest-moduulin asentaminen ja suorittaminen
+## Pytest-moduulin asentaminen ja suorittaminen
 
 Voit asentaa Pythonin pytest-moduulin itsellesi seuraavalla komennolla:
 
@@ -202,14 +205,14 @@ Edellä esitetyn `swap`-funktion testejä olisikin kenties syytä laajentaa viel
 
 
 
-# Yksikkötestauksen haasteet
+## Yksikkötestauksen haasteet
 
 Ohjelman rakenteesta riippuen sen testaaminen voi olla hyvin hankalaa. Esimerkiksi globaalit muuttujat, ulkoiset riippuvuudet ja "spagettikoodi" vaikeuttavat testausta merkittävästi. Jos testattavassa koodissa tehdään esimerkiksi HTTP-pyyntöjä tai tietokantakyselyjä, näiden operaatioiden tulokset vaikuttavat testien tuloksiin, joten testattavan aineiston muuttuessa myös testien tulokset voivat muuttua, vaikka koodi edelleen toimisi toivotulla tavalla. Oppitunnilla sivuamme myös tällaisten riippuvuuksien korvaamista testikohtaisilla mock-toteutuksilla.
 
 Ulkoisten riippuvuuksien vaikutuksen minimoimiseksi testit suoritetaan usein erillisessä QA-ympäristössä (quality assurance), jossa eri rajapintojen vastaukset ja toiminta on hallittavissa. Tällä oppitunnilla meillä ei ole käytössä QA-ympäristöä, joten testaamme integraatiota postinumeroaineiston "tuotantodataa" vasten.
 
 
-# Oman postinumerologiikan testaaminen
+## Oman postinumerologiikan testaaminen
 
 Mikäli oma postinumerotehtävän ratkaisusi noudattaa malliratkaisun kaltaista arkkitehtuuria, jossa kaikki logiikka on toteutettu moduulin tasolle, joudut refaktoroimaan koodia testaamisen mahdollistamiseksi. Tämä johtuu siitä, että yksikkötestissä et halua kysyä syötettä käyttäjältä tai antaa ohjelman tulostaa konsoliin, vaan haluat itse ohjelmallisesti tarkistaa oikean lopputuloksen tietyllä syötteellä. 
 
@@ -239,7 +242,7 @@ def etsi_postitoimipaikka(postinumero, postinumerot_sanakirja):
 Tämän funktion testaaminen yksikkötestillä onkin jo huomattavasti helpompaa, koska se ei kysy käyttäjältä mitään eikä tee tulostuksia.
 
 
-# Yksikkötestien suorittaminen VS Codella
+## Yksikkötestien suorittaminen VS Codella
 
 VS Codessa on oma erillinen näkymänsä testeille. Tämän näkymän kautta testien suoritusta voidaan nopeuttaa ja tehdä vielä havainnollisemmaksi kuin komentoriviltä.
 
@@ -251,7 +254,7 @@ VS Codessa on oma erillinen näkymänsä testeille. Tämän näkymän kautta tes
 Ota testausominaisuudet käyttöön seuraamalla oppituntia tai ohjeita sivulla: [https://code.visualstudio.com/docs/python/testing](https://code.visualstudio.com/docs/python/testing)
 
 
-# Testidata
+## Testidata
 
 <!--TODO: Usein tarvitsemme realistista testidataa, jotta tiedämme, että koodi toimii esimerkiksi erilaisten indeksien, eri pituisten listojen ja eri tyyppisten arvojen kanssa. -->
 
@@ -306,7 +309,7 @@ Koska HTTP-rajapinnasta saatava vastaus muuttuu Postin postinumeroiden muuttuess
 
 Yksikkötesteissä ulkoiset riippuvuudet korvataan usein ns. mock'eilla, joiden avulla testi suorittaa vain tietyn osaan koodista. Riippuvuudet voivat olla niin ulkoisiin rajapintoihin kuin vaikka kellonaikoihin liittyviä.
 
-### pytest-mock
+## pytest-mock
 
 Käyttämämme Pytest-testityökalun `pytest-mock`-laajennus voidaan asentaa seuraavasti:
 
@@ -360,7 +363,7 @@ Integraatiotestejä voidaan toteuttaa samoilla teknologioilla kuin yksikköteste
 Järjestelmätestauksella varmistetaan usein monivaiheisia käyttötapauksia. Testattava käyttötapaus voisi pitää sisällään esimerkiksi kirjautumisen järjestelmään, jonkin datan muokkaamisen ja muokatun datan tarkastelemisen. Järjestelmätestejä tehdäänkin usein eri työkaluilla kuin yksikkötestejä. Yksi järjestelmätesteissä hyödyllinen testityökalu on kotimaista alkuperää oleva [Robot Framework](https://robotframework.org/), jolla voidaan erilaisten laajennusten kanssa testata verkkosivuja tai vaikka matkapuhelinverkkoja. Robot Frameworkilla on oma kielensä, jolla testitapaukset voivat näyttää esim. tältä: https://github.com/robotframework/WebDemo/blob/master/login_tests/valid_login.robot.
 
 
-# Extra: riippuvuuksien hallinta
+## Extra: riippuvuuksien hallinta
 
 Olemme tämän kurssin aikana asennelleet Pythonin kirjastoja yksi kerrallaan `pip3 install` -komennolla. Jotta kirjoittamamme koodi olisi asennettavissa toisen kehittäjän koneelle tai tulvaisuudessa CI- ja tuotantoympäristöihin, täytyy riippuvuudet dokumentoida. Pip-pakettienhallinta mahdollistaa asennettujen riippuvuuksien listaamisen kätevästi `pip3 freeze`-komennolla:
 
@@ -402,7 +405,7 @@ Myöhemmin samat riippuvuudet on asennettavissa uuteen ympäristöön yksinkerta
 $ pip3 install -r requirements.txt
 ```
 
-# Extra: testien kattavuus (coverage)
+## Extra: testien kattavuus (coverage)
 
 Yksi tapa mitata testien laatua on testikattavuus (coverage), joka tarkoittaa niiden kirjoitettujen koodirivien osuutta, jotka suoritetaan testien aikana. Testikattavuutta voidaan rivien määrän lisäksi mitata myös erilaisten suorituspolkujen määrillä. Pythonin `coverage`-moduuli auttaa selvittämään, mitkä rivit tulevat suoritetuksi testien aikana. Voit halutessasi tutustua tähän työkaluun itsenäisesti.
 
@@ -429,7 +432,7 @@ swap.py                48      3    94%
 Voit käyttää myös `coverage html`-komentoa, joka muodostaa raportin staattisen verkkosivun muodossa.
 
 
-# Tehtävä
+## Tehtävä
 
 Tällä viikolla harjoittelemme koodin refaktorointia ja yksikkötestausta kirjoittamalla testejä aikaisemmin koodatulle `postinumerot.py`-skriptille. Mikäli aikaisempi tehtävä jäi sinulta palauttamatta tai et halua käyttää vanhaa koodiasi, voit käyttää myös tehtävän malliratkaisun tiedostoja.
 

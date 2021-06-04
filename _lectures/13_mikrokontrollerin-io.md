@@ -15,7 +15,13 @@ __links__:
 
 Tämän oppitunnin aikana perehdymme sensorien ja ohjattavien laitteiden kytkemiseen sekä niiden hyödyntämiseen ohjelmallisesti.
 
-* Reagoiminen painikkeisiin
+
+**Sisällysluettelo**
+
+<div class="js-toc"></div>
+
+
+<!--* Reagoiminen painikkeisiin
 * Sensorit ja toimilaitteet
   * lämpötila
   * ultraääni
@@ -23,7 +29,7 @@ Tämän oppitunnin aikana perehdymme sensorien ja ohjattavien laitteiden kytkemi
   * ääni
   * kosketus
   * servo
-  * DC-moottori)
+  * DC-moottori)-->
 
 ## Esimerkkiprojekti
 
@@ -109,7 +115,7 @@ def keskiarvo(tulokset):
     return sum(tulokset) / len(tulokset)
 ```
 
-### Analogisen signaalin vaimentaminen
+## Analogisen signaalin vaimentaminen
 
 Lämpötilasensorin kohdalla mittaväli nollasta yhteen volttiin riittää normaalin huoneenlämmön mittaamiseen. Jännitteen nousu yli yhden voltin johtaa kuitenkin aina samaan tulokseen, eli maksimiarvoon 4095. Mikäli oletuksena käytettävä jänniteväli ei riitä, joudutaan signaalia vaimentamaan.
 

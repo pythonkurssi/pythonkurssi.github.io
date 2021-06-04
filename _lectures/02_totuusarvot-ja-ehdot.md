@@ -13,8 +13,6 @@ __links__:
       name: slides
 ---
 
-# Totuusarvot ja ehtolauseet
-
 
 Tällä tunnilla tutustumme Pythonin totuusarvoihin `True` ja `False` sekä niihin liittyvään logiikkaan. Opimme vertailemaan eri arvoja toisiinsa ja tekemään vertailun tulosten perusteella ehdollisesti suoritettavaa ohjelmalogiikkaa.
 

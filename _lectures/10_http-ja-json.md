@@ -14,16 +14,19 @@ __links__:
 ---
 
 
-Oppitunnin aiheet:
 
-1. JSON-muotoisen datan lukeminen
-1. JSON-datan kirjoittaminen
-1. HTTP-pyynnöt
+**Sisällysluettelo**
+
+<div class="js-toc"></div>
+
 
 ## Suositeltavaa luettavaa
 
-* [PY4E: Networked Programs](https://www.py4e.com/html3/12-network)
-* [PY4E: Using Web Services](https://www.py4e.com/html3/13-web)
+* Ohjelmoinnin perusteet (mooc.fi): [Datan käsittely](https://ohjelmointi-21.mooc.fi/osa-7/4-datan-kasittely)
+* Python for Everybody (py4e.com): [Networked Programs](https://www.py4e.com/html3/12-network)
+* Python for Everybody (py4e.com): [Using Web Services](https://www.py4e.com/html3/13-web)
+
+
 
 ## Postinumeroaineisto
 

@@ -14,8 +14,16 @@ __links__:
       name: slides
 ---
 
-## Sensorien lukemien lähettäminen MQTT-viestien avulla.
 
+
+**Sisällysluettelo**
+
+<div class="js-toc"></div>
+
+
+## Sensorien lukemien lähettäminen MQTT-viestien avulla
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_vcQTyLU1WY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Liitäntöjen ohjaaminen vastaanotettujen viestien avulla.
@@ -28,6 +36,11 @@ __links__:
 * topics and messages
 * Quality of Service (0, 1, 2)
 * HTTP vs. MQTT
+
+## Oppitunnin esimerkkiprojektit
+
+Lämpötila-, kosteus- ja kaasusensorin tietojen välittäminen MQTT-palvelimelle MicroPythonilla: [https://github.com/pythonkurssi/environmental-development-board](https://github.com/pythonkurssi/environmental-development-board)
+
 
 ## Kurssin aiheiden soveltaminen IoT-projektissa.
 

@@ -13,7 +13,6 @@ __links__:
       name: slides
 ---
 
-# Python-ohjelmoinnin aloitus
 
 Kurssin suorittamiseksi tarvitset omalle tietokoneellesi Python-ohjelmointiympäristön, VS Code -editorin sekä Python-laajennoksen VS Code -editoriin. Saat käyttää myös muita työkaluja, mutta niihin ei voida tarjota käyttötukea.
 
