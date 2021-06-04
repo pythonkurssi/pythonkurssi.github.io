@@ -41,9 +41,6 @@ Lämpötila-, kosteus- ja kaasusensorin tietojen välittäminen MQTT-palvelimell
 * Quality of Service (0, 1, 2)
 * HTTP vs. MQTT
 
-## Oppitunnin esimerkkiprojektit
-
-
 
 ## Kurssin aiheiden soveltaminen IoT-projektissa
 
