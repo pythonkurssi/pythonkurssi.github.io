@@ -143,18 +143,19 @@ a {
 blockquote {
     border: 1px solid $grey-color-light;
     border-left-width: 20px;
-    padding-left: $spacing-unit / 2;
+    padding: $spacing-unit / 2;
     position: relative;
+    margin-bottom: $spacing-unit;
 
     &:before {
         content: '”';
         position: absolute;
-        top: 0;
-        left: -17px;
-        font-size: 50px;
+        top: -38px;
+        right: 10px;
+        font-size: 115px;
         font-family: serif;
         font-style: italic;
-        color: #777;
+        color: #ddd;
     }
 
     > :last-child {
